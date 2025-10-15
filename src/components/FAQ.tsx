@@ -4,22 +4,23 @@ import { useState } from 'react'
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<string | null>(null)
 
+  // Seulement les 4 premières questions de la page FAQ complète
   const faqs = [
     {
       question: 'Comment réserver un service ?',
-      answer: 'Entrez simplement votre code postal, choisissez le service dont vous avez besoin, sélectionnez votre date et heure préférées, et confirmez votre réservation. C\'est aussi simple que ça !'
+      answer: 'Vous pouvez réserver directement sur notre plateforme en ligne. Sélectionnez le service souhaité, choisissez votre date et heure, puis confirmez votre réservation. Vous recevrez une confirmation par SMS et email.'
     },
     {
-      question: 'Les professionnels sont-ils vérifiés ?',
-      answer: 'Oui, tous nos professionnels sont soigneusement vérifiés, formés et assurés. Nous effectuons des vérifications d\'antécédents approfondies pour garantir votre sécurité et votre tranquillité d\'esprit.'
+      question: 'Vos professionnels sont-ils vérifiés ?',
+      answer: 'Oui, tous nos professionnels passent par un processus de vérification rigoureux incluant la vérification des diplômes, de l\'expérience, un entretien et une formation. Ils sont également assurés.'
     },
     {
       question: 'Quels modes de paiement acceptez-vous ?',
-      answer: 'Nous acceptons les cartes de crédit/débit, Orange Money, Wave, et les paiements en espèces. Tous les paiements en ligne sont sécurisés et cryptés.'
+      answer: 'Nous acceptons Orange Money, Wave, les cartes bancaires et les paiements en espèces. Le paiement est sécurisé et peut être effectué en ligne ou après la prestation selon votre préférence.'
     },
     {
-      question: 'Puis-je annuler ou reprogrammer ma réservation ?',
-      answer: 'Oui, vous pouvez annuler ou reprogrammer votre réservation jusqu\'à 24 heures avant l\'heure prévue sans frais. Les annulations tardives peuvent entraîner des frais.'
+      question: 'Puis-je annuler ou modifier ma réservation ?',
+      answer: 'Vous pouvez annuler ou modifier votre réservation jusqu\'à 24 heures avant l\'intervention via votre espace client ou en nous contactant. Les annulations tardives peuvent entraîner des frais.'
     },
   ]
 
@@ -57,6 +58,15 @@ export default function FAQ() {
               )}
             </div>
           ))}
+        </div>
+
+        <div className="mt-12 text-center">
+          <a 
+            href="/faq"
+            className="inline-block bg-primary hover:bg-primary-dark text-white px-8 py-3 rounded-full font-semibold transition-colors"
+          >
+            Voir toutes les questions
+          </a>
         </div>
       </div>
     </section>
