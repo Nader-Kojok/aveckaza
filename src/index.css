@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800&family=Bricolage+Grotesque:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Figtree', system-ui, sans-serif;
+  --font-display: 'Bricolage Grotesque', system-ui, sans-serif;
+  
+  --color-primary: #FF6B35;
+  --color-primary-dark: #E55A2B;
+  --color-secondary: #57E2E5;
+  --color-accent: #FFB627;
+  --color-blue: #1A5F7A;
+  --color-blue-dark: #134A5F;
+  --color-cream: #FFF8F0;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: #000000;
+  background-color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
