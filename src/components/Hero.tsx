@@ -16,20 +16,24 @@ export default function Hero() {
         {/* Service Icons Grid - Better responsive breakpoints */}
         <div className="mt-12 grid grid-cols-4 sm:grid-cols-4 md:grid-cols-8 gap-4 sm:gap-6 max-w-5xl mx-auto">
           {[
-            { icon: '🧹', label: 'Ménage' },
-            { icon: '🔧', label: 'Bricolage' },
-            { icon: '🌿', label: 'Jardinage' },
-            { icon: '🚗', label: 'Lavage auto' },
-            { icon: '🏠', label: 'Déménagement' },
-            { icon: '🧸', label: 'Lessive' },
-            { icon: '🍳', label: 'Cuisine' },
-            { icon: '❤️', label: 'Aide à domicile' },
+            { icon: '/services_icons/icons8-vacuum-cleaner-128.png', label: 'Ménage' },
+            { icon: '/services_icons/icons8-drill-128.png', label: 'Bricolage' },
+            { icon: '/services_icons/icons8-tree-128.png', label: 'Jardinage' },
+            { icon: '/services_icons/icons8-plumbing-128.png', label: 'Plomberie' },
+            { icon: '/services_icons/icons8-light-on-128.png', label: 'Électricité' },
+            { icon: '/services_icons/icons8-paint-roller-128.png', label: 'Peinture' },
+            { icon: '/services_icons/icons8-air-conditioner-128.png', label: 'Climatisation' },
+            { icon: '/services_icons/icons8-key-security-128.png', label: 'Serrurerie' },
           ].map((service) => (
             <div
               key={service.label}
               className="flex flex-col items-center justify-center min-h-[80px] hover:scale-105 transition-transform cursor-pointer p-2"
             >
-              <div className="text-3xl sm:text-4xl mb-2">{service.icon}</div>
+              <img 
+                src={service.icon} 
+                alt={service.label}
+                className="w-10 h-10 sm:w-12 sm:h-12 mb-2 object-contain"
+              />
               <span className="text-xs sm:text-sm text-gray-700 text-center leading-tight">{service.label}</span>
             </div>
           ))}

@@ -7,7 +7,12 @@ export default function Header() {
   const location = useLocation()
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-blue/95 backdrop-blur-md z-50 shadow-lg">
+    <header 
+      className="fixed top-0 left-0 right-0 backdrop-blur-md z-50 shadow-lg"
+      style={{
+        background: 'linear-gradient(90deg, rgba(4, 81, 125, 0.95) 0%, rgba(37, 133, 195, 0.95) 20%, rgba(37, 133, 195, 0.95) 50%, rgba(37, 133, 195, 0.95) 80%, rgba(4, 81, 125, 0.95) 100%)'
+      }}
+    >
       {/* Skip to main content link for keyboard users */}
       <a 
         href="#main-content" 
@@ -20,9 +25,9 @@ export default function Header() {
           <div className="flex items-center">
             <a href="/" className="flex items-center">
               <img 
-                src="/logo_kaza.png" 
+                src="/footer_logo_kaza.svg" 
                 alt="Kaza" 
-                className="!h-8 sm:!h-10 w-auto max-h-10" 
+                className="!h-10 sm:!h-[75px] w-auto max-h-[75px]" 
                 fetchPriority="high"
                 loading="eager"
               />

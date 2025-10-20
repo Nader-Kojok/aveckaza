@@ -7,9 +7,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           <div>
             <img 
-              src="/logo_kaza.png" 
+              src="/footer_logo_kaza.svg" 
               alt="Kaza" 
-              className="!h-12 w-auto max-h-12 mb-4" 
+              className="!h-[80px] w-auto max-h-[80px] mb-4" 
               loading="lazy"
             />
             <p className="text-white/80 text-sm mb-4">
