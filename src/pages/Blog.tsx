@@ -1,0 +1,123 @@
+import { Link } from 'react-router-dom'
+import { Calendar, ArrowRight } from 'lucide-react'
+
+export default function Blog() {
+  const articles = [
+    {
+      id: 'conseils-nettoyage-saison-pluies',
+      title: 'Conseils de nettoyage pour la saison des pluies',
+      category: 'Nettoyage',
+      emoji: '🌧️',
+      gradient: 'from-secondary to-blue-400',
+      description: 'La saison des pluies à Dakar apporte son lot de défis pour l\'entretien de votre maison. Découvrez nos meilleurs conseils pour garder votre intérieur frais et propre.',
+      date: '15 Octobre 2024',
+      readTime: '5 min'
+    },
+    {
+      id: 'entretien-jardin-climat-tropical',
+      title: 'Entretien du jardin en climat tropical',
+      category: 'Jardinage',
+      emoji: '🌴',
+      gradient: 'from-accent to-primary',
+      description: 'Le climat sénégalais offre des conditions uniques pour le jardinage. Apprenez les meilleures pratiques pour un jardin luxuriant toute l\'année à Dakar.',
+      date: '10 Octobre 2024',
+      readTime: '7 min'
+    },
+    {
+      id: 'securite-domicile-guide-complet',
+      title: 'Sécurité à domicile : Guide complet',
+      category: 'Sécurité',
+      emoji: '🔒',
+      gradient: 'from-primary to-primary-dark',
+      description: 'Protégez votre maison et votre famille avec nos conseils essentiels de sécurité adaptés au contexte sénégalais. Un guide pratique et complet.',
+      date: '5 Octobre 2024',
+      readTime: '6 min'
+    }
+  ]
+
+  return (
+    <div className="min-h-screen bg-cream">
+      {/* Hero Section */}
+      <section className="bg-gradient-to-br from-blue to-blue-600 text-white py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-6">
+            Blog Kaza
+          </h1>
+          <p className="text-xl sm:text-2xl text-white/90 max-w-2xl mx-auto">
+            Conseils, astuces et guides pour entretenir votre maison au Sénégal
+          </p>
+        </div>
+      </section>
+
+      {/* Articles Grid */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {articles.map((article) => (
+              <Link
+                key={article.id}
+                to={`/blog/${article.id}`}
+                className="group"
+              >
+                <article className="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden h-full flex flex-col">
+                  {/* Image/Gradient Header */}
+                  <div className={`bg-gradient-to-br ${article.gradient} p-12 flex items-center justify-center group-hover:scale-105 transition-transform`}>
+                    <div className="text-center text-white">
+                      <div className="text-7xl mb-4">{article.emoji}</div>
+                      <span className="inline-block px-4 py-1 bg-white/20 backdrop-blur-sm rounded-full text-sm font-semibold uppercase tracking-wide">
+                        {article.category}
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Content */}
+                  <div className="p-6 flex-1 flex flex-col">
+                    <div className="flex items-center gap-4 text-sm text-gray-500 mb-3">
+                      <span className="flex items-center gap-1">
+                        <Calendar className="w-4 h-4" />
+                        {article.date}
+                      </span>
+                      <span>•</span>
+                      <span>{article.readTime} de lecture</span>
+                    </div>
+
+                    <h2 className="text-2xl font-display font-bold text-blue mb-3 group-hover:text-primary transition-colors">
+                      {article.title}
+                    </h2>
+
+                    <p className="text-gray-600 mb-4 flex-1">
+                      {article.description}
+                    </p>
+
+                    <div className="flex items-center text-primary font-semibold group-hover:gap-2 transition-all">
+                      Lire l'article
+                      <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                    </div>
+                  </div>
+                </article>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary to-primary-dark text-white">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl sm:text-4xl font-display font-bold mb-6">
+            Besoin d'aide professionnelle ?
+          </h2>
+          <p className="text-xl mb-8 text-white/90">
+            Nos experts Kaza sont là pour vous accompagner dans tous vos besoins d'entretien à domicile.
+          </p>
+          <Link
+            to="/"
+            className="inline-block bg-white text-primary px-8 py-4 rounded-full font-semibold hover:bg-cream transition-colors"
+          >
+            Réserver un service
+          </Link>
+        </div>
+      </section>
+    </div>
+  )
+}

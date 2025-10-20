@@ -18,6 +18,9 @@ export default function Header() {
             <a href="/club-kaza" className="text-sm font-medium text-white/90 hover:text-white transition-colors">
               Club Kaza
             </a>
+            <a href="/blog" className="text-sm font-medium text-white/90 hover:text-white transition-colors">
+              Blog
+            </a>
             <a href="/offre-entreprises" className="text-sm font-medium text-white/90 hover:text-white transition-colors">
               Entreprises
             </a>

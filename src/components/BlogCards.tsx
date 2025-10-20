@@ -1,6 +1,9 @@
+import { Link } from 'react-router-dom'
+
 export default function BlogCards() {
   const articles = [
     {
+      id: 'conseils-nettoyage-saison-pluies',
       title: 'Conseils de nettoyage pour la saison des pluies',
       category: 'Nettoyage',
       image: '🌧️',
@@ -8,6 +11,7 @@ export default function BlogCards() {
       description: 'Gardez votre maison fraîche et propre pendant la saison des pluies à Dakar.'
     },
     {
+      id: 'entretien-jardin-climat-tropical',
       title: 'Entretien du jardin en climat tropical',
       category: 'Jardinage',
       image: '🌴',
@@ -15,6 +19,7 @@ export default function BlogCards() {
       description: 'Les meilleures pratiques pour un jardin luxuriant toute l\'année.'
     },
     {
+      id: 'securite-domicile-guide-complet',
       title: 'Sécurité à domicile : Guide complet',
       category: 'Sécurité',
       image: '🔒',
@@ -34,9 +39,10 @@ export default function BlogCards() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {articles.map((article, index) => (
-            <div
-              key={index}
+          {articles.map((article) => (
+            <Link
+              key={article.id}
+              to={`/blog/${article.id}`}
               className="group cursor-pointer"
             >
               <div className={`bg-gradient-to-br ${article.color} rounded-2xl p-8 aspect-square flex items-center justify-center mb-4 group-hover:scale-105 transition-transform`}>
@@ -53,7 +59,7 @@ export default function BlogCards() {
               <p className="text-white/80 text-sm">
                 {article.description}
               </p>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
