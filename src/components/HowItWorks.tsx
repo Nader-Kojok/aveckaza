@@ -3,16 +3,16 @@ export default function HowItWorks() {
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-cream">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <p className="text-base font-semibold text-primary mb-2">BESOIN D'AIDE?</p>
-          <h2 className="text-5xl sm:text-6xl font-display font-bold text-gray-900">
+          <p className="text-sm sm:text-base font-semibold text-primary mb-2">BESOIN D'AIDE?</p>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-bold text-gray-900 leading-tight">
             Trouvez la meilleure aide à temps plein.
           </h2>
-          <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
+          <p className="mt-4 text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
             Soyez mis en relation avec un professionnel à temps plein ou partiel qui correspond à vos besoins et à votre emploi du temps.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {[
             {
               title: 'Femme de ménage à temps plein',

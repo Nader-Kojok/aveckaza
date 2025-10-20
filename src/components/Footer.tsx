@@ -4,9 +4,9 @@ export default function Footer() {
   return (
     <footer className="bg-blue text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           <div>
-            <img src="/logo_kaza.png" alt="Kaza" className="h-16 mb-4" />
+            <img src="/logo_kaza.png" alt="Kaza" className="!h-12 w-auto max-h-12 mb-4" />
             <p className="text-white/80 text-sm mb-4">
               Tous les services dont votre maison a besoin, à portée de main.
             </p>
@@ -53,14 +53,14 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/20 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-sm text-white/60 mb-4 md:mb-0">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-sm text-white/60 text-center md:text-left">
               © 2025 Kaza Sénégal. Tous droits réservés.
             </p>
-            <div className="flex items-center space-x-4 text-sm text-white/60">
-              <a href="mailto:contact@aveckaza.com" className="hover:text-white/80 transition-colors">contact@aveckaza.com</a>
-              <span>•</span>
-              <a href="tel:+221787891010" className="hover:text-white/80 transition-colors">+221 78 789 10 10</a>
+            <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 text-sm text-white/60">
+              <a href="mailto:contact@aveckaza.com" className="hover:text-white/80 transition-colors min-h-[44px] flex items-center">contact@aveckaza.com</a>
+              <span className="hidden sm:inline">•</span>
+              <a href="tel:+221787891010" className="hover:text-white/80 transition-colors min-h-[44px] flex items-center">+221 78 789 10 10</a>
             </div>
           </div>
         </div>

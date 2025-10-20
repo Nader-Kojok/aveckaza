@@ -30,15 +30,15 @@ export default function Testimonials() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <p className="text-sm font-semibold text-primary mb-2">TÉMOIGNAGES</p>
-          <h2 className="text-3xl sm:text-4xl font-display font-bold text-gray-900">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-bold text-gray-900 leading-tight">
             Rencontrez quelques-uns de nos professionnels Kaza.
           </h2>
-          <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
+          <p className="mt-4 text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
             Ne nous croyez pas sur parole. Voici ce que nos clients disent de leur expérience.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.name}
