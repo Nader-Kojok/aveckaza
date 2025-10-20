@@ -1,14 +1,18 @@
+import { placeholders } from '../lib/placeholder'
+
 export default function FindHelp() {
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
-            <div className="bg-gradient-to-br from-pink-100 to-purple-100 rounded-3xl p-12 aspect-square flex items-center justify-center">
-              <div className="text-center">
-                <div className="text-8xl mb-4">💻</div>
-                <p className="text-xl font-display font-semibold text-gray-900">Plateforme Web</p>
-              </div>
+            <div className="rounded-3xl overflow-hidden aspect-square shadow-xl">
+              <img 
+                src={placeholders.platform.webPlatform} 
+                alt="Plateforme web Kaza"
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
             </div>
           </div>
           

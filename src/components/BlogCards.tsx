@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { placeholders } from '../lib/placeholder'
 
 export default function BlogCards() {
   const articles = [
@@ -6,24 +7,21 @@ export default function BlogCards() {
       id: 'conseils-nettoyage-saison-pluies',
       title: 'Conseils de nettoyage pour la saison des pluies',
       category: 'Nettoyage',
-      image: '🌧️',
-      color: 'from-secondary to-blue-400',
+      image: placeholders.blog.rainySeasonCleaning,
       description: 'Gardez votre maison fraîche et propre pendant la saison des pluies à Dakar.'
     },
     {
       id: 'entretien-jardin-climat-tropical',
       title: 'Entretien du jardin en climat tropical',
       category: 'Jardinage',
-      image: '🌴',
-      color: 'from-accent to-primary',
+      image: placeholders.blog.tropicalGarden,
       description: 'Les meilleures pratiques pour un jardin luxuriant toute l\'année.'
     },
     {
       id: 'securite-domicile-guide-complet',
       title: 'Sécurité à domicile : Guide complet',
       category: 'Sécurité',
-      image: '🔒',
-      color: 'from-primary to-primary-dark',
+      image: placeholders.blog.homeSecurity,
       description: 'Protégez votre maison et votre famille avec ces conseils essentiels.'
     },
   ]
@@ -45,10 +43,15 @@ export default function BlogCards() {
               to={`/blog/${article.id}`}
               className="group cursor-pointer"
             >
-              <div className={`bg-gradient-to-br ${article.color} rounded-2xl p-8 aspect-square flex items-center justify-center mb-4 group-hover:scale-105 transition-transform`}>
-                <div className="text-center text-white">
-                  <div className="text-6xl mb-4">{article.image}</div>
-                  <span className="text-sm font-semibold uppercase tracking-wide">
+              <div className="relative rounded-2xl overflow-hidden aspect-square mb-4 group-hover:scale-105 transition-transform">
+                <img 
+                  src={article.image} 
+                  alt={article.title}
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
+                  <span className="text-sm font-semibold uppercase tracking-wide text-white">
                     {article.category}
                   </span>
                 </div>

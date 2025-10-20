@@ -1,3 +1,5 @@
+import { placeholders } from '../lib/placeholder'
+
 export default function WorkWithUs() {
   return (
     <section id="carrieres" className="py-16 px-4 sm:px-6 lg:px-8">
@@ -6,10 +8,15 @@ export default function WorkWithUs() {
           <div className="order-2 lg:order-1">
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-orange-400 to-orange-600 rounded-3xl transform rotate-3"></div>
-              <div className="relative bg-gradient-to-br from-orange-400 to-orange-600 rounded-3xl p-12 aspect-square flex items-center justify-center">
-                <div className="text-center text-white">
-                  <div className="text-8xl mb-4">👥</div>
-                  <p className="text-2xl font-display font-bold">Rejoignez notre équipe</p>
+              <div className="relative rounded-3xl overflow-hidden aspect-square shadow-xl">
+                <img 
+                  src={placeholders.platform.teamWork} 
+                  alt="Rejoignez l'équipe Kaza"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-orange-600/80 to-transparent flex items-end p-8">
+                  <p className="text-2xl font-display font-bold text-white">Rejoignez notre équipe</p>
                 </div>
               </div>
             </div>

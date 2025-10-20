@@ -1,8 +1,10 @@
 import { Menu, X } from 'lucide-react'
 import { useState } from 'react'
+import { useLocation } from 'react-router-dom'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const location = useLocation()
 
   return (
     <header className="fixed top-0 left-0 right-0 bg-blue/95 backdrop-blur-md z-50 shadow-lg">
@@ -16,19 +18,54 @@ export default function Header() {
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="/services" className="text-base font-medium text-white/90 hover:text-primary transition-colors">
+            <a 
+              href="/services" 
+              className={`text-base font-medium transition-colors ${
+                location.pathname === '/services' 
+                  ? 'text-primary' 
+                  : 'text-white/90 hover:text-primary'
+              }`}
+            >
               Services
             </a>
-            <a href="/club-kaza" className="text-base font-medium text-white/90 hover:text-primary transition-colors">
+            <a 
+              href="/club-kaza" 
+              className={`text-base font-medium transition-colors ${
+                location.pathname === '/club-kaza' 
+                  ? 'text-primary' 
+                  : 'text-white/90 hover:text-primary'
+              }`}
+            >
               Club Kaza
             </a>
-            <a href="/blog" className="text-base font-medium text-white/90 hover:text-primary transition-colors">
+            <a 
+              href="/blog" 
+              className={`text-base font-medium transition-colors ${
+                location.pathname.startsWith('/blog') 
+                  ? 'text-primary' 
+                  : 'text-white/90 hover:text-primary'
+              }`}
+            >
               Blog
             </a>
-            <a href="/offre-entreprises" className="text-base font-medium text-white/90 hover:text-primary transition-colors">
+            <a 
+              href="/offre-entreprises" 
+              className={`text-base font-medium transition-colors ${
+                location.pathname === '/offre-entreprises' 
+                  ? 'text-primary' 
+                  : 'text-white/90 hover:text-primary'
+              }`}
+            >
               Entreprises
             </a>
-            <a href="/entreprise" className="text-base font-medium text-white/90 hover:text-primary transition-colors">
+            <a 
+              href="/entreprise" 
+              className={`text-base font-medium transition-colors ${
+                location.pathname === '/entreprise' 
+                  ? 'text-primary' 
+                  : 'text-white/90 hover:text-primary'
+              }`}
+            >
               À propos
             </a>
           </nav>
@@ -65,35 +102,55 @@ export default function Header() {
           <nav className="max-w-7xl mx-auto px-4 py-4 space-y-1">
             <a 
               href="/services" 
-              className="block px-4 py-3 text-base font-medium text-white/90 hover:text-primary hover:bg-white/5 rounded-lg transition-colors min-h-[44px]"
+              className={`block px-4 py-3 text-base font-medium rounded-lg transition-colors min-h-[44px] ${
+                location.pathname === '/services'
+                  ? 'text-primary bg-white/10'
+                  : 'text-white/90 hover:text-primary hover:bg-white/5'
+              }`}
               onClick={() => setIsMenuOpen(false)}
             >
               Services
             </a>
             <a 
               href="/club-kaza" 
-              className="block px-4 py-3 text-base font-medium text-white/90 hover:text-primary hover:bg-white/5 rounded-lg transition-colors min-h-[44px]"
+              className={`block px-4 py-3 text-base font-medium rounded-lg transition-colors min-h-[44px] ${
+                location.pathname === '/club-kaza'
+                  ? 'text-primary bg-white/10'
+                  : 'text-white/90 hover:text-primary hover:bg-white/5'
+              }`}
               onClick={() => setIsMenuOpen(false)}
             >
               Club Kaza
             </a>
             <a 
               href="/blog" 
-              className="block px-4 py-3 text-base font-medium text-white/90 hover:text-primary hover:bg-white/5 rounded-lg transition-colors min-h-[44px]"
+              className={`block px-4 py-3 text-base font-medium rounded-lg transition-colors min-h-[44px] ${
+                location.pathname.startsWith('/blog')
+                  ? 'text-primary bg-white/10'
+                  : 'text-white/90 hover:text-primary hover:bg-white/5'
+              }`}
               onClick={() => setIsMenuOpen(false)}
             >
               Blog
             </a>
             <a 
               href="/offre-entreprises" 
-              className="block px-4 py-3 text-base font-medium text-white/90 hover:text-primary hover:bg-white/5 rounded-lg transition-colors min-h-[44px]"
+              className={`block px-4 py-3 text-base font-medium rounded-lg transition-colors min-h-[44px] ${
+                location.pathname === '/offre-entreprises'
+                  ? 'text-primary bg-white/10'
+                  : 'text-white/90 hover:text-primary hover:bg-white/5'
+              }`}
               onClick={() => setIsMenuOpen(false)}
             >
               Entreprises
             </a>
             <a 
               href="/entreprise" 
-              className="block px-4 py-3 text-base font-medium text-white/90 hover:text-primary hover:bg-white/5 rounded-lg transition-colors min-h-[44px]"
+              className={`block px-4 py-3 text-base font-medium rounded-lg transition-colors min-h-[44px] ${
+                location.pathname === '/entreprise'
+                  ? 'text-primary bg-white/10'
+                  : 'text-white/90 hover:text-primary hover:bg-white/5'
+              }`}
               onClick={() => setIsMenuOpen(false)}
             >
               À propos

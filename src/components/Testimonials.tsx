@@ -1,25 +1,26 @@
 import { Star } from 'lucide-react'
+import { placeholders } from '../lib/placeholder'
 
 export default function Testimonials() {
   const testimonials = [
     {
       name: 'Fatou D.',
       role: 'Propriétaire',
-      image: '👩🏾',
+      image: placeholders.profiles.woman1,
       rating: 5,
       text: 'Kaza a changé ma vie! Ma maison n’a jamais été aussi propre et j’adore la facilité de réservation.',
     },
     {
       name: 'Moussa S.',
       role: 'Professionnel occupé',
-      image: '👨🏾',
+      image: placeholders.profiles.man1,
       rating: 5,
       text: 'J’étais sceptique au début, mais le service a dépassé mes attentes. Je recommande vivement!',
     },
     {
       name: 'Awa N.',
       role: 'Maman',
-      image: '👩🏾',
+      image: placeholders.profiles.woman2,
       rating: 5,
       text: 'En tant que maman qui travaille, ce service est une bouée de sauvetage. Les professionnels sont fiables.',
     },
@@ -45,7 +46,12 @@ export default function Testimonials() {
               className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow border border-gray-100"
             >
               <div className="flex items-center mb-4">
-                <div className="text-5xl mr-4">{testimonial.image}</div>
+                <img 
+                  src={testimonial.image} 
+                  alt={testimonial.name}
+                  className="w-16 h-16 rounded-full object-cover mr-4"
+                  loading="lazy"
+                />
                 <div>
                   <h4 className="font-display font-bold text-gray-900">{testimonial.name}</h4>
                   <p className="text-sm text-gray-500">{testimonial.role}</p>

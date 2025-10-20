@@ -1,3 +1,5 @@
+import { placeholders } from '../lib/placeholder'
+
 export default function HowItWorks() {
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-cream">
@@ -17,30 +19,41 @@ export default function HowItWorks() {
             {
               title: 'Femme de ménage à temps plein',
               description: 'Aide dédiée pour tous vos besoins domestiques.',
-              color: 'bg-yellow-100',
+              image: placeholders.fullTimeHelp.housekeeping,
             },
             {
               title: 'Nounou à temps plein',
-              description: 'Garde d’enfants professionnelle à domicile.',
-              color: 'bg-pink-100',
+              description: 'Garde d\'enfants professionnelle à domicile.',
+              image: placeholders.fullTimeHelp.nanny,
             },
             {
               title: 'Aide soignant(e) à temps plein',
               description: 'Soins compassionnels pour les membres âgés de la famille.',
-              color: 'bg-blue-100',
+              image: placeholders.fullTimeHelp.caregiver,
             },
           ].map((option) => (
             <div
               key={option.title}
-              className={`${option.color} rounded-2xl p-8 hover:scale-105 transition-transform cursor-pointer`}
+              className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all cursor-pointer"
             >
-              <h3 className="text-xl font-display font-bold text-gray-900 mb-3">
-                {option.title}
-              </h3>
-              <p className="text-gray-700 mb-6">{option.description}</p>
-              <a href="/en-savoir-plus" className="text-primary font-semibold text-sm hover:underline hover:text-primary-dark transition-colors">
-                En savoir plus →
-              </a>
+              <div className="relative h-48 overflow-hidden">
+                <img 
+                  src={option.image} 
+                  alt={option.title}
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-display font-bold text-gray-900 mb-3">
+                  {option.title}
+                </h3>
+                <p className="text-gray-700 mb-4">{option.description}</p>
+                <a href="/en-savoir-plus" className="text-primary font-semibold text-sm hover:underline hover:text-primary-dark transition-colors">
+                  En savoir plus →
+                </a>
+              </div>
             </div>
           ))}
         </div>

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { Calendar, ArrowRight } from 'lucide-react'
 import SEO from '../components/SEO'
+import { placeholders } from '../lib/placeholder'
 
 export default function Blog() {
   const articles = [
@@ -8,8 +9,7 @@ export default function Blog() {
       id: 'conseils-nettoyage-saison-pluies',
       title: 'Conseils de nettoyage pour la saison des pluies',
       category: 'Nettoyage',
-      emoji: '🌧️',
-      gradient: 'from-secondary to-blue-400',
+      image: placeholders.blog.rainySeasonCleaning,
       description: 'La saison des pluies à Dakar apporte son lot de défis pour l\'entretien de votre maison. Découvrez nos meilleurs conseils pour garder votre intérieur frais et propre.',
       date: '15 Octobre 2024',
       readTime: '5 min'
@@ -18,8 +18,7 @@ export default function Blog() {
       id: 'entretien-jardin-climat-tropical',
       title: 'Entretien du jardin en climat tropical',
       category: 'Jardinage',
-      emoji: '🌴',
-      gradient: 'from-accent to-primary',
+      image: placeholders.blog.tropicalGarden,
       description: 'Le climat sénégalais offre des conditions uniques pour le jardinage. Apprenez les meilleures pratiques pour un jardin luxuriant toute l\'année à Dakar.',
       date: '10 Octobre 2024',
       readTime: '7 min'
@@ -28,8 +27,7 @@ export default function Blog() {
       id: 'securite-domicile-guide-complet',
       title: 'Sécurité à domicile : Guide complet',
       category: 'Sécurité',
-      emoji: '🔒',
-      gradient: 'from-primary to-primary-dark',
+      image: placeholders.blog.homeSecurity,
       description: 'Protégez votre maison et votre famille avec nos conseils essentiels de sécurité adaptés au contexte sénégalais. Un guide pratique et complet.',
       date: '5 Octobre 2024',
       readTime: '6 min'
@@ -84,11 +82,16 @@ export default function Blog() {
                 className="group"
               >
                 <article className="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden h-full flex flex-col">
-                  {/* Image/Gradient Header */}
-                  <div className={`bg-gradient-to-br ${article.gradient} p-12 flex items-center justify-center group-hover:scale-105 transition-transform`}>
-                    <div className="text-center text-white">
-                      <div className="text-7xl mb-4">{article.emoji}</div>
-                      <span className="inline-block px-4 py-1 bg-white/20 backdrop-blur-sm rounded-full text-sm font-semibold uppercase tracking-wide">
+                  {/* Image Header */}
+                  <div className="relative h-64 overflow-hidden">
+                    <img 
+                      src={article.image} 
+                      alt={article.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
+                      <span className="inline-block px-4 py-1 bg-white/20 backdrop-blur-sm rounded-full text-sm font-semibold uppercase tracking-wide text-white">
                         {article.category}
                       </span>
                     </div>
