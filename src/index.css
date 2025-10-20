@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600;700&display=swap');
 @import "tailwindcss";
 
 @theme {
   /* Taille de base */
   --font-size-base: 1.125rem;
   
-  /* Polices */
-  --font-sans: 'Barlow Semi Condensed', system-ui, sans-serif;
-  --font-display: 'Barlow Semi Condensed', system-ui, sans-serif;
+  /* Polices with system fallbacks for faster rendering */
+  --font-sans: 'Barlow Semi Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-display: 'Barlow Semi Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   
   /* Couleurs principales */
   --color-primary: #ff8200;

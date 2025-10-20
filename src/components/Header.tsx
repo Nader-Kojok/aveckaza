@@ -19,7 +19,13 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <a href="/" className="flex items-center">
-              <img src="/logo_kaza.png" alt="Kaza" className="!h-8 sm:!h-10 w-auto max-h-10" />
+              <img 
+                src="/logo_kaza.png" 
+                alt="Kaza" 
+                className="!h-8 sm:!h-10 w-auto max-h-10" 
+                fetchPriority="high"
+                loading="eager"
+              />
             </a>
           </div>
           
