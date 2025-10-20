@@ -74,6 +74,9 @@ export default function Blog() {
       {/* Articles Grid */}
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl font-display font-bold text-gray-900 mb-8 text-center">
+            Nos derniers articles
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {articles.map((article) => (
               <Link
@@ -108,9 +111,9 @@ export default function Blog() {
                       <span>{article.readTime} de lecture</span>
                     </div>
 
-                    <h2 className="text-2xl font-display font-bold text-blue mb-3 group-hover:text-primary transition-colors">
+                    <h3 className="text-2xl font-display font-bold text-blue mb-3 group-hover:text-primary transition-colors">
                       {article.title}
-                    </h2>
+                    </h3>
 
                     <p className="text-gray-600 mb-4 flex-1">
                       {article.description}

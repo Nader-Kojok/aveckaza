@@ -11,10 +11,22 @@ export default function Footer() {
               Tous les services dont votre maison a besoin, à portée de main.
             </p>
             <div className="flex space-x-4">
-              <a href="https://www.facebook.com/profile.php?id=61570831864851" target="_blank" rel="noopener noreferrer" className="hover:text-white/80 transition-colors">
+              <a 
+                href="https://www.facebook.com/profile.php?id=61570831864851" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:text-white/80 transition-colors"
+                aria-label="Suivez-nous sur Facebook"
+              >
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="https://www.instagram.com/kaza.sn" target="_blank" rel="noopener noreferrer" className="hover:text-white/80 transition-colors">
+              <a 
+                href="https://www.instagram.com/kaza.sn" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:text-white/80 transition-colors"
+                aria-label="Suivez-nous sur Instagram"
+              >
                 <Instagram className="w-5 h-5" />
               </a>
             </div>

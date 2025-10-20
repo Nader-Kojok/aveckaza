@@ -8,6 +8,13 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 bg-blue/95 backdrop-blur-md z-50 shadow-lg">
+      {/* Skip to main content link for keyboard users */}
+      <a 
+        href="#main-content" 
+        className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:bg-primary focus:text-white focus:px-4 focus:py-2 focus:rounded"
+      >
+        Aller au contenu principal
+      </a>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
@@ -17,7 +24,7 @@ export default function Header() {
           </div>
           
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-8" aria-label="Navigation principale">
             <a 
               href="/services" 
               className={`text-base font-medium transition-colors ${
@@ -109,7 +116,7 @@ export default function Header() {
       {/* Mobile Navigation */}
       {isMenuOpen && (
         <div className="md:hidden bg-blue-dark border-t border-white/10 animate-in slide-in-from-top duration-200">
-          <nav className="max-w-7xl mx-auto px-4 py-4 space-y-1">
+          <nav className="max-w-7xl mx-auto px-4 py-4 space-y-1" aria-label="Navigation mobile">
             <a 
               href="/services" 
               className={`block px-4 py-3 text-base font-medium rounded-lg transition-colors min-h-[44px] ${
