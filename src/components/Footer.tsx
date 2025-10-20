@@ -35,6 +35,7 @@ export default function Footer() {
             <h4 className="font-display font-bold mb-4">À Propos</h4>
             <ul className="space-y-2 text-sm text-white/80">
               <li><a href="/entreprise" className="hover:text-white transition-colors">L'entreprise</a></li>
+              <li><a href="/club-kaza" className="hover:text-white transition-colors">Club Kaza</a></li>
               <li><a href="/devenir-pro" className="hover:text-white transition-colors">Devenir pro</a></li>
               <li><a href="/faq" className="hover:text-white transition-colors">FAQ</a></li>
               <li><a href="/cgv" className="hover:text-white transition-colors">CGV</a></li>
