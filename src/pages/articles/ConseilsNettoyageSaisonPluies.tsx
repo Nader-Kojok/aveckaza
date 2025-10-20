@@ -1,9 +1,44 @@
 import { Link } from 'react-router-dom'
 import { ArrowLeft, Calendar, Clock } from 'lucide-react'
+import SEO from '../../components/SEO'
 
 export default function ConseilsNettoyageSaisonPluies() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Conseils de nettoyage pour la saison des pluies à Dakar",
+    "description": "La saison des pluies à Dakar apporte son lot de défis pour l'entretien de votre maison. Découvrez nos meilleurs conseils pour garder votre intérieur frais et propre pendant la saison humide au Sénégal.",
+    "image": "https://aveckaza.com/logo_kaza.png",
+    "datePublished": "2024-10-15",
+    "dateModified": "2024-10-15",
+    "author": {
+      "@type": "Organization",
+      "name": "Kaza Sénégal"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Kaza Sénégal",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://aveckaza.com/logo_kaza.png"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://aveckaza.com/blog/conseils-nettoyage-saison-pluies"
+    }
+  }
+
   return (
     <div className="min-h-screen bg-cream">
+      <SEO
+        title="Conseils Nettoyage Saison des Pluies Dakar"
+        description="Découvrez les meilleurs conseils pour entretenir votre maison pendant la saison des pluies à Dakar. Astuces anti-humidité, nettoyage efficace et prévention des moisissures au Sénégal."
+        keywords="nettoyage saison pluies Dakar, entretien maison humidité Sénégal, anti-moisissure Dakar, conseils ménage saison pluies, maison propre hivernage"
+        canonical="/blog/conseils-nettoyage-saison-pluies"
+        ogType="article"
+        structuredData={structuredData}
+      />
       {/* Header */}
       <div className="bg-gradient-to-br from-secondary to-blue-400 text-white py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">

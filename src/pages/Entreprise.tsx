@@ -1,8 +1,24 @@
 import { Target, Heart, Users, Award, TrendingUp, Shield } from 'lucide-react'
+import SEO from '../components/SEO'
 
 export default function Entreprise() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "À propos de Kaza Sénégal",
+    "description": "Découvrez Kaza, la première plateforme de services à domicile au Sénégal. Notre mission, nos valeurs et notre engagement envers nos clients et professionnels.",
+    "url": "https://aveckaza.com/entreprise"
+  }
+
   return (
     <div className="min-h-screen bg-white pt-24 pb-16">
+      <SEO
+        title="À Propos - Notre Mission et Valeurs"
+        description="Kaza est la première plateforme de services à domicile au Sénégal. Découvrez notre mission, nos valeurs et notre engagement pour connecter clients et professionnels qualifiés à Dakar."
+        keywords="à propos Kaza, entreprise services domicile Sénégal, plateforme services Dakar, mission Kaza, valeurs Kaza"
+        canonical="/entreprise"
+        structuredData={structuredData}
+      />
       {/* Hero Section */}
       <section className="px-4 sm:px-6 lg:px-8 py-16">
         <div className="max-w-4xl mx-auto text-center">

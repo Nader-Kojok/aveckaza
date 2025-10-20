@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { ChevronDown } from 'lucide-react'
+import SEO from '../components/SEO'
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null)
@@ -88,8 +89,30 @@ export default function FAQ() {
     }
   ]
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.flatMap(category => 
+      category.questions.map(q => ({
+        "@type": "Question",
+        "name": q.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": q.answer
+        }
+      }))
+    )
+  }
+
   return (
     <div className="min-h-screen bg-white pt-24 pb-16 px-4 sm:px-6 lg:px-8">
+      <SEO
+        title="FAQ - Questions Fréquentes Services à Domicile"
+        description="Trouvez les réponses à vos questions sur nos services à domicile à Dakar : réservation, tarifs, paiement, professionnels. FAQ Kaza Sénégal."
+        keywords="FAQ services domicile, questions Kaza, aide réservation Dakar, tarifs services domicile, paiement Kaza"
+        canonical="/faq"
+        structuredData={structuredData}
+      />
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-display font-bold text-gray-900 mb-4">

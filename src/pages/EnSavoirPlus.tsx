@@ -1,8 +1,15 @@
 import { Check, Shield, Clock, Users, Award, Sparkles } from 'lucide-react'
+import SEO from '../components/SEO'
 
 export default function EnSavoirPlus() {
   return (
     <div className="min-h-screen bg-white pt-24 pb-16">
+      <SEO
+        title="En Savoir Plus - Nos Services Détaillés"
+        description="Découvrez en détail nos 3 types de services : réservations ponctuelles, placements à temps plein et boutique hygiène. Services à domicile Kaza Dakar."
+        keywords="services Kaza détails, réservation services Dakar, placement aide domicile, boutique hygiène Sénégal, comment ça marche Kaza"
+        canonical="/en-savoir-plus"
+      />
       {/* Hero Section */}
       <section className="px-4 sm:px-6 lg:px-8 py-16 bg-gradient-to-br from-primary to-primary-dark text-white">
         <div className="max-w-4xl mx-auto text-center">

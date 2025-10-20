@@ -1,9 +1,44 @@
 import { Link } from 'react-router-dom'
 import { ArrowLeft, Calendar, Clock } from 'lucide-react'
+import SEO from '../../components/SEO'
 
 export default function SecuriteDomicileGuideComplet() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Sécurité à domicile : Guide complet pour le Sénégal",
+    "description": "Protégez votre maison et votre famille avec nos conseils essentiels de sécurité adaptés au contexte sénégalais. Un guide pratique et complet.",
+    "image": "https://aveckaza.com/logo_kaza.png",
+    "datePublished": "2024-10-05",
+    "dateModified": "2024-10-05",
+    "author": {
+      "@type": "Organization",
+      "name": "Kaza Sénégal"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Kaza Sénégal",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://aveckaza.com/logo_kaza.png"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://aveckaza.com/blog/securite-domicile-guide-complet"
+    }
+  }
+
   return (
     <div className="min-h-screen bg-cream">
+      <SEO
+        title="Sécurité Domicile Dakar - Guide Complet 2025"
+        description="Protégez votre maison à Dakar avec notre guide complet de sécurité : alarmes, gardiennage, systèmes de surveillance adaptés au Sénégal."
+        keywords="sécurité maison Dakar, protection domicile Sénégal, alarme Dakar, gardiennage, surveillance maison"
+        canonical="/blog/securite-domicile-guide-complet"
+        ogType="article"
+        structuredData={structuredData}
+      />
       {/* Header */}
       <div className="bg-gradient-to-br from-primary to-primary-dark text-white py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">

@@ -1,8 +1,36 @@
 import { Building2, Users, Clock, Shield, TrendingUp, CheckCircle } from 'lucide-react'
+import SEO from '../components/SEO'
 
 export default function OffreEntreprises() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Services B2B pour entreprises",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Kaza Sénégal",
+      "telephone": "+221787891010",
+      "email": "contact@aveckaza.com"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Dakar"
+    },
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock"
+    }
+  }
+
   return (
     <div className="min-h-screen bg-white pt-24 pb-16">
+      <SEO
+        title="Offre Entreprises - Services B2B Dakar"
+        description="Solutions de services à domicile pour entreprises à Dakar : nettoyage bureaux, entretien locaux, conciergerie d'entreprise. Devis personnalisé Kaza B2B."
+        keywords="services entreprises Dakar, nettoyage bureaux Dakar, entretien locaux Sénégal, conciergerie entreprise, B2B Kaza"
+        canonical="/offre-entreprises"
+        structuredData={structuredData}
+      />
       {/* Hero Section */}
       <section className="px-4 sm:px-6 lg:px-8 py-16 bg-gradient-to-br from-blue to-blue-dark text-white">
         <div className="max-w-4xl mx-auto text-center">

@@ -1,8 +1,38 @@
 import { Check, Clock, TrendingUp, Shield, Users, Briefcase } from 'lucide-react'
+import SEO from '../components/SEO'
 
 export default function DevenirPro() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    "title": "Professionnel de services à domicile",
+    "description": "Rejoignez la communauté Kaza et trouvez des clients pour vos services à Dakar. Inscription gratuite pour professionnels de ménage, bricolage, jardinage et plus.",
+    "hiringOrganization": {
+      "@type": "Organization",
+      "name": "Kaza Sénégal",
+      "sameAs": "https://aveckaza.com"
+    },
+    "jobLocation": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Dakar",
+        "addressCountry": "SN"
+      }
+    },
+    "employmentType": ["CONTRACTOR", "PART_TIME", "FULL_TIME"],
+    "workHours": "Flexible"
+  }
+
   return (
     <div className="min-h-screen bg-white pt-24 pb-16">
+      <SEO
+        title="Devenir Professionnel - Rejoignez Kaza"
+        description="Rejoignez la communauté Kaza et trouvez des clients pour vos services à Dakar. Inscription gratuite pour professionnels de ménage, bricolage, jardinage et plus."
+        keywords="devenir pro Kaza, travailler avec Kaza, inscription professionnel Dakar, emploi services domicile Sénégal, freelance Dakar"
+        canonical="/devenir-pro"
+        structuredData={structuredData}
+      />
       {/* Hero Section */}
       <section className="px-4 sm:px-6 lg:px-8 py-16 bg-gradient-to-br from-blue to-blue-dark text-white">
         <div className="max-w-4xl mx-auto text-center">

@@ -1,6 +1,19 @@
 import { Gift, Users, Star, Award, TrendingUp, Sparkles, MessageCircle, Mail } from 'lucide-react'
+import SEO from '../components/SEO'
 
 export default function ClubKaza() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "LoyaltyProgram",
+    "name": "Club Kaza",
+    "description": "Programme de fidélité et de parrainage pour services à domicile",
+    "provider": {
+      "@type": "Organization",
+      "name": "Kaza Sénégal"
+    },
+    "url": "https://aveckaza.com/club-kaza"
+  }
+
   const levels = [
     {
       name: 'Bronze',
@@ -36,7 +49,14 @@ export default function ClubKaza() {
   ]
 
   return (
-    <div className="min-h-screen bg-white pt-24 pb-16">
+    <div className="min-h-screen bg-white">
+      <SEO
+        title="Club Kaza - Programme de Fidélité et Parrainage"
+        description="Rejoignez le Club Kaza et profitez de réductions, points de fidélité et bonus de parrainage. Programme de récompenses pour services à domicile Dakar."
+        keywords="Club Kaza, programme fidélité Dakar, parrainage services domicile, réductions Kaza, points fidélité"
+        canonical="/club-kaza"
+        structuredData={structuredData}
+      />
       {/* Hero Section */}
       <section className="px-4 sm:px-6 lg:px-8 py-16 bg-gradient-to-br from-primary via-primary-dark to-blue text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">

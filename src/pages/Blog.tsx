@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Calendar, ArrowRight } from 'lucide-react'
+import SEO from '../components/SEO'
 
 export default function Blog() {
   const articles = [
@@ -35,8 +36,31 @@ export default function Blog() {
     }
   ]
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Blog Kaza Sénégal",
+    "description": "Conseils, astuces et guides pour entretenir votre maison au Sénégal",
+    "url": "https://aveckaza.com/blog",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Kaza Sénégal",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://aveckaza.com/logo_kaza.png"
+      }
+    }
+  }
+
   return (
     <div className="min-h-screen bg-cream">
+      <SEO
+        title="Blog - Conseils Entretien Maison Sénégal"
+        description="Découvrez nos articles sur l'entretien de maison au Sénégal : nettoyage saison des pluies, jardinage tropical, sécurité domicile. Conseils d'experts Kaza."
+        keywords="blog entretien maison Sénégal, conseils ménage Dakar, jardinage tropical, nettoyage saison pluies, astuces maison Sénégal"
+        canonical="/blog"
+        structuredData={structuredData}
+      />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue to-blue-600 text-white py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">

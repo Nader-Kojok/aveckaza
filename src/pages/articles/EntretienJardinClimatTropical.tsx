@@ -1,9 +1,44 @@
 import { Link } from 'react-router-dom'
 import { ArrowLeft, Calendar, Clock } from 'lucide-react'
+import SEO from '../../components/SEO'
 
 export default function EntretienJardinClimatTropical() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Entretien du jardin en climat tropical au Sénégal",
+    "description": "Le climat sénégalais offre des conditions uniques pour le jardinage. Apprenez les meilleures pratiques pour un jardin luxuriant toute l'année à Dakar.",
+    "image": "https://aveckaza.com/logo_kaza.png",
+    "datePublished": "2024-10-10",
+    "dateModified": "2024-10-10",
+    "author": {
+      "@type": "Organization",
+      "name": "Kaza Sénégal"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Kaza Sénégal",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://aveckaza.com/logo_kaza.png"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://aveckaza.com/blog/entretien-jardin-climat-tropical"
+    }
+  }
+
   return (
     <div className="min-h-screen bg-cream">
+      <SEO
+        title="Entretien Jardin Climat Tropical - Guide Sénégal"
+        description="Guide complet pour entretenir votre jardin en climat tropical à Dakar. Plantes adaptées, arrosage, taille et entretien spécifique au Sénégal."
+        keywords="jardinage Sénégal, entretien jardin tropical Dakar, plantes tropicales Sénégal, jardinage climat tropical, conseils jardinage Dakar"
+        canonical="/blog/entretien-jardin-climat-tropical"
+        ogType="article"
+        structuredData={structuredData}
+      />
       {/* Header */}
       <div className="bg-gradient-to-br from-accent to-primary text-white py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
