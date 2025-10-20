@@ -99,7 +99,7 @@ export default function Services() {
   ]
 
   return (
-    <div className="min-h-screen bg-white pt-24 pb-16">
+    <div className="min-h-screen bg-white">
       <SEO
         title="Nos Services - Tous les services professionnels à domicile"
         description="Découvrez tous nos services professionnels à domicile au Sénégal : plomberie, électricité, climatisation, jardinage, peinture, carrelage, menuiserie et plus. Artisans qualifiés à Dakar."
@@ -109,7 +109,7 @@ export default function Services() {
       />
 
       {/* Hero Section */}
-      <section className="px-4 sm:px-6 lg:px-8 py-16 bg-cream">
+      <section className="px-4 sm:px-6 lg:px-8 pt-32 pb-16 bg-cream">
         <div className="max-w-4xl mx-auto text-center">
           <h1 
             className="font-display font-bold text-gray-900 mb-6"

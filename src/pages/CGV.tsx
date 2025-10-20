@@ -2,7 +2,7 @@ import SEO from '../components/SEO'
 
 export default function CGV() {
   return (
-    <div className="min-h-screen bg-white pt-24 pb-16 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-white pt-32 pb-16 px-4 sm:px-6 lg:px-8">
       <SEO
         title="Conditions Générales de Vente - CGV Kaza"
         description="Consultez les conditions générales de vente et d'utilisation de la plateforme Kaza Sénégal. CGV services à domicile Dakar."

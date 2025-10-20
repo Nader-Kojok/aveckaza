@@ -105,7 +105,7 @@ export default function FAQ() {
   }
 
   return (
-    <div className="min-h-screen bg-white pt-24 pb-16 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-white pt-32 pb-16 px-4 sm:px-6 lg:px-8">
       <SEO
         title="FAQ - Questions Fréquentes Services à Domicile"
         description="Trouvez les réponses à vos questions sur nos services à domicile à Dakar : réservation, tarifs, paiement, professionnels. FAQ Kaza Sénégal."

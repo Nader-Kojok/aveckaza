@@ -23,7 +23,7 @@ export default function OffreEntreprises() {
   }
 
   return (
-    <div className="min-h-screen bg-white pt-24 pb-16">
+    <div className="min-h-screen bg-white">
       <SEO
         title="Offre Entreprises - Services B2B Dakar"
         description="Solutions de services à domicile pour entreprises à Dakar : nettoyage bureaux, entretien locaux, conciergerie d'entreprise. Devis personnalisé Kaza B2B."
@@ -32,7 +32,7 @@ export default function OffreEntreprises() {
         structuredData={structuredData}
       />
       {/* Hero Section */}
-      <section className="px-4 sm:px-6 lg:px-8 py-16 bg-gradient-to-br from-blue to-blue-dark text-white">
+      <section className="px-4 sm:px-6 lg:px-8 pt-32 pb-16 bg-gradient-to-br from-blue to-blue-dark text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl font-display font-bold mb-6">
             Solutions pour Entreprises

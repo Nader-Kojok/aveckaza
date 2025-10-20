@@ -68,6 +68,16 @@ export default function Header() {
             >
               À propos
             </a>
+            <a 
+              href="/contact" 
+              className={`text-base font-medium transition-colors ${
+                location.pathname === '/contact' 
+                  ? 'text-primary' 
+                  : 'text-white/90 hover:text-primary'
+              }`}
+            >
+              Contact
+            </a>
           </nav>
 
           <div className="flex items-center space-x-2 sm:space-x-4">
@@ -154,6 +164,17 @@ export default function Header() {
               onClick={() => setIsMenuOpen(false)}
             >
               À propos
+            </a>
+            <a 
+              href="/contact" 
+              className={`block px-4 py-3 text-base font-medium rounded-lg transition-colors min-h-[44px] ${
+                location.pathname === '/contact'
+                  ? 'text-primary bg-white/10'
+                  : 'text-white/90 hover:text-primary hover:bg-white/5'
+              }`}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Contact
             </a>
           </nav>
         </div>

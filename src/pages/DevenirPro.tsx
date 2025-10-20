@@ -25,7 +25,7 @@ export default function DevenirPro() {
   }
 
   return (
-    <div className="min-h-screen bg-white pt-24 pb-16">
+    <div className="min-h-screen bg-white">
       <SEO
         title="Devenir Professionnel - Rejoignez Kaza"
         description="Rejoignez la communauté Kaza et trouvez des clients pour vos services à Dakar. Inscription gratuite pour professionnels de ménage, bricolage, jardinage et plus."
@@ -34,7 +34,7 @@ export default function DevenirPro() {
         structuredData={structuredData}
       />
       {/* Hero Section */}
-      <section className="px-4 sm:px-6 lg:px-8 py-16 bg-gradient-to-br from-blue to-blue-dark text-white">
+      <section className="px-4 sm:px-6 lg:px-8 pt-32 pb-16 bg-gradient-to-br from-blue to-blue-dark text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl font-display font-bold mb-6">
             Rejoignez l'équipe Kaza

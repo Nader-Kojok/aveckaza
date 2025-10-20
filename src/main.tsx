@@ -13,6 +13,7 @@ import OffreEntreprises from './pages/OffreEntreprises.tsx'
 import ClubKaza from './pages/ClubKaza.tsx'
 import Blog from './pages/Blog.tsx'
 import Services from './pages/Services.tsx'
+import Contact from './pages/Contact.tsx'
 import ConseilsNettoyageSaisonPluies from './pages/articles/ConseilsNettoyageSaisonPluies.tsx'
 import EntretienJardinClimatTropical from './pages/articles/EntretienJardinClimatTropical.tsx'
 import SecuriteDomicileGuideComplet from './pages/articles/SecuriteDomicileGuideComplet.tsx'
@@ -39,6 +40,7 @@ createRoot(document.getElementById('root')!).render(
           <Route path="/offre-entreprises" element={<OffreEntreprises />} />
           <Route path="/club-kaza" element={<ClubKaza />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/blog/conseils-nettoyage-saison-pluies" element={<ConseilsNettoyageSaisonPluies />} />
           <Route path="/blog/entretien-jardin-climat-tropical" element={<EntretienJardinClimatTropical />} />
           <Route path="/blog/securite-domicile-guide-complet" element={<SecuriteDomicileGuideComplet />} />

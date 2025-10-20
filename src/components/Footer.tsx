@@ -39,6 +39,7 @@ export default function Footer() {
               <li><a href="/devenir-pro" className="hover:text-white transition-colors">Devenir pro</a></li>
               <li><a href="/faq" className="hover:text-white transition-colors">FAQ</a></li>
               <li><a href="/cgv" className="hover:text-white transition-colors">CGV</a></li>
+              <li><a href="/contact" className="hover:text-white transition-colors">Contact</a></li>
             </ul>
           </div>
 

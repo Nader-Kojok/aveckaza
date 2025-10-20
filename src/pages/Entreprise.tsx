@@ -11,7 +11,7 @@ export default function Entreprise() {
   }
 
   return (
-    <div className="min-h-screen bg-white pt-24 pb-16">
+    <div className="min-h-screen bg-white">
       <SEO
         title="À Propos - Notre Mission et Valeurs"
         description="Kaza est la première plateforme de services à domicile au Sénégal. Découvrez notre mission, nos valeurs et notre engagement pour connecter clients et professionnels qualifiés à Dakar."
@@ -20,7 +20,7 @@ export default function Entreprise() {
         structuredData={structuredData}
       />
       {/* Hero Section */}
-      <section className="px-4 sm:px-6 lg:px-8 py-16">
+      <section className="px-4 sm:px-6 lg:px-8 pt-32 pb-16">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-6xl sm:text-7xl font-display font-bold text-gray-900 mb-6">
             À propos de Kaza
