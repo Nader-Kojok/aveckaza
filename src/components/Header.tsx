@@ -12,22 +12,19 @@ export default function Header() {
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="/#services" className="text-sm font-medium text-white/90 hover:text-white transition-colors">
+            <a href="/services" className="text-base font-medium text-white/90 hover:text-primary transition-colors">
               Services
             </a>
-            <a href="/club-kaza" className="text-sm font-medium text-white/90 hover:text-white transition-colors">
+            <a href="/club-kaza" className="text-base font-medium text-white/90 hover:text-primary transition-colors">
               Club Kaza
             </a>
-            <a href="/blog" className="text-sm font-medium text-white/90 hover:text-white transition-colors">
+            <a href="/blog" className="text-base font-medium text-white/90 hover:text-primary transition-colors">
               Blog
             </a>
-            <a href="/offre-entreprises" className="text-sm font-medium text-white/90 hover:text-white transition-colors">
+            <a href="/offre-entreprises" className="text-base font-medium text-white/90 hover:text-primary transition-colors">
               Entreprises
             </a>
-            <a href="/#temoignages" className="text-sm font-medium text-white/90 hover:text-white transition-colors">
-              Témoignages
-            </a>
-            <a href="/entreprise" className="text-sm font-medium text-white/90 hover:text-white transition-colors">
+            <a href="/entreprise" className="text-base font-medium text-white/90 hover:text-primary transition-colors">
               À propos
             </a>
           </nav>

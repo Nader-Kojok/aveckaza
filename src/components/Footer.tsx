@@ -23,11 +23,11 @@ export default function Footer() {
           <div>
             <h4 className="font-display font-bold mb-4">Navigation</h4>
             <ul className="space-y-2 text-sm text-white/80">
-              <li><a href="/#services" className="hover:text-white transition-colors">Services</a></li>
+              <li><a href="/services" className="hover:text-white transition-colors">Services</a></li>
               <li><a href="/#comment-ca-marche" className="hover:text-white transition-colors">Comment ça marche</a></li>
               <li><a href="/offre-entreprises" className="hover:text-white transition-colors">Offre Entreprises</a></li>
-              <li><a href="/#temoignages" className="hover:text-white transition-colors">Témoignages</a></li>
-              <li><a href="/#carrieres" className="hover:text-white transition-colors">Carrières</a></li>
+              <li><a href="/blog" className="hover:text-white transition-colors">Blog</a></li>
+              <li><a href="/devenir-pro" className="hover:text-white transition-colors">Devenir pro</a></li>
             </ul>
           </div>
 

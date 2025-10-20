@@ -3,8 +3,8 @@ export default function HowItWorks() {
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-cream">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <p className="text-sm font-semibold text-primary mb-2">BESOIN D'AIDE?</p>
-          <h2 className="text-3xl sm:text-4xl font-display font-bold text-gray-900">
+          <p className="text-base font-semibold text-primary mb-2">BESOIN D'AIDE?</p>
+          <h2 className="text-5xl sm:text-6xl font-display font-bold text-gray-900">
             Trouvez la meilleure aide à temps plein.
           </h2>
           <p className="mt-4 text-gray-600 max-w-2xl mx-auto">

@@ -4,8 +4,8 @@ export default function Features() {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <p className="text-sm font-semibold text-primary mb-2">COMMENT ÇA MARCHE</p>
-            <h2 className="text-3xl sm:text-4xl font-display font-bold text-gray-900 mb-6">
+            <p className="text-base font-semibold text-primary mb-2">COMMENT ÇA MARCHE</p>
+            <h2 className="text-5xl sm:text-6xl font-display font-bold text-gray-900 mb-6">
               Mettre de l'ordre dans votre maison n'a jamais été aussi facile.
             </h2>
             <p className="text-gray-600 mb-6">

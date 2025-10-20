@@ -2,10 +2,16 @@ export default function Hero() {
   return (
     <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto text-center">
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-gray-900 mb-6">
+        <h1 
+          className="font-display font-bold text-gray-900 mb-6 leading-tight"
+          style={{ fontSize: 'clamp(2.5rem, 4.5vw, 4.5rem)' }}
+        >
           Des techniciens de confiance, simplement!
         </h1>
-        <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
+        <p 
+          className="text-gray-600 max-w-3xl mx-auto mb-8"
+          style={{ fontSize: 'clamp(1.1rem, 1.8vw, 1.5rem)' }}
+        >
           Notre promesse : des techniciens fiables et qualifiés qui interviennent au moment où vous en avez besoin.
         </p>
         
@@ -25,7 +31,7 @@ export default function Hero() {
               className="flex flex-col items-center justify-center w-20 sm:w-24 hover:scale-105 transition-transform cursor-pointer"
             >
               <div className="text-3xl sm:text-4xl mb-2">{service.icon}</div>
-              <span className="text-xs sm:text-sm text-gray-700 text-center">{service.label}</span>
+              <span className="text-sm sm:text-base text-gray-700 text-center">{service.label}</span>
             </div>
           ))}
         </div>

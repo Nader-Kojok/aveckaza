@@ -12,6 +12,7 @@ import EnSavoirPlus from './pages/EnSavoirPlus.tsx'
 import OffreEntreprises from './pages/OffreEntreprises.tsx'
 import ClubKaza from './pages/ClubKaza.tsx'
 import Blog from './pages/Blog.tsx'
+import Services from './pages/Services.tsx'
 import ConseilsNettoyageSaisonPluies from './pages/articles/ConseilsNettoyageSaisonPluies.tsx'
 import EntretienJardinClimatTropical from './pages/articles/EntretienJardinClimatTropical.tsx'
 import SecuriteDomicileGuideComplet from './pages/articles/SecuriteDomicileGuideComplet.tsx'
@@ -29,6 +30,7 @@ createRoot(document.getElementById('root')!).render(
         <Header />
         <Routes>
           <Route path="/" element={<App />} />
+          <Route path="/services" element={<Services />} />
           <Route path="/cgv" element={<CGV />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/devenir-pro" element={<DevenirPro />} />
