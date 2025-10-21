@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { ArrowRight } from 'lucide-react'
 
 export default function BlogCards() {
   const articles = [
@@ -32,6 +33,9 @@ export default function BlogCards() {
     },
   ]
 
+  // Show only the last 3 articles
+  const recentArticles = articles.slice(0, 3)
+
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-blue text-white">
       <div className="max-w-7xl mx-auto">
@@ -42,8 +46,8 @@ export default function BlogCards() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {articles.map((article) => (
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {recentArticles.map((article) => (
             <Link
               key={article.id}
               to={`/blog/${article.id}`}
@@ -67,6 +71,16 @@ export default function BlogCards() {
               </div>
             </Link>
           ))}
+        </div>
+
+        <div className="text-center mt-12">
+          <Link
+            to="/blog"
+            className="inline-flex items-center gap-2 bg-white text-blue hover:bg-gray-100 px-8 py-4 rounded-full font-semibold transition-colors group"
+          >
+            Voir tous les articles
+            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+          </Link>
         </div>
       </div>
     </section>
