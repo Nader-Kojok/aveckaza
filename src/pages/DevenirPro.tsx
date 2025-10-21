@@ -1,5 +1,5 @@
 import { Check, Clock, TrendingUp, Shield, Users, Briefcase } from 'lucide-react'
-import SEO from '../components/SEO'
+import Seo from '../components/SEO'
 
 export default function DevenirPro() {
   const structuredData = {
@@ -26,7 +26,7 @@ export default function DevenirPro() {
 
   return (
     <div className="min-h-screen bg-white">
-      <SEO
+      <Seo
         title="Devenir Professionnel - Rejoignez Kaza"
         description="Rejoignez la communauté Kaza et trouvez des clients pour vos services à Dakar. Inscription gratuite pour professionnels de ménage, bricolage, jardinage et plus."
         keywords="devenir pro Kaza, travailler avec Kaza, inscription professionnel Dakar, emploi services domicile Sénégal, freelance Dakar"

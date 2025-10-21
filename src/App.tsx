@@ -8,7 +8,7 @@ import Testimonials from './components/Testimonials'
 import FAQSection from './components/FAQ'
 import WorkWithUs from './components/WorkWithUs'
 import BlogCards from './components/BlogCards'
-import SEO from './components/SEO'
+import Seo from './components/SEO'
 
 function App() {
   const structuredData = {
@@ -56,7 +56,7 @@ function App() {
 
   return (
     <>
-      <SEO
+      <Seo
         title="Services à Domicile Dakar"
         description="Trouvez des professionnels vérifiés pour tous vos besoins à domicile à Dakar : ménage, bricolage, jardinage, lavage auto, déménagement. Réservez en quelques clics avec Kaza Sénégal."
         keywords="services à domicile Dakar, femme de ménage Dakar, bricolage Dakar, jardinage Dakar, aide ménagère Sénégal, lavage auto domicile, déménagement Dakar, Kaza Sénégal"

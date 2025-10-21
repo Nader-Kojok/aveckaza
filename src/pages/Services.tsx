@@ -1,5 +1,5 @@
 import { Droplet, Refrigerator, Wrench, Zap, Wind, Lock, Leaf, Paintbrush, Shield, Droplets, Armchair, Grid3x3, SquareStack } from 'lucide-react'
-import SEO from '../components/SEO'
+import Seo from '../components/SEO'
 
 export default function Services() {
   const structuredData = {
@@ -100,7 +100,7 @@ export default function Services() {
 
   return (
     <div className="min-h-screen bg-white">
-      <SEO
+      <Seo
         title="Nos Services - Tous les services professionnels à domicile"
         description="Découvrez tous nos services professionnels à domicile au Sénégal : plomberie, électricité, climatisation, jardinage, peinture, carrelage, menuiserie et plus. Artisans qualifiés à Dakar."
         keywords="plomberie Dakar, électricien Sénégal, climatisation, jardinage, peinture, carrelage, menuiserie, serrurier, étanchéité, services domicile Dakar"

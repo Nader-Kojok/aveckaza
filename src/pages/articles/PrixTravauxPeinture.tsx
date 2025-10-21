@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { ArrowLeft, Calendar, Clock } from 'lucide-react'
-import SEO from '../../components/SEO'
+import Seo from '../../components/SEO'
 
 export default function PrixTravauxPeinture() {
   const structuredData = {
@@ -31,7 +31,7 @@ export default function PrixTravauxPeinture() {
 
   return (
     <div className="min-h-screen bg-cream">
-      <SEO
+      <Seo
         title="6 Facteurs qui Déterminent le Prix des Travaux de Peinture - Kaza"
         description="Découvrez les 6 facteurs qui influencent le prix d'un artisan peintre au Sénégal. Comprendre les tarifs pour mieux anticiper vos travaux de peinture."
         keywords="prix peinture Dakar, tarif artisan peintre Sénégal, coût travaux peinture, devis peinture, facteurs prix peinture"

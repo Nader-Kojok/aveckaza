@@ -1,5 +1,5 @@
 import { Target, Heart, Users, Award, TrendingUp, Shield } from 'lucide-react'
-import SEO from '../components/SEO'
+import Seo from '../components/SEO'
 
 export default function Entreprise() {
   const structuredData = {
@@ -12,7 +12,7 @@ export default function Entreprise() {
 
   return (
     <div className="min-h-screen bg-white">
-      <SEO
+      <Seo
         title="À Propos - Notre Mission et Valeurs"
         description="Kaza est la première plateforme de services à domicile au Sénégal. Découvrez notre mission, nos valeurs et notre engagement pour connecter clients et professionnels qualifiés à Dakar."
         keywords="à propos Kaza, entreprise services domicile Sénégal, plateforme services Dakar, mission Kaza, valeurs Kaza"
@@ -190,19 +190,19 @@ export default function Entreprise() {
               <ul className="space-y-2 text-gray-700">
                 <li className="flex items-start">
                   <span className="text-primary mr-2">•</span>
-                  Des professionnels vérifiés et qualifiés
+                  <span>Des professionnels vérifiés et qualifiés</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-2">•</span>
-                  Une plateforme simple et intuitive
+                  <span>Une plateforme simple et intuitive</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-2">•</span>
-                  Un service client réactif et à l'écoute
+                  <span>Un service client réactif et à l'écoute</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-2">•</span>
-                  Une garantie satisfaction sur tous nos services
+                  <span>Une garantie satisfaction sur tous nos services</span>
                 </li>
               </ul>
             </div>
@@ -214,19 +214,19 @@ export default function Entreprise() {
               <ul className="space-y-2 text-gray-700">
                 <li className="flex items-start">
                   <span className="text-primary mr-2">•</span>
-                  Des opportunités de travail régulières
+                  <span>Des opportunités de travail régulières</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-2">•</span>
-                  Des paiements rapides et sécurisés
+                  <span>Des paiements rapides et sécurisés</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-2">•</span>
-                  Une assurance pour toutes les interventions
+                  <span>Une assurance pour toutes les interventions</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-2">•</span>
-                  Un accompagnement et des formations continues
+                  <span>Un accompagnement et des formations continues</span>
                 </li>
               </ul>
             </div>

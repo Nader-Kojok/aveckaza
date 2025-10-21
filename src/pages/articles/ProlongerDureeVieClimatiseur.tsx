@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { ArrowLeft, Calendar, Clock } from 'lucide-react'
-import SEO from '../../components/SEO'
+import Seo from '../../components/SEO'
 
 export default function ProlongerDureeVieClimatiseur() {
   const structuredData = {
@@ -31,7 +31,7 @@ export default function ProlongerDureeVieClimatiseur() {
 
   return (
     <div className="min-h-screen bg-cream">
-      <SEO
+      <Seo
         title="7 Astuces pour Prolonger la Durée de Vie de Votre Climatiseur - Kaza"
         description="Découvrez 7 astuces essentielles pour prolonger la durée de vie de votre climatiseur au Sénégal. Conseils d'entretien, nettoyage et maintenance professionnelle."
         keywords="entretien climatisation Sénégal, maintenance climatiseur Dakar, prolonger durée vie climatisation, nettoyage filtres climatiseur, réparation climatisation"

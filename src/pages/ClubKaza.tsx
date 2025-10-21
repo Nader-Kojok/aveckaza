@@ -1,5 +1,5 @@
 import { Gift, Users, Star, Award, TrendingUp, Sparkles, MessageCircle, Mail } from 'lucide-react'
-import SEO from '../components/SEO'
+import Seo from '../components/SEO'
 
 export default function ClubKaza() {
   const structuredData = {
@@ -50,7 +50,7 @@ export default function ClubKaza() {
 
   return (
     <div className="min-h-screen bg-white">
-      <SEO
+      <Seo
         title="Club Kaza - Programme de Fidélité et Parrainage"
         description="Rejoignez le Club Kaza et profitez de réductions, points de fidélité et bonus de parrainage. Programme de récompenses pour services à domicile Dakar."
         keywords="Club Kaza, programme fidélité Dakar, parrainage services domicile, réductions Kaza, points fidélité"
@@ -143,8 +143,8 @@ export default function ClubKaza() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {howToEarnPoints.map((item, index) => (
-              <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
+            {howToEarnPoints.map((item) => (
+              <div key={item.title} className="bg-white rounded-2xl p-6 shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
                 <div className="text-5xl mb-4">{item.icon}</div>
                 <h3 className="text-xl font-display font-bold text-gray-900 mb-2">
                   {item.title}
@@ -174,8 +174,8 @@ export default function ClubKaza() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {levels.map((level, index) => (
-              <div key={index} className="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-200 hover:scale-105 transition-transform">
+            {levels.map((level) => (
+              <div key={level.name} className="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-200 hover:scale-105 transition-transform">
                 <div className={`bg-gradient-to-br ${level.color} p-6 text-white`}>
                   <Award className="w-12 h-12 mb-3" />
                   <h3 className="text-2xl font-display font-bold mb-2">
@@ -187,8 +187,8 @@ export default function ClubKaza() {
                 </div>
                 <div className="p-6">
                   <ul className="space-y-3">
-                    {level.benefits.map((benefit, idx) => (
-                      <li key={idx} className="flex items-start gap-2 text-sm text-gray-700">
+                    {level.benefits.map((benefit) => (
+                      <li key={benefit} className="flex items-start gap-2 text-sm text-gray-700">
                         <Star className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
                         <span>{benefit}</span>
                       </li>

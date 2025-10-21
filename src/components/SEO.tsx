@@ -1,17 +1,17 @@
 import { Helmet } from '@vuer-ai/react-helmet-async'
 
 interface SEOProps {
-  title: string
-  description: string
-  keywords?: string
-  ogImage?: string
-  ogType?: string
-  canonical?: string
-  noindex?: boolean
-  structuredData?: object
+  readonly title: string
+  readonly description: string
+  readonly keywords?: string
+  readonly ogImage?: string
+  readonly ogType?: string
+  readonly canonical?: string
+  readonly noindex?: boolean
+  readonly structuredData?: object
 }
 
-export default function SEO({
+export default function Seo({
   title,
   description,
   keywords = 'services à domicile Dakar, femme de ménage Sénégal, bricolage Dakar, jardinage Dakar, aide ménagère, Kaza Sénégal',
@@ -20,7 +20,7 @@ export default function SEO({
   canonical,
   noindex = false,
   structuredData
-}: SEOProps) {
+}: Readonly<SEOProps>) {
   const siteName = 'Kaza Sénégal'
   const siteUrl = 'https://aveckaza.com'
   const fullTitle = `${title} | ${siteName}`

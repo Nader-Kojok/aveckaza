@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import { ChevronDown } from 'lucide-react'
-import SEO from '../components/SEO'
+import Seo from '../components/SEO'
 
-export default function FAQ() {
-  const [openIndex, setOpenIndex] = useState<number | null>(null)
+export default function Faq() {
+  const [openIndex, setOpenIndex] = useState<string | null>(null)
 
   const faqs = [
     {
@@ -99,7 +99,7 @@ export default function FAQ() {
 
   return (
     <div className="min-h-screen bg-white pt-32 pb-16 px-4 sm:px-6 lg:px-8">
-      <SEO
+      <Seo
         title="FAQ - Questions Fréquentes Services à Domicile"
         description="Trouvez les réponses à vos questions sur nos services à domicile à Dakar : réservation, tarifs, paiement, professionnels. FAQ Kaza Sénégal."
         keywords="FAQ services domicile, questions Kaza, aide réservation Dakar, tarifs services domicile, paiement Kaza"
@@ -117,38 +117,35 @@ export default function FAQ() {
         </div>
 
         <div className="space-y-8">
-          {faqs.map((category, categoryIndex) => (
-            <div key={categoryIndex}>
+          {faqs.map((category) => (
+            <div key={category.category}>
               <h2 className="text-2xl font-display font-bold text-primary mb-4">
                 {category.category}
               </h2>
               <div className="space-y-3">
-                {category.questions.map((faq, questionIndex) => {
-                  const globalIndex = categoryIndex * 100 + questionIndex
-                  return (
+                {category.questions.map((faq) => (
                     <div
-                      key={globalIndex}
+                      key={faq.question}
                       className="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-200"
                     >
                       <button
-                        onClick={() => setOpenIndex(openIndex === globalIndex ? null : globalIndex)}
+                        onClick={() => setOpenIndex(openIndex === faq.question ? null : faq.question)}
                         className="w-full px-6 py-4 flex items-center justify-between text-left hover:bg-gray-50 transition-colors"
                       >
                         <span className="font-semibold text-gray-900 pr-4">{faq.question}</span>
                         <ChevronDown
                           className={`w-5 h-5 text-primary flex-shrink-0 transition-transform ${
-                            openIndex === globalIndex ? 'rotate-180' : ''
+                            openIndex === faq.question ? 'rotate-180' : ''
                           }`}
                         />
                       </button>
-                      {openIndex === globalIndex && (
+                      {openIndex === faq.question && (
                         <div className="px-6 pb-4 text-gray-600">
                           {faq.answer}
                         </div>
                       )}
                     </div>
-                  )
-                })}
+                ))}
               </div>
             </div>
           ))}

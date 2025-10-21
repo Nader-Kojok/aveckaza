@@ -1,10 +1,10 @@
 import { Check, Shield, Clock, Users, Award, Sparkles } from 'lucide-react'
-import SEO from '../components/SEO'
+import Seo from '../components/SEO'
 
 export default function EnSavoirPlus() {
   return (
     <div className="min-h-screen bg-white pt-24 pb-16">
-      <SEO
+      <Seo
         title="En Savoir Plus - Nos Services Détaillés"
         description="Découvrez en détail nos 3 types de services : réservations ponctuelles, placements à temps plein et boutique hygiène. Services à domicile Kaza Dakar."
         keywords="services Kaza détails, réservation services Dakar, placement aide domicile, boutique hygiène Sénégal, comment ça marche Kaza"

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { ArrowLeft, Calendar, Clock } from 'lucide-react'
-import SEO from '../../components/SEO'
+import Seo from '../../components/SEO'
 
 export default function PlombsQuiSautent() {
   const structuredData = {
@@ -31,7 +31,7 @@ export default function PlombsQuiSautent() {
 
   return (
     <div className="min-h-screen bg-cream">
-      <SEO
+      <Seo
         title="Plombs qui sautent : causes et solutions - Kaza"
         description="Découvrez pourquoi vos plombs sautent et comment résoudre le problème. Guide complet sur les disjoncteurs et quand faire appel à un électricien au Sénégal."
         keywords="plombs qui sautent, disjoncteur saute, panne électrique Dakar, électricien Sénégal, court-circuit, surcharge électrique"

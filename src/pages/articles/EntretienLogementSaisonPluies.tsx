@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { ArrowLeft, Calendar, Clock } from 'lucide-react'
-import SEO from '../../components/SEO'
+import Seo from '../../components/SEO'
 
 export default function EntretienLogementSaisonPluies() {
   const structuredData = {
@@ -31,7 +31,7 @@ export default function EntretienLogementSaisonPluies() {
 
   return (
     <div className="min-h-screen bg-cream">
-      <SEO
+      <Seo
         title="Comment entretenir son logement après la saison des pluies - Kaza"
         description="La saison des pluies au Sénégal peut laisser des traces sur votre maison. Découvrez comment entretenir votre logement après cette période pour préserver votre maison."
         keywords="entretien maison saison pluies, maintenance logement Sénégal, après pluies Dakar, réparation infiltrations, traitement humidité"

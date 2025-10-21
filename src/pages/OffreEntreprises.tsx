@@ -1,5 +1,5 @@
 import { Building2, Users, Clock, Shield, TrendingUp, CheckCircle } from 'lucide-react'
-import SEO from '../components/SEO'
+import Seo from '../components/SEO'
 
 export default function OffreEntreprises() {
   const structuredData = {
@@ -24,7 +24,7 @@ export default function OffreEntreprises() {
 
   return (
     <div className="min-h-screen bg-white">
-      <SEO
+      <Seo
         title="Offre Entreprises - Services B2B Dakar"
         description="Solutions de services à domicile pour entreprises à Dakar : nettoyage bureaux, entretien locaux, conciergerie d'entreprise. Devis personnalisé Kaza B2B."
         keywords="services entreprises Dakar, nettoyage bureaux Dakar, entretien locaux Sénégal, conciergerie entreprise, B2B Kaza"

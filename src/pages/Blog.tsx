@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Calendar, ArrowRight } from 'lucide-react'
-import SEO from '../components/SEO'
+import Seo from '../components/SEO'
 
 export default function Blog() {
   const articles = [
@@ -60,7 +60,7 @@ export default function Blog() {
 
   return (
     <div className="min-h-screen bg-cream">
-      <SEO
+      <Seo
         title="Blog - Conseils Entretien Maison Sénégal"
         description="Découvrez nos articles sur l'entretien de maison au Sénégal : nettoyage saison des pluies, jardinage tropical, sécurité domicile. Conseils d'experts Kaza."
         keywords="blog entretien maison Sénégal, conseils ménage Dakar, jardinage tropical, nettoyage saison pluies, astuces maison Sénégal"
