@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import { ArrowLeft, Calendar, Clock } from 'lucide-react'
 import SEO from '../../components/SEO'
 
-export default function SecuriteDomicileGuideComplet() {
+export default function PlombsQuiSautent() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -76,9 +76,19 @@ export default function SecuriteDomicileGuideComplet() {
       {/* Article Content */}
       <article className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-2xl shadow-sm p-8 sm:p-12">
-            {/* Introduction */}
-            <div className="prose prose-lg max-w-none mb-12">
+          <div className="bg-white rounded-2xl shadow-sm overflow-hidden">
+            {/* Featured Image */}
+            <div className="w-full h-96 overflow-hidden">
+              <img 
+                src="/blog/plombs_sautent.webp" 
+                alt="Plombs qui sautent : causes, solutions et quand faire appel à un électricien"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            
+            <div className="p-8 sm:p-12">
+              {/* Introduction */}
+              <div className="prose prose-lg max-w-none mb-12">
               <p className="text-xl text-gray-700 leading-relaxed">
                 Un disjoncteur qui saute sans raison apparente peut être source de frustration et d'inquiétude. 
                 Que vous ayez ajouté de nouveaux appareils ou que rien n'ait changé récemment, plusieurs raisons 
@@ -206,6 +216,7 @@ export default function SecuriteDomicileGuideComplet() {
               >
                 Trouver un électricien qualifié
               </Link>
+            </div>
             </div>
           </div>
         </div>

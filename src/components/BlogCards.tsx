@@ -42,32 +42,29 @@ export default function BlogCards() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {articles.map((article) => (
             <Link
               key={article.id}
               to={`/blog/${article.id}`}
               className="group cursor-pointer"
             >
-              <div className="relative rounded-2xl overflow-hidden aspect-square mb-4 group-hover:scale-105 transition-transform">
+              <div className="relative rounded-2xl overflow-hidden aspect-[4/5] group-hover:scale-[1.02] transition-transform">
                 <img 
                   src={article.image} 
                   alt={article.title}
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
-                  <span className="text-sm font-semibold uppercase tracking-wide text-white">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex flex-col justify-end p-6">
+                  <span className="text-sm font-semibold uppercase tracking-wide text-white mb-3">
                     {article.category}
                   </span>
+                  <h3 className="text-xl font-display font-bold text-white leading-tight">
+                    {article.title}
+                  </h3>
                 </div>
               </div>
-              <h3 className="text-xl font-display font-bold mb-2">
-                {article.title}
-              </h3>
-              <p className="text-white/80 text-sm">
-                {article.description}
-              </p>
             </Link>
           ))}
         </div>

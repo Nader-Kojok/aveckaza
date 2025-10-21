@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import { ArrowLeft, Calendar, Clock } from 'lucide-react'
 import SEO from '../../components/SEO'
 
-export default function ConseilsNettoyageSaisonPluies() {
+export default function EntretienLogementSaisonPluies() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -76,9 +76,19 @@ export default function ConseilsNettoyageSaisonPluies() {
       {/* Article Content */}
       <article className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-2xl shadow-sm p-8 sm:p-12">
-            {/* Introduction */}
-            <div className="prose prose-lg max-w-none mb-12">
+          <div className="bg-white rounded-2xl shadow-sm overflow-hidden">
+            {/* Featured Image */}
+            <div className="w-full h-96 overflow-hidden">
+              <img 
+                src="/blog/entretenir_logement.webp" 
+                alt="Comment entretenir son logement après la saison des pluies"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            
+            <div className="p-8 sm:p-12">
+              {/* Introduction */}
+              <div className="prose prose-lg max-w-none mb-12">
               <p className="text-xl text-gray-700 leading-relaxed">
                 La saison des pluies au Sénégal peut laisser des traces sur votre maison : humidité excessive, moisissures, 
                 infiltrations d'eau, peinture abîmée… Un bon entretien après cette période est essentiel pour préserver 
@@ -204,6 +214,7 @@ export default function ConseilsNettoyageSaisonPluies() {
               >
                 Demander un devis personnalisé
               </Link>
+            </div>
             </div>
           </div>
         </div>

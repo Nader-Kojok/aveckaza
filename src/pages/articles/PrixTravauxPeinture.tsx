@@ -76,9 +76,19 @@ export default function PrixTravauxPeinture() {
       {/* Article Content */}
       <article className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-2xl shadow-sm p-8 sm:p-12">
-            {/* Introduction */}
-            <div className="prose prose-lg max-w-none mb-12">
+          <div className="bg-white rounded-2xl shadow-sm overflow-hidden">
+            {/* Featured Image */}
+            <div className="w-full h-96 overflow-hidden">
+              <img 
+                src="/blog/travaux_peinture.webp" 
+                alt="Peinture : les 6 facteurs qui font varier le prix des travaux"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            
+            <div className="p-8 sm:p-12">
+              {/* Introduction */}
+              <div className="prose prose-lg max-w-none mb-12">
               <p className="text-xl text-gray-700 leading-relaxed">
                 Refaire la peinture d'un logement peut sembler simple, mais plusieurs éléments influencent le prix d'un artisan peintre. 
                 Avant de demander un devis, il est important de comprendre ce qui fait varier les tarifs et d'anticiper les coûts liés 
@@ -223,6 +233,7 @@ export default function PrixTravauxPeinture() {
               >
                 Demander votre devis dès maintenant
               </Link>
+            </div>
             </div>
           </div>
         </div>

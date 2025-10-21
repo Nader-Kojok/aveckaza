@@ -14,9 +14,9 @@ import ClubKaza from './pages/ClubKaza.tsx'
 import Blog from './pages/Blog.tsx'
 import Services from './pages/Services.tsx'
 import Contact from './pages/Contact.tsx'
-import ConseilsNettoyageSaisonPluies from './pages/articles/ConseilsNettoyageSaisonPluies.tsx'
-import EntretienJardinClimatTropical from './pages/articles/EntretienJardinClimatTropical.tsx'
-import SecuriteDomicileGuideComplet from './pages/articles/SecuriteDomicileGuideComplet.tsx'
+import EntretienLogementSaisonPluies from './pages/articles/EntretienLogementSaisonPluies.tsx'
+import ProlongerDureeVieClimatiseur from './pages/articles/ProlongerDureeVieClimatiseur.tsx'
+import PlombsQuiSautent from './pages/articles/PlombsQuiSautent.tsx'
 import PrixTravauxPeinture from './pages/articles/PrixTravauxPeinture.tsx'
 import NotFound from './pages/NotFound.tsx'
 import Header from './components/Header.tsx'
@@ -43,9 +43,9 @@ createRoot(document.getElementById('root')!).render(
             <Route path="/club-kaza" element={<ClubKaza />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/blog/conseils-nettoyage-saison-pluies" element={<ConseilsNettoyageSaisonPluies />} />
-            <Route path="/blog/entretien-jardin-climat-tropical" element={<EntretienJardinClimatTropical />} />
-            <Route path="/blog/securite-domicile-guide-complet" element={<SecuriteDomicileGuideComplet />} />
+            <Route path="/blog/conseils-nettoyage-saison-pluies" element={<EntretienLogementSaisonPluies />} />
+            <Route path="/blog/entretien-jardin-climat-tropical" element={<ProlongerDureeVieClimatiseur />} />
+            <Route path="/blog/securite-domicile-guide-complet" element={<PlombsQuiSautent />} />
             <Route path="/blog/prix-travaux-peinture" element={<PrixTravauxPeinture />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
