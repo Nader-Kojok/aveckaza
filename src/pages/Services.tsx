@@ -1,4 +1,3 @@
-import { Droplet, Refrigerator, Wrench, Zap, Wind, Lock, Leaf, Paintbrush, Shield, Droplets, Armchair, Grid3x3, SquareStack } from 'lucide-react'
 import Seo from '../components/SEO'
 
 export default function Services() {
@@ -19,82 +18,76 @@ export default function Services() {
 
   const services = [
     {
-      icon: Droplet,
+      icon: '/services_icons/icons8-plumbing-128.png',
       title: 'Plomberie',
       description: 'Installation et réparation de plomberie. Fuites, robinetterie, canalisations, nos plombiers interviennent rapidement.',
       features: ['Réparation fuites', 'Installation sanitaires', 'Débouchage', 'Dépannage urgence']
     },
     {
-      icon: Refrigerator,
+      icon: '/services_icons/icons8-fridge-128.png',
       title: 'Électroménager',
       description: 'Réparation et entretien d\'électroménager. Machines à laver, réfrigérateurs, climatiseurs et plus encore.',
       features: ['Réparation tous appareils', 'Entretien préventif', 'Pièces détachées', 'Garantie travaux']
     },
     {
-      icon: Wrench,
+      icon: '/services_icons/icons8-drill-128.png',
       title: 'Petits travaux',
       description: 'Tous petits travaux de bricolage et réparation. Installation, montage, fixation par des professionnels qualifiés.',
       features: ['Montage meubles', 'Fixations murales', 'Réparations diverses', 'Installation équipements']
     },
     {
-      icon: Zap,
+      icon: '/services_icons/icons8-light-on-128.png',
       title: 'Électricité',
       description: 'Installation électrique et dépannage. Tableaux électriques, prises, éclairage par des électriciens certifiés.',
       features: ['Installation complète', 'Dépannage rapide', 'Mise aux normes', 'Éclairage LED']
     },
     {
-      icon: Wind,
+      icon: '/services_icons/icons8-air-conditioner-128.png',
       title: 'Climatisation',
       description: 'Installation, entretien et réparation de climatisation. Climatiseurs split, centralisés, maintenance régulière.',
       features: ['Installation clim', 'Entretien annuel', 'Recharge gaz', 'Dépannage 24/7']
     },
     {
-      icon: Lock,
+      icon: '/services_icons/icons8-key-security-128.png',
       title: 'Serrurier',
       description: 'Services de serrurerie professionnelle. Ouverture de porte, changement de serrure, blindage et sécurisation.',
       features: ['Ouverture porte', 'Changement serrure', 'Blindage porte', 'Dépannage urgence']
     },
     {
-      icon: Leaf,
+      icon: '/services_icons/icons8-tree-128.png',
       title: 'Jardinage',
       description: 'Entretien de jardin et espaces verts. Taille, tonte, plantation et aménagement paysager par des professionnels.',
       features: ['Tonte pelouse', 'Taille arbres', 'Plantation', 'Entretien régulier']
     },
     {
-      icon: Paintbrush,
+      icon: '/services_icons/icons8-paint-roller-128.png',
       title: 'Peinture',
       description: 'Travaux de peinture intérieure et extérieure. Préparation des surfaces, peinture de qualité, finitions soignées.',
       features: ['Peinture intérieure', 'Peinture extérieure', 'Préparation murs', 'Finitions décoratives']
     },
     {
-      icon: Shield,
+      icon: '/services_icons/icons8-bullet-camera-128.png',
       title: 'Sécurité',
       description: 'Installation de systèmes de sécurité. Alarmes, caméras de surveillance, contrôle d\'accès pour votre tranquillité.',
       features: ['Alarmes anti-intrusion', 'Vidéosurveillance', 'Contrôle accès', 'Télésurveillance']
     },
     {
-      icon: Droplets,
-      title: 'Étanchéité',
-      description: 'Travaux d\'étanchéité et d\'isolation. Toitures, terrasses, murs, protection contre les infiltrations d\'eau.',
-      features: ['Étanchéité toiture', 'Traitement terrasse', 'Isolation thermique', 'Anti-infiltration']
+      icon: '/services_icons/icons8-vacuum-cleaner-128.png',
+      title: 'Ménage',
+      description: 'Services de ménage professionnel. Nettoyage complet, entretien régulier, prestations personnalisées.',
+      features: ['Ménage complet', 'Entretien régulier', 'Nettoyage profond', 'Prestations sur mesure']
     },
     {
-      icon: Armchair,
+      icon: '/services_icons/icons8-recliner-128.png',
       title: 'Meubles & menuiserie bois',
       description: 'Fabrication et réparation de meubles sur mesure. Menuiserie bois, ébénisterie, aménagements personnalisés.',
       features: ['Meubles sur mesure', 'Réparation meubles', 'Ébénisterie', 'Aménagement intérieur']
     },
     {
-      icon: Grid3x3,
-      title: 'Faux-plafond',
-      description: 'Installation de faux-plafonds décoratifs et techniques. Placo, staff, isolation acoustique et thermique.',
-      features: ['Placo BA13', 'Faux-plafond décoratif', 'Isolation phonique', 'Éclairage intégré']
-    },
-    {
-      icon: SquareStack,
-      title: 'Carrelage',
-      description: 'Pose de carrelage et faïence. Sol, mur, salle de bain, cuisine, travaux de qualité par des carreleurs experts.',
-      features: ['Pose carrelage sol', 'Faïence murale', 'Joints parfaits', 'Finitions soignées']
+      icon: '/services_icons/icons8-saw-128 (1).png',
+      title: 'Menuiserie',
+      description: 'Travaux de menuiserie et charpente. Portes, fenêtres, placards, aménagements sur mesure.',
+      features: ['Portes & fenêtres', 'Placards sur mesure', 'Charpente', 'Agencement intérieur']
     }
   ]
 
@@ -135,15 +128,17 @@ export default function Services() {
       <section className="px-4 sm:px-6 lg:px-8 py-16">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service) => {
-              const Icon = service.icon
-              return (
+            {services.map((service) => (
                 <div
                   key={service.title}
                   className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-gray-100"
                 >
                   <div className="bg-primary/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
-                    <Icon className="w-8 h-8 text-primary" />
+                    <img 
+                      src={service.icon} 
+                      alt={service.title}
+                      className="w-10 h-10"
+                    />
                   </div>
                   <h3 className="text-3xl font-display font-bold text-gray-900 mb-4">
                     {service.title}
@@ -160,8 +155,7 @@ export default function Services() {
                     ))}
                   </ul>
                 </div>
-              )
-            })}
+            ))}
           </div>
         </div>
       </section>

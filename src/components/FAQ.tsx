@@ -8,19 +8,19 @@ export default function FAQ() {
   const faqs = [
     {
       question: 'Quels types de services proposez-vous ?',
-      answer: 'Nous proposons aujourd\'hui une large gamme de services : Plomberie, Travaux d\'électricité, Réparation d\'électroménager, Petits travaux (changement de moustiquaire de portes, changement de serrures, fixation de miroirs, tableaux, étagères…), Peinture, Élagage et entretien du jardin.'
+      answer: 'Nous proposons aujourd\'hui une large gamme de services :\n\n• Plomberie\n• Travaux d\'électricité\n• Réparation d\'électroménager\n• Petits travaux (changement de moustiquaire de portes, changement de serrures, fixation de miroirs, tableaux, étagères…)\n• Peinture\n• Élagage et entretien du jardin'
     },
     {
       question: 'Comment fonctionne votre plateforme ?',
-      answer: 'Notre plateforme vous met en relation avec des artisans qualifiés. Voici les étapes : 1. Vous choisissez le service dont vous avez besoin. 2. Vous indiquez votre localisation et le créneau horaire de disponibilité. 3. Un artisan vous est attribué et se rend sur place pour réaliser la prestation.'
+      answer: 'Notre plateforme vous met en relation avec des artisans qualifiés. Voici les étapes :\n\n1. Vous choisissez le service dont vous avez besoin.\n\n2. Vous indiquez votre localisation et le créneau horaire de disponibilité.\n\n3. Un artisan vous est attribué et se rend sur place pour réaliser la prestation.'
     },
     {
       question: 'Qui sont les artisans avec lesquels vous travaillez ?',
-      answer: 'Nous collaborons avec des artisans qualifiés et expérimentés. Chaque artisan est rigoureusement sélectionné après un processus d\'évaluation comprenant : Vérification des références et compétences, Formation sur nos standards de qualité, Suivi régulier pour garantir un service irréprochable.'
+      answer: 'Nous collaborons avec des artisans qualifiés et expérimentés. Chaque artisan est rigoureusement sélectionné après un processus d\'évaluation comprenant :\n\n• Vérification des références et compétences\n• Formation sur nos standards de qualité\n• Suivi régulier pour garantir un service irréprochable'
     },
     {
       question: 'Comment fonctionne le paiement des prestations ?',
-      answer: 'Vous payez votre prestation à la fin de l\'intervention via un lien de paiement sécurisé qui vous sera envoyé. Nous acceptons : Paiements via mobile money (Wave, Orange Money), Paiement par carte bancaire. Nous n\'acceptons pas les paiements en espèces.'
+      answer: 'Vous payez votre prestation à la fin de l\'intervention via un lien de paiement sécurisé qui vous sera envoyé.\n\nNous acceptons :\n• Paiements via mobile money (Wave, Orange Money)\n• Paiement par carte bancaire\n\nNous n\'acceptons pas les paiements en espèces.'
     },
   ]
 
@@ -52,7 +52,7 @@ export default function FAQ() {
                 />
               </button>
               {openIndex === faq.question && (
-                <div className="px-6 pb-4 text-gray-600">
+                <div className="px-6 pb-4 text-gray-600 whitespace-pre-line leading-relaxed">
                   {faq.answer}
                 </div>
               )}

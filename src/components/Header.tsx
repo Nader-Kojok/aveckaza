@@ -8,10 +8,7 @@ export default function Header() {
 
   return (
     <header 
-      className="fixed top-0 left-0 right-0 backdrop-blur-md z-50 shadow-lg"
-      style={{
-        background: 'linear-gradient(90deg, rgba(4, 81, 125, 0.95) 0%, rgba(37, 133, 195, 0.95) 20%, rgba(37, 133, 195, 0.95) 50%, rgba(37, 133, 195, 0.95) 80%, rgba(4, 81, 125, 0.95) 100%)'
-      }}
+      className="fixed top-0 left-0 right-0 bg-white z-50 shadow-sm border-b border-gray-100"
     >
       {/* Skip to main content link for keyboard users */}
       <a 
@@ -25,9 +22,9 @@ export default function Header() {
           <div className="flex items-center">
             <a href="/" className="flex items-center">
               <img 
-                src="/footer_logo_kaza.svg" 
+                src="/logo_kaza.svg" 
                 alt="Kaza" 
-                className="!h-10 sm:!h-[75px] w-auto max-h-[75px]" 
+                className="h-8 sm:h-12 w-auto max-h-20 object-contain" 
                 fetchPriority="high"
                 loading="eager"
               />
@@ -40,8 +37,8 @@ export default function Header() {
               href="/services" 
               className={`text-base font-medium transition-colors ${
                 location.pathname === '/services' 
-                  ? 'text-primary' 
-                  : 'text-white/90 hover:text-primary'
+                  ? 'text-primary font-semibold' 
+                  : 'text-gray-700 hover:text-primary'
               }`}
             >
               Services
@@ -50,8 +47,8 @@ export default function Header() {
               href="/club-kaza" 
               className={`text-base font-medium transition-colors ${
                 location.pathname === '/club-kaza' 
-                  ? 'text-primary' 
-                  : 'text-white/90 hover:text-primary'
+                  ? 'text-primary font-semibold' 
+                  : 'text-gray-700 hover:text-primary'
               }`}
             >
               Club Kaza
@@ -60,8 +57,8 @@ export default function Header() {
               href="/blog" 
               className={`text-base font-medium transition-colors ${
                 location.pathname.startsWith('/blog') 
-                  ? 'text-primary' 
-                  : 'text-white/90 hover:text-primary'
+                  ? 'text-primary font-semibold' 
+                  : 'text-gray-700 hover:text-primary'
               }`}
             >
               Blog
@@ -70,8 +67,8 @@ export default function Header() {
               href="/offre-entreprises" 
               className={`text-base font-medium transition-colors ${
                 location.pathname === '/offre-entreprises' 
-                  ? 'text-primary' 
-                  : 'text-white/90 hover:text-primary'
+                  ? 'text-primary font-semibold' 
+                  : 'text-gray-700 hover:text-primary'
               }`}
             >
               Entreprises
@@ -80,8 +77,8 @@ export default function Header() {
               href="/entreprise" 
               className={`text-base font-medium transition-colors ${
                 location.pathname === '/entreprise' 
-                  ? 'text-primary' 
-                  : 'text-white/90 hover:text-primary'
+                  ? 'text-primary font-semibold' 
+                  : 'text-gray-700 hover:text-primary'
               }`}
             >
               À propos
@@ -90,8 +87,8 @@ export default function Header() {
               href="/contact" 
               className={`text-base font-medium transition-colors ${
                 location.pathname === '/contact' 
-                  ? 'text-primary' 
-                  : 'text-white/90 hover:text-primary'
+                  ? 'text-primary font-semibold' 
+                  : 'text-gray-700 hover:text-primary'
               }`}
             >
               Contact
@@ -103,7 +100,7 @@ export default function Header() {
               href="https://commander.aveckaza.com/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="bg-primary hover:bg-primary-dark text-white px-4 sm:px-6 py-2 rounded-full text-sm font-semibold transition-colors inline-flex items-center min-h-[44px]"
+              className="bg-primary hover:bg-primary-dark text-white px-4 sm:px-6 py-2 rounded-full text-sm font-semibold transition-all hover:scale-105 inline-flex items-center min-h-[44px] shadow-md"
             >
               Réserver
             </a>
@@ -115,9 +112,9 @@ export default function Header() {
               aria-expanded={isMenuOpen}
             >
               {isMenuOpen ? (
-                <X className="w-6 h-6 text-white" />
+                <X className="w-6 h-6 text-gray-700" />
               ) : (
-                <Menu className="w-6 h-6 text-white" />
+                <Menu className="w-6 h-6 text-gray-700" />
               )}
             </button>
           </div>
@@ -126,14 +123,14 @@ export default function Header() {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="md:hidden bg-blue-dark border-t border-white/10 animate-in slide-in-from-top duration-200">
+        <div className="md:hidden bg-white border-t border-gray-200 animate-in slide-in-from-top duration-200">
           <nav className="max-w-7xl mx-auto px-4 py-4 space-y-1" aria-label="Navigation mobile">
             <a 
               href="/services" 
               className={`block px-4 py-3 text-base font-medium rounded-lg transition-colors min-h-[44px] ${
                 location.pathname === '/services'
-                  ? 'text-primary bg-white/10'
-                  : 'text-white/90 hover:text-primary hover:bg-white/5'
+                  ? 'text-primary bg-primary/10 font-semibold'
+                  : 'text-gray-700 hover:text-primary hover:bg-gray-50'
               }`}
               onClick={() => setIsMenuOpen(false)}
             >
@@ -143,8 +140,8 @@ export default function Header() {
               href="/club-kaza" 
               className={`block px-4 py-3 text-base font-medium rounded-lg transition-colors min-h-[44px] ${
                 location.pathname === '/club-kaza'
-                  ? 'text-primary bg-white/10'
-                  : 'text-white/90 hover:text-primary hover:bg-white/5'
+                  ? 'text-primary bg-primary/10 font-semibold'
+                  : 'text-gray-700 hover:text-primary hover:bg-gray-50'
               }`}
               onClick={() => setIsMenuOpen(false)}
             >
@@ -154,8 +151,8 @@ export default function Header() {
               href="/blog" 
               className={`block px-4 py-3 text-base font-medium rounded-lg transition-colors min-h-[44px] ${
                 location.pathname.startsWith('/blog')
-                  ? 'text-primary bg-white/10'
-                  : 'text-white/90 hover:text-primary hover:bg-white/5'
+                  ? 'text-primary bg-primary/10 font-semibold'
+                  : 'text-gray-700 hover:text-primary hover:bg-gray-50'
               }`}
               onClick={() => setIsMenuOpen(false)}
             >
@@ -165,8 +162,8 @@ export default function Header() {
               href="/offre-entreprises" 
               className={`block px-4 py-3 text-base font-medium rounded-lg transition-colors min-h-[44px] ${
                 location.pathname === '/offre-entreprises'
-                  ? 'text-primary bg-white/10'
-                  : 'text-white/90 hover:text-primary hover:bg-white/5'
+                  ? 'text-primary bg-primary/10 font-semibold'
+                  : 'text-gray-700 hover:text-primary hover:bg-gray-50'
               }`}
               onClick={() => setIsMenuOpen(false)}
             >
@@ -176,8 +173,8 @@ export default function Header() {
               href="/entreprise" 
               className={`block px-4 py-3 text-base font-medium rounded-lg transition-colors min-h-[44px] ${
                 location.pathname === '/entreprise'
-                  ? 'text-primary bg-white/10'
-                  : 'text-white/90 hover:text-primary hover:bg-white/5'
+                  ? 'text-primary bg-primary/10 font-semibold'
+                  : 'text-gray-700 hover:text-primary hover:bg-gray-50'
               }`}
               onClick={() => setIsMenuOpen(false)}
             >
@@ -187,8 +184,8 @@ export default function Header() {
               href="/contact" 
               className={`block px-4 py-3 text-base font-medium rounded-lg transition-colors min-h-[44px] ${
                 location.pathname === '/contact'
-                  ? 'text-primary bg-white/10'
-                  : 'text-white/90 hover:text-primary hover:bg-white/5'
+                  ? 'text-primary bg-primary/10 font-semibold'
+                  : 'text-gray-700 hover:text-primary hover:bg-gray-50'
               }`}
               onClick={() => setIsMenuOpen(false)}
             >

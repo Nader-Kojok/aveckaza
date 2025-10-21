@@ -65,10 +65,10 @@ function App() {
       />
       <Hero />
       <Services />
+      <Artisans />
       <Features />
       <HowItWorks />
       <FindHelp />
-      <Artisans />
       <Testimonials />
       <FAQSection />
       <WorkWithUs />

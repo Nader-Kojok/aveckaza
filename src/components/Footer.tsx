@@ -9,11 +9,12 @@ export default function Footer() {
             <img 
               src="/footer_logo_kaza.svg" 
               alt="Kaza" 
-              className="!h-[80px] w-auto max-h-[80px] mb-4" 
+              className="!h-[100px] w-auto max-h-[100px] mb-4" 
               loading="lazy"
             />
             <p className="text-white/80 text-sm mb-4">
-              Tous les services dont votre maison a besoin, à portée de main.
+              Kaza remet de l'ordre et de la confiance
+              dans les services à domicile.
             </p>
             <div className="flex space-x-4">
               <a 
