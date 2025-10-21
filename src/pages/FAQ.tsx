@@ -7,19 +7,45 @@ export default function FAQ() {
 
   const faqs = [
     {
-      category: "Réservation",
+      category: "Services",
       questions: [
         {
-          question: "Comment réserver un service ?",
-          answer: "Vous pouvez réserver directement sur notre plateforme en ligne. Sélectionnez le service souhaité, choisissez votre date et heure, puis confirmez votre réservation. Vous recevrez une confirmation par SMS et email."
+          question: "Quels types de services proposez-vous ?",
+          answer: "Nous proposons aujourd'hui une large gamme de services, et en ajoutons de nouveaux régulièrement : Plomberie, Travaux d'électricité, Réparation d'électroménager, Petits travaux (changement de moustiquaire de portes, changement de serrures, fixation de miroirs, tableaux, étagères…), Peinture, Élagage et entretien du jardin."
         },
         {
-          question: "Puis-je réserver pour le jour même ?",
-          answer: "Oui, selon la disponibilité de nos professionnels. Nous faisons notre maximum pour répondre aux demandes urgentes. Contactez-nous directement pour les interventions en urgence."
+          question: "Intervenez-vous dans tout le Sénégal ?",
+          answer: "Pour le moment, nos services sont disponibles uniquement dans la ville de Dakar. Nous prévoyons d'élargir bientôt notre couverture à l'ensemble de la région de Dakar."
         },
         {
-          question: "Comment annuler ou modifier ma réservation ?",
-          answer: "Vous pouvez annuler ou modifier votre réservation jusqu'à 24 heures avant l'intervention via votre espace client ou en nous contactant. Les annulations tardives peuvent entraîner des frais."
+          question: "Proposez-vous des services pour les professionnels ?",
+          answer: "Oui, nous travaillons avec des entreprises pour des prestations telles que : Maintenance technique des locaux (bureaux, espaces commerciaux, parcs immobiliers…), Suivi et gestion de travaux sur vos sites. Contactez-nous pour un devis personnalisé."
+        }
+      ]
+    },
+    {
+      category: "Fonctionnement",
+      questions: [
+        {
+          question: "Comment fonctionne votre plateforme ?",
+          answer: "Notre plateforme vous met en relation avec des artisans qualifiés. Voici les étapes : 1. Vous choisissez le service dont vous avez besoin. 2. Vous indiquez votre localisation et le créneau horaire de disponibilité. 3. Un artisan vous est attribué et se rend sur place pour réaliser la prestation."
+        },
+        {
+          question: "Quels sont vos délais d'intervention ?",
+          answer: "Nous assurons des interventions rapides : Pour les urgences, nous intervenons dans un délai maximum de 2 heures. Pour les prestations planifiées, vous pouvez choisir un créneau selon vos disponibilités."
+        },
+        {
+          question: "Puis-je annuler ou modifier ma commande ?",
+          answer: "Oui, vous pouvez modifier ou annuler votre commande jusqu'à 2 heures avant l'intervention prévue. Pour les urgences, des frais de déplacement peuvent s'appliquer si l'artisan est déjà en route."
+        }
+      ]
+    },
+    {
+      category: "Artisans",
+      questions: [
+        {
+          question: "Qui sont les artisans avec lesquels vous travaillez ?",
+          answer: "Nous collaborons avec des artisans qualifiés et expérimentés. Chaque artisan est rigoureusement sélectionné après un processus d'évaluation comprenant : Vérification des références et compétences, Formation sur nos standards de qualité, Suivi régulier pour garantir un service irréprochable."
         }
       ]
     },
@@ -27,63 +53,30 @@ export default function FAQ() {
       category: "Paiement",
       questions: [
         {
-          question: "Quels modes de paiement acceptez-vous ?",
-          answer: "Nous acceptons Orange Money, Wave, les cartes bancaires et les paiements en espèces. Le paiement est sécurisé et peut être effectué en ligne ou après la prestation selon votre préférence."
-        },
-        {
-          question: "Quand dois-je payer ?",
-          answer: "Le paiement peut être effectué en ligne lors de la réservation ou après la prestation. Pour les interventions régulières, nous proposons des formules d'abonnement avec paiement mensuel."
-        },
-        {
-          question: "Puis-je obtenir une facture ?",
-          answer: "Oui, une facture vous est automatiquement envoyée par email après chaque prestation. Vous pouvez également la télécharger depuis votre espace client."
+          question: "Comment fonctionne le paiement des prestations ?",
+          answer: "Vous payez votre prestation à la fin de l'intervention via un lien de paiement sécurisé qui vous sera envoyé. Si l'intervention nécessite des pièces détachées, vous devez les régler directement à l'artisan qui vous fournira une facture pour ces achats. Nous acceptons : Paiements via mobile money (Wave, Orange Money), Paiement par carte bancaire. Nous n'acceptons pas les paiements en espèces."
         }
       ]
     },
     {
-      category: "Professionnels",
+      category: "Problèmes et satisfaction",
       questions: [
         {
-          question: "Vos professionnels sont-ils vérifiés ?",
-          answer: "Oui, tous nos professionnels passent par un processus de vérification rigoureux incluant la vérification des diplômes, de l'expérience, un entretien et une formation. Ils sont également assurés."
+          question: "Et si l'artisan ne parvient pas à résoudre mon problème ?",
+          answer: "Dans ce cas, les frais de déplacement restent à votre charge, selon les conditions suivantes : 3 000 FCFA pour les prestations entre 10h et 20h (du lundi au samedi), 5 000 FCFA pour les prestations aux horaires majorées (nuit, dimanches et jours fériés). Cependant, nous faisons tout notre possible pour attribuer des artisans compétents et éviter ce type de situation. Pour les dépannages, si l'artisan a identifié la panne mais n'est pas en mesure de la réparer immédiatement (disponibilité des pièces, matériel spécifique...), des frais de diagnostic équivalents à 40% du montant de la prestation seront facturés. Ils pourront être déduits du montant de l'intervention suivante, une fois la réparation effectuée."
         },
         {
-          question: "Puis-je choisir mon professionnel ?",
-          answer: "Oui, après une première intervention, vous pouvez demander le même professionnel pour vos prochaines réservations si celui-ci est disponible."
-        },
-        {
-          question: "Que faire si je ne suis pas satisfait ?",
-          answer: "Votre satisfaction est notre priorité. Si vous n'êtes pas satisfait, contactez-nous dans les 48 heures. Nous ferons tout notre possible pour résoudre le problème, y compris une nouvelle intervention gratuite si nécessaire."
+          question: "Que faire si je ne suis pas satisfait de la prestation ?",
+          answer: "Votre satisfaction est notre priorité. Si vous rencontrez un problème, contactez notre service client sous 24 heures après la prestation. Nous trouverons une solution adaptée : Intervention corrective, Attribution d'un avoir correspondant à tout ou partie du montant de la prestation, utilisable pour une future intervention."
         }
       ]
     },
     {
-      category: "Services",
+      category: "Sécurité",
       questions: [
         {
-          question: "Quels services proposez-vous ?",
-          answer: "Nous proposons une large gamme de services : ménage, bricolage, jardinage, plomberie, électricité, déménagement, et bien plus. Consultez notre liste complète sur la page d'accueil."
-        },
-        {
-          question: "Intervenez-vous dans toute la région de Dakar ?",
-          answer: "Oui, nous couvrons l'ensemble de la région de Dakar et ses environs, incluant les Almadies, Mermoz, Plateau, Ouakam, et autres quartiers."
-        },
-        {
-          question: "Proposez-vous des services réguliers ?",
-          answer: "Oui, nous proposons des formules d'abonnement pour des interventions régulières (hebdomadaires, bi-hebdomadaires, mensuelles) avec des tarifs préférentiels."
-        }
-      ]
-    },
-    {
-      category: "Devenir professionnel",
-      questions: [
-        {
-          question: "Comment devenir professionnel Kaza ?",
-          answer: "Rendez-vous sur notre page 'Devenir pro' et remplissez le formulaire de candidature. Notre équipe vous contactera pour un entretien et vous guidera dans le processus d'inscription."
-        },
-        {
-          question: "Quels sont les critères pour rejoindre Kaza ?",
-          answer: "Nous recherchons des professionnels qualifiés, expérimentés, fiables et avec un excellent sens du service client. Une vérification des antécédents et des références est également requise."
+          question: "Quels sont vos engagements en matière de sécurité et de responsabilité ?",
+          answer: "Nous disposons d'une assurance responsabilité civile pour couvrir tout dommage éventuel lié aux interventions. De plus, nous sélectionnons des artisans qualifiés et assurons un suivi rigoureux pour garantir des prestations sécurisées et de qualité."
         }
       ]
     }

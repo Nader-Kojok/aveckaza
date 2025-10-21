@@ -4,23 +4,23 @@ import { useState } from 'react'
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<string | null>(null)
 
-  // Seulement les 4 premières questions de la page FAQ complète
+  // Seulement les questions les plus importantes de la page FAQ complète
   const faqs = [
     {
-      question: 'Comment réserver un service ?',
-      answer: 'Vous pouvez réserver directement sur notre plateforme en ligne. Sélectionnez le service souhaité, choisissez votre date et heure, puis confirmez votre réservation. Vous recevrez une confirmation par SMS et email.'
+      question: 'Quels types de services proposez-vous ?',
+      answer: 'Nous proposons aujourd\'hui une large gamme de services : Plomberie, Travaux d\'électricité, Réparation d\'électroménager, Petits travaux (changement de moustiquaire de portes, changement de serrures, fixation de miroirs, tableaux, étagères…), Peinture, Élagage et entretien du jardin.'
     },
     {
-      question: 'Vos professionnels sont-ils vérifiés ?',
-      answer: 'Oui, tous nos professionnels passent par un processus de vérification rigoureux incluant la vérification des diplômes, de l\'expérience, un entretien et une formation. Ils sont également assurés.'
+      question: 'Comment fonctionne votre plateforme ?',
+      answer: 'Notre plateforme vous met en relation avec des artisans qualifiés. Voici les étapes : 1. Vous choisissez le service dont vous avez besoin. 2. Vous indiquez votre localisation et le créneau horaire de disponibilité. 3. Un artisan vous est attribué et se rend sur place pour réaliser la prestation.'
     },
     {
-      question: 'Quels modes de paiement acceptez-vous ?',
-      answer: 'Nous acceptons Orange Money, Wave, les cartes bancaires et les paiements en espèces. Le paiement est sécurisé et peut être effectué en ligne ou après la prestation selon votre préférence.'
+      question: 'Qui sont les artisans avec lesquels vous travaillez ?',
+      answer: 'Nous collaborons avec des artisans qualifiés et expérimentés. Chaque artisan est rigoureusement sélectionné après un processus d\'évaluation comprenant : Vérification des références et compétences, Formation sur nos standards de qualité, Suivi régulier pour garantir un service irréprochable.'
     },
     {
-      question: 'Puis-je annuler ou modifier ma réservation ?',
-      answer: 'Vous pouvez annuler ou modifier votre réservation jusqu\'à 24 heures avant l\'intervention via votre espace client ou en nous contactant. Les annulations tardives peuvent entraîner des frais.'
+      question: 'Comment fonctionne le paiement des prestations ?',
+      answer: 'Vous payez votre prestation à la fin de l\'intervention via un lien de paiement sécurisé qui vous sera envoyé. Nous acceptons : Paiements via mobile money (Wave, Orange Money), Paiement par carte bancaire. Nous n\'acceptons pas les paiements en espèces.'
     },
   ]
 
