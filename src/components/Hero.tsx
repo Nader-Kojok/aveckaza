@@ -5,7 +5,7 @@ export default function Hero() {
         <h1 
           className="font-display font-bold text-blue-dark mb-12 leading-tight text-3xl sm:text-4xl lg:text-5xl"
         >
-          Kaza remet de <span className="underline decoration-primary decoration-4">l'ordre</span> et de la <span className="underline decoration-primary decoration-4">confiance</span>
+          Kaza remet de <span className="underline decoration-[#04CBBF] decoration-[8px] underline-offset-1">l'ordre</span> et de la <span className="underline decoration-[#04CBBF] decoration-[8px] underline-offset-1">confiance</span>
           <br />
           dans les services à domicile.
         </h1>

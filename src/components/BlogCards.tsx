@@ -53,21 +53,23 @@ export default function BlogCards() {
               to={`/blog/${article.id}`}
               className="group cursor-pointer"
             >
-              <div className="relative rounded-2xl overflow-hidden aspect-[3/4] group-hover:scale-[1.02] transition-transform duration-300">
-                <img 
-                  src={article.image} 
-                  alt={article.title}
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent flex flex-col justify-end p-6">
-                  <span className="text-xs font-bold uppercase tracking-wider text-white mb-2 opacity-90">
-                    {article.category}
-                  </span>
-                  <h3 className="text-lg sm:text-xl font-display font-bold text-white leading-tight">
-                    {article.title}
-                  </h3>
+              <div className="flex flex-col">
+                <div className="relative rounded-2xl overflow-hidden aspect-[16/10] group-hover:scale-[1.02] transition-transform duration-300 mb-4">
+                  <img 
+                    src={article.image} 
+                    alt={article.title}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                  <div className="absolute top-4 left-4">
+                    <span className="text-xs font-bold uppercase tracking-wider text-white bg-blue/80 px-3 py-1.5 rounded-full backdrop-blur-sm">
+                      {article.category}
+                    </span>
+                  </div>
                 </div>
+                <h3 className="text-sm sm:text-base font-display font-bold text-white leading-tight group-hover:text-white/80 transition-colors">
+                  {article.title}
+                </h3>
               </div>
             </Link>
           ))}

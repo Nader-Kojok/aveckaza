@@ -38,7 +38,7 @@ export default function Header() {
               className={`text-base font-medium transition-colors ${
                 location.pathname === '/services' 
                   ? 'text-primary font-semibold' 
-                  : 'text-gray-700 hover:text-primary'
+                  : 'text-blue-dark hover:text-primary'
               }`}
             >
               Services
@@ -48,7 +48,7 @@ export default function Header() {
               className={`text-base font-medium transition-colors ${
                 location.pathname === '/club-kaza' 
                   ? 'text-primary font-semibold' 
-                  : 'text-gray-700 hover:text-primary'
+                  : 'text-blue-dark hover:text-primary'
               }`}
             >
               Club Kaza
@@ -58,7 +58,7 @@ export default function Header() {
               className={`text-base font-medium transition-colors ${
                 location.pathname.startsWith('/blog') 
                   ? 'text-primary font-semibold' 
-                  : 'text-gray-700 hover:text-primary'
+                  : 'text-blue-dark hover:text-primary'
               }`}
             >
               Blog
@@ -68,7 +68,7 @@ export default function Header() {
               className={`text-base font-medium transition-colors ${
                 location.pathname === '/offre-entreprises' 
                   ? 'text-primary font-semibold' 
-                  : 'text-gray-700 hover:text-primary'
+                  : 'text-blue-dark hover:text-primary'
               }`}
             >
               Entreprises
@@ -78,7 +78,7 @@ export default function Header() {
               className={`text-base font-medium transition-colors ${
                 location.pathname === '/entreprise' 
                   ? 'text-primary font-semibold' 
-                  : 'text-gray-700 hover:text-primary'
+                  : 'text-blue-dark hover:text-primary'
               }`}
             >
               À propos
@@ -88,7 +88,7 @@ export default function Header() {
               className={`text-base font-medium transition-colors ${
                 location.pathname === '/contact' 
                   ? 'text-primary font-semibold' 
-                  : 'text-gray-700 hover:text-primary'
+                  : 'text-blue-dark hover:text-primary'
               }`}
             >
               Contact
@@ -130,7 +130,7 @@ export default function Header() {
               className={`block px-4 py-3 text-base font-medium rounded-lg transition-colors min-h-[44px] ${
                 location.pathname === '/services'
                   ? 'text-primary bg-primary/10 font-semibold'
-                  : 'text-gray-700 hover:text-primary hover:bg-gray-50'
+                  : 'text-blue-dark hover:text-primary hover:bg-gray-50'
               }`}
               onClick={() => setIsMenuOpen(false)}
             >
@@ -141,7 +141,7 @@ export default function Header() {
               className={`block px-4 py-3 text-base font-medium rounded-lg transition-colors min-h-[44px] ${
                 location.pathname === '/club-kaza'
                   ? 'text-primary bg-primary/10 font-semibold'
-                  : 'text-gray-700 hover:text-primary hover:bg-gray-50'
+                  : 'text-blue-dark hover:text-primary hover:bg-gray-50'
               }`}
               onClick={() => setIsMenuOpen(false)}
             >
@@ -152,7 +152,7 @@ export default function Header() {
               className={`block px-4 py-3 text-base font-medium rounded-lg transition-colors min-h-[44px] ${
                 location.pathname.startsWith('/blog')
                   ? 'text-primary bg-primary/10 font-semibold'
-                  : 'text-gray-700 hover:text-primary hover:bg-gray-50'
+                  : 'text-blue-dark hover:text-primary hover:bg-gray-50'
               }`}
               onClick={() => setIsMenuOpen(false)}
             >
@@ -163,7 +163,7 @@ export default function Header() {
               className={`block px-4 py-3 text-base font-medium rounded-lg transition-colors min-h-[44px] ${
                 location.pathname === '/offre-entreprises'
                   ? 'text-primary bg-primary/10 font-semibold'
-                  : 'text-gray-700 hover:text-primary hover:bg-gray-50'
+                  : 'text-blue-dark hover:text-primary hover:bg-gray-50'
               }`}
               onClick={() => setIsMenuOpen(false)}
             >
@@ -174,7 +174,7 @@ export default function Header() {
               className={`block px-4 py-3 text-base font-medium rounded-lg transition-colors min-h-[44px] ${
                 location.pathname === '/entreprise'
                   ? 'text-primary bg-primary/10 font-semibold'
-                  : 'text-gray-700 hover:text-primary hover:bg-gray-50'
+                  : 'text-blue-dark hover:text-primary hover:bg-gray-50'
               }`}
               onClick={() => setIsMenuOpen(false)}
             >
@@ -185,7 +185,7 @@ export default function Header() {
               className={`block px-4 py-3 text-base font-medium rounded-lg transition-colors min-h-[44px] ${
                 location.pathname === '/contact'
                   ? 'text-primary bg-primary/10 font-semibold'
-                  : 'text-gray-700 hover:text-primary hover:bg-gray-50'
+                  : 'text-blue-dark hover:text-primary hover:bg-gray-50'
               }`}
               onClick={() => setIsMenuOpen(false)}
             >
