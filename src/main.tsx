@@ -17,6 +17,7 @@ import Contact from './pages/Contact.tsx'
 import ConseilsNettoyageSaisonPluies from './pages/articles/ConseilsNettoyageSaisonPluies.tsx'
 import EntretienJardinClimatTropical from './pages/articles/EntretienJardinClimatTropical.tsx'
 import SecuriteDomicileGuideComplet from './pages/articles/SecuriteDomicileGuideComplet.tsx'
+import PrixTravauxPeinture from './pages/articles/PrixTravauxPeinture.tsx'
 import NotFound from './pages/NotFound.tsx'
 import Header from './components/Header.tsx'
 import Footer from './components/Footer.tsx'
@@ -45,6 +46,7 @@ createRoot(document.getElementById('root')!).render(
             <Route path="/blog/conseils-nettoyage-saison-pluies" element={<ConseilsNettoyageSaisonPluies />} />
             <Route path="/blog/entretien-jardin-climat-tropical" element={<EntretienJardinClimatTropical />} />
             <Route path="/blog/securite-domicile-guide-complet" element={<SecuriteDomicileGuideComplet />} />
+            <Route path="/blog/prix-travaux-peinture" element={<PrixTravauxPeinture />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>

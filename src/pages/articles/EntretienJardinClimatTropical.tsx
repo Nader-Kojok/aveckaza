@@ -6,11 +6,11 @@ export default function EntretienJardinClimatTropical() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "headline": "Entretien du jardin en climat tropical au Sénégal",
-    "description": "Le climat sénégalais offre des conditions uniques pour le jardinage. Apprenez les meilleures pratiques pour un jardin luxuriant toute l'année à Dakar.",
+    "headline": "7 astuces incontournables pour prolonger la durée de vie de votre climatiseur",
+    "description": "Un climatiseur bien entretenu peut fonctionner efficacement pendant de nombreuses années, tout en limitant vos dépenses en réparations ou en remplacement. Si vous souhaitez maximiser la durée de vie de votre climatiseur dans le climat du Sénégal, voici les meilleures pratiques à adopter.",
     "image": "https://aveckaza.com/logo_kaza.png",
-    "datePublished": "2024-10-10",
-    "dateModified": "2024-10-10",
+    "datePublished": "2025-01-18",
+    "dateModified": "2025-01-18",
     "author": {
       "@type": "Organization",
       "name": "Kaza Sénégal"
@@ -32,9 +32,9 @@ export default function EntretienJardinClimatTropical() {
   return (
     <div className="min-h-screen bg-cream">
       <SEO
-        title="Entretien Jardin Climat Tropical - Guide Sénégal"
-        description="Guide complet pour entretenir votre jardin en climat tropical à Dakar. Plantes adaptées, arrosage, taille et entretien spécifique au Sénégal."
-        keywords="jardinage Sénégal, entretien jardin tropical Dakar, plantes tropicales Sénégal, jardinage climat tropical, conseils jardinage Dakar"
+        title="7 Astuces pour Prolonger la Durée de Vie de Votre Climatiseur - Kaza"
+        description="Découvrez 7 astuces essentielles pour prolonger la durée de vie de votre climatiseur au Sénégal. Conseils d'entretien, nettoyage et maintenance professionnelle."
+        keywords="entretien climatisation Sénégal, maintenance climatiseur Dakar, prolonger durée vie climatisation, nettoyage filtres climatiseur, réparation climatisation"
         canonical="/blog/entretien-jardin-climat-tropical"
         ogType="article"
         structuredData={structuredData}
@@ -52,22 +52,22 @@ export default function EntretienJardinClimatTropical() {
 
           <div className="flex items-center gap-2 mb-4">
             <span className="px-4 py-1 bg-white/20 backdrop-blur-sm rounded-full text-sm font-semibold uppercase tracking-wide">
-              Jardinage
+              Climatisation
             </span>
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-6">
-            Entretien du jardin en climat tropical
+            7 astuces incontournables pour prolonger la durée de vie de votre climatiseur
           </h1>
 
           <div className="flex items-center gap-6 text-white/90">
             <span className="flex items-center gap-2">
               <Calendar className="w-5 h-5" />
-              10 Octobre 2024
+              18 Janvier 2025
             </span>
             <span className="flex items-center gap-2">
               <Clock className="w-5 h-5" />
-              7 min de lecture
+              8 min de lecture
             </span>
           </div>
         </div>
@@ -80,78 +80,123 @@ export default function EntretienJardinClimatTropical() {
             {/* Introduction */}
             <div className="prose prose-lg max-w-none mb-12">
               <p className="text-xl text-gray-700 leading-relaxed">
-                Le climat tropical du Sénégal offre des conditions uniques pour créer un jardin luxuriant. 
-                Avec les bonnes techniques et un entretien adapté, vous pouvez profiter d'un espace vert 
-                magnifique toute l'année, que vous soyez aux Almadies, à Mermoz ou dans d'autres quartiers de Dakar.
+                Un climatiseur bien entretenu peut fonctionner efficacement pendant de nombreuses années, tout en limitant 
+                vos dépenses en réparations ou en remplacement. Si vous souhaitez maximiser la durée de vie de votre climatiseur 
+                dans le climat du Sénégal, voici les meilleures pratiques à adopter.
               </p>
             </div>
 
-            {/* Section 1 - À compléter manuellement */}
+            {/* Section 1 */}
             <section className="mb-12">
               <h2 className="text-3xl font-display font-bold text-blue mb-6">
-                1. Choisir les plantes adaptées au climat sénégalais
+                1. Nettoyez régulièrement les filtres à air
               </h2>
               <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p>
-                  [Contenu à ajouter : Liste des plantes tropicales adaptées, arbres fruitiers locaux, 
-                  plantes ornementales résistantes à la chaleur, etc.]
+                  Les filtres de votre climatiseur jouent un rôle crucial en retenant la poussière, les allergènes et les particules en suspension. 
+                  Lorsque ces filtres sont obstrués, l'appareil doit travailler plus dur, ce qui peut entraîner une usure prématurée.
+                </p>
+                <p>
+                  <strong>Nettoyez ou remplacez les filtres tous les 1 à 3 mois</strong>, selon l'intensité d'utilisation et l'environnement. 
+                  Si vous avez des animaux ou vivez dans un environnement poussiéreux, comme au Sénégal, vérifiez les filtres plus fréquemment.
+                </p>
+              </div>
+            </section>
+
+            {/* Section 2 */}
+            <section className="mb-12">
+              <h2 className="text-3xl font-display font-bold text-blue mb-6">
+                2. Vérifiez et nettoyez les bobines du climatiseur
+              </h2>
+              <div className="space-y-4 text-gray-700 leading-relaxed">
+                <p>
+                  Les bobines (ou serpentins) de l'évaporateur et du condenseur accumulent également la saleté au fil du temps. 
+                  Cela peut réduire l'efficacité du transfert de chaleur et forcer l'appareil à consommer plus d'énergie.
+                </p>
+                <p>
+                  <strong>Faites inspecter les bobines au moins une fois par an</strong> et nettoyez-les délicatement avec une brosse douce ou un nettoyant spécial.
+                </p>
+              </div>
+            </section>
+
+            {/* Section 3 */}
+            <section className="mb-12">
+              <h2 className="text-3xl font-display font-bold text-blue mb-6">
+                3. Assurez un bon flux d'air autour de l'unité extérieure
+              </h2>
+              <div className="space-y-4 text-gray-700 leading-relaxed">
+                <p>
+                  L'unité extérieure (condenseur) a besoin d'un espace dégagé pour fonctionner efficacement. Si des objets, des plantes 
+                  ou des débris bloquent les grilles de ventilation, cela peut entraîner une surchauffe et endommager le compresseur.
+                </p>
+                <p>
+                  <strong>Dégagez au moins 60 cm autour de l'unité</strong> et éliminez régulièrement les feuilles, branches et saletés.
+                </p>
+              </div>
+            </section>
+
+            {/* Section 4 */}
+            <section className="mb-12">
+              <h2 className="text-3xl font-display font-bold text-blue mb-6">
+                4. Programmez un entretien annuel avec un professionnel
+              </h2>
+              <div className="space-y-4 text-gray-700 leading-relaxed">
+                <p>
+                  Un entretien régulier par un technicien qualifié est indispensable pour vérifier l'ensemble des composants, 
+                  détecter les éventuels problèmes et éviter les pannes coûteuses.
+                </p>
+                <p>
+                  <strong>Au programme :</strong> vérification des niveaux de réfrigérant, test des connexions électriques, inspection des ventilateurs et des conduits.
+                </p>
+                <p>
+                  Faire appel à un professionnel garantit une maintenance optimale et prolonge considérablement la durée de vie de votre climatiseur.
+                </p>
+              </div>
+            </section>
+
+            {/* Section 5 */}
+            <section className="mb-12">
+              <h2 className="text-3xl font-display font-bold text-blue mb-6">
+                5. Évitez de sursolliciter votre climatiseur
+              </h2>
+              <div className="space-y-4 text-gray-700 leading-relaxed">
+                <p>
+                  Une utilisation excessive ou inadaptée peut accélérer l'usure de votre climatiseur.
                 </p>
                 <ul className="list-disc list-inside space-y-2 ml-4">
-                  <li>[Plante 1 et ses caractéristiques]</li>
-                  <li>[Plante 2 et ses caractéristiques]</li>
-                  <li>[Plante 3 et ses caractéristiques]</li>
+                  <li>Réglez la température à un niveau raisonnable (entre 20-24°C)</li>
+                  <li>Utilisez des ventilateurs pour répartir l'air frais dans la pièce</li>
+                  <li>Fermez les fenêtres et les portes pour éviter les pertes de fraîcheur</li>
                 </ul>
               </div>
             </section>
 
-            {/* Section 2 - À compléter manuellement */}
+            {/* Section 6 */}
             <section className="mb-12">
               <h2 className="text-3xl font-display font-bold text-blue mb-6">
-                2. Gestion de l'arrosage en climat tropical
+                6. Isolez correctement votre logement
               </h2>
               <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p>
-                  [Contenu à ajouter : Fréquence d'arrosage selon les saisons, techniques d'irrigation, 
-                  économie d'eau, meilleurs moments de la journée pour arroser, etc.]
+                  Un bon système d'isolation réduit la charge de travail de votre climatiseur, prolongeant ainsi sa durée de vie.
+                </p>
+                <p>
+                  Ajoutez des rideaux ou stores pour limiter la chaleur entrante et isolez vos fenêtres avec des joints ou des films réfléchissants.
                 </p>
               </div>
             </section>
 
-            {/* Section 3 - À compléter manuellement */}
+            {/* Section 7 */}
             <section className="mb-12">
               <h2 className="text-3xl font-display font-bold text-blue mb-6">
-                3. Protection contre les parasites et maladies
+                7. Évitez les démarrages et arrêts fréquents
               </h2>
               <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p>
-                  [Contenu à ajouter : Parasites courants au Sénégal, solutions naturelles et écologiques, 
-                  prévention des maladies des plantes, etc.]
+                  Démarrer et arrêter votre climatiseur à répétition sollicite fortement le compresseur, ce qui peut réduire sa durée de vie.
                 </p>
-              </div>
-            </section>
-
-            {/* Section 4 - À compléter manuellement */}
-            <section className="mb-12">
-              <h2 className="text-3xl font-display font-bold text-blue mb-6">
-                4. Entretien selon les saisons
-              </h2>
-              <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p>
-                  [Contenu à ajouter : Calendrier d'entretien, travaux spécifiques à la saison sèche 
-                  et à la saison des pluies, taille, fertilisation, etc.]
-                </p>
-              </div>
-            </section>
-
-            {/* Section 5 - À compléter manuellement */}
-            <section className="mb-12">
-              <h2 className="text-3xl font-display font-bold text-blue mb-6">
-                5. Créer des zones d'ombre et de fraîcheur
-              </h2>
-              <div className="space-y-4 text-gray-700 leading-relaxed">
-                <p>
-                  [Contenu à ajouter : Aménagement d'espaces ombragés, choix d'arbres pour l'ombre, 
-                  création de pergolas, etc.]
+                  Si vous quittez la pièce pour une courte période, laissez le climatiseur allumé plutôt que de l'éteindre et le rallumer.
                 </p>
               </div>
             </section>
@@ -159,17 +204,18 @@ export default function EntretienJardinClimatTropical() {
             {/* Conclusion */}
             <div className="bg-cream rounded-xl p-8 mt-12">
               <h3 className="text-2xl font-display font-bold text-blue mb-4">
-                Confiez votre jardin à des experts
+                Pourquoi entretenir votre climatiseur avec Kaza ?
               </h3>
               <p className="text-gray-700 mb-6">
-                Nos jardiniers professionnels connaissent parfaitement le climat sénégalais et les 
-                techniques adaptées. Ils transformeront votre espace extérieur en un véritable havre de paix.
+                Chez Kaza, nous vous connectons avec des artisans qualifiés au Sénégal, experts en entretien de climatiseurs. 
+                Nos techniciens vous aident à prolonger la durée de vie de votre appareil, à améliorer son efficacité énergétique 
+                et à réduire vos factures. En suivant ces conseils, vous profiterez d'un climatiseur performant pendant de nombreuses années.
               </p>
               <Link
                 to="/"
                 className="inline-block bg-primary text-white px-8 py-3 rounded-full font-semibold hover:bg-primary-dark transition-colors"
               >
-                Réserver un service de jardinage
+                Demander un entretien de climatisation
               </Link>
             </div>
           </div>

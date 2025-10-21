@@ -1,28 +1,34 @@
 import { Link } from 'react-router-dom'
-import { placeholders } from '../lib/placeholder'
 
 export default function BlogCards() {
   const articles = [
     {
-      id: 'conseils-nettoyage-saison-pluies',
-      title: 'Conseils de nettoyage pour la saison des pluies',
-      category: 'Nettoyage',
-      image: placeholders.blog.rainySeasonCleaning,
-      description: 'Gardez votre maison fraîche et propre pendant la saison des pluies à Dakar.'
+      id: 'prix-travaux-peinture',
+      title: 'Peinture : les 6 facteurs qui font varier le prix des travaux',
+      category: 'Design & Décoration',
+      image: '/blog/travaux_peinture.webp',
+      description: 'Comprendre ce qui influence le prix d\'un artisan peintre pour mieux anticiper vos travaux.'
     },
     {
       id: 'entretien-jardin-climat-tropical',
-      title: 'Entretien du jardin en climat tropical',
-      category: 'Jardinage',
-      image: placeholders.blog.tropicalGarden,
-      description: 'Les meilleures pratiques pour un jardin luxuriant toute l\'année.'
+      title: '7 astuces incontournables pour prolonger la durée de vie de votre climatiseur',
+      category: 'Climatisation',
+      image: '/blog/prolonger_climatiseur.webp',
+      description: 'Maximisez la durée de vie de votre climatiseur avec ces conseils d\'entretien essentiels.'
+    },
+    {
+      id: 'conseils-nettoyage-saison-pluies',
+      title: 'Comment entretenir son logement après la saison des pluies ?',
+      category: 'Maintenance',
+      image: '/blog/entretenir_logement.webp',
+      description: 'Protégez votre maison des dégâts de la saison des pluies avec ces conseils pratiques.'
     },
     {
       id: 'securite-domicile-guide-complet',
-      title: 'Sécurité à domicile : Guide complet',
-      category: 'Sécurité',
-      image: placeholders.blog.homeSecurity,
-      description: 'Protégez votre maison et votre famille avec ces conseils essentiels.'
+      title: 'Plombs qui sautent : causes, solutions et quand faire appel à un électricien',
+      category: 'Électricité',
+      image: '/blog/plombs_sautent.webp',
+      description: 'Identifiez pourquoi vos plombs sautent et découvrez les solutions adaptées.'
     },
   ]
 

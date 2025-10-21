@@ -1,36 +1,44 @@
 import { Link } from 'react-router-dom'
 import { Calendar, ArrowRight } from 'lucide-react'
 import SEO from '../components/SEO'
-import { placeholders } from '../lib/placeholder'
 
 export default function Blog() {
   const articles = [
     {
+      id: 'prix-travaux-peinture',
+      title: 'Peinture : les 6 facteurs qui font varier le prix des travaux',
+      category: 'Design & Décoration',
+      image: '/blog/travaux_peinture.webp',
+      description: 'Refaire la peinture d\'un logement peut sembler simple, mais plusieurs éléments influencent le prix d\'un artisan peintre. Comprendre ce qui fait varier les tarifs.',
+      date: '22 Janvier 2025',
+      readTime: '8 min'
+    },
+    {
       id: 'conseils-nettoyage-saison-pluies',
-      title: 'Conseils de nettoyage pour la saison des pluies',
-      category: 'Nettoyage',
-      image: placeholders.blog.rainySeasonCleaning,
-      description: 'La saison des pluies à Dakar apporte son lot de défis pour l\'entretien de votre maison. Découvrez nos meilleurs conseils pour garder votre intérieur frais et propre.',
-      date: '15 Octobre 2024',
-      readTime: '5 min'
+      title: 'Comment entretenir son logement après la saison des pluies ?',
+      category: 'Maintenance',
+      image: '/blog/entretenir_logement.webp',
+      description: 'La saison des pluies au Sénégal peut laisser des traces sur votre maison. Découvrez les actions à entreprendre pour protéger votre logement.',
+      date: '20 Janvier 2025',
+      readTime: '6 min'
     },
     {
       id: 'entretien-jardin-climat-tropical',
-      title: 'Entretien du jardin en climat tropical',
-      category: 'Jardinage',
-      image: placeholders.blog.tropicalGarden,
-      description: 'Le climat sénégalais offre des conditions uniques pour le jardinage. Apprenez les meilleures pratiques pour un jardin luxuriant toute l\'année à Dakar.',
-      date: '10 Octobre 2024',
-      readTime: '7 min'
+      title: '7 astuces incontournables pour prolonger la durée de vie de votre climatiseur',
+      category: 'Climatisation',
+      image: '/blog/prolonger_climatiseur.webp',
+      description: 'Un climatiseur bien entretenu peut fonctionner efficacement pendant de nombreuses années. Découvrez les meilleures pratiques à adopter.',
+      date: '18 Janvier 2025',
+      readTime: '8 min'
     },
     {
       id: 'securite-domicile-guide-complet',
-      title: 'Sécurité à domicile : Guide complet',
-      category: 'Sécurité',
-      image: placeholders.blog.homeSecurity,
-      description: 'Protégez votre maison et votre famille avec nos conseils essentiels de sécurité adaptés au contexte sénégalais. Un guide pratique et complet.',
-      date: '5 Octobre 2024',
-      readTime: '6 min'
+      title: 'Plombs qui sautent : causes, solutions et quand faire appel à un électricien',
+      category: 'Électricité',
+      image: '/blog/plombs_sautent.webp',
+      description: 'Un disjoncteur qui saute sans raison apparente peut être source de frustration. Identifiez l\'origine du problème et découvrez les solutions.',
+      date: '15 Janvier 2025',
+      readTime: '7 min'
     }
   ]
 

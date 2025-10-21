@@ -6,11 +6,11 @@ export default function ConseilsNettoyageSaisonPluies() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "headline": "Conseils de nettoyage pour la saison des pluies à Dakar",
-    "description": "La saison des pluies à Dakar apporte son lot de défis pour l'entretien de votre maison. Découvrez nos meilleurs conseils pour garder votre intérieur frais et propre pendant la saison humide au Sénégal.",
+    "headline": "Comment entretenir son logement après la saison des pluies ?",
+    "description": "La saison des pluies au Sénégal peut laisser des traces sur votre maison : humidité excessive, moisissures, infiltrations d'eau, peinture abîmée… Un bon entretien après cette période est essentiel pour préserver votre logement.",
     "image": "https://aveckaza.com/logo_kaza.png",
-    "datePublished": "2024-10-15",
-    "dateModified": "2024-10-15",
+    "datePublished": "2025-01-20",
+    "dateModified": "2025-01-20",
     "author": {
       "@type": "Organization",
       "name": "Kaza Sénégal"
@@ -32,9 +32,9 @@ export default function ConseilsNettoyageSaisonPluies() {
   return (
     <div className="min-h-screen bg-cream">
       <SEO
-        title="Conseils Nettoyage Saison des Pluies Dakar"
-        description="Découvrez les meilleurs conseils pour entretenir votre maison pendant la saison des pluies à Dakar. Astuces anti-humidité, nettoyage efficace et prévention des moisissures au Sénégal."
-        keywords="nettoyage saison pluies Dakar, entretien maison humidité Sénégal, anti-moisissure Dakar, conseils ménage saison pluies, maison propre hivernage"
+        title="Comment entretenir son logement après la saison des pluies - Kaza"
+        description="La saison des pluies au Sénégal peut laisser des traces sur votre maison. Découvrez comment entretenir votre logement après cette période pour préserver votre maison."
+        keywords="entretien maison saison pluies, maintenance logement Sénégal, après pluies Dakar, réparation infiltrations, traitement humidité"
         canonical="/blog/conseils-nettoyage-saison-pluies"
         ogType="article"
         structuredData={structuredData}
@@ -57,17 +57,17 @@ export default function ConseilsNettoyageSaisonPluies() {
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-6">
-            Conseils de nettoyage pour la saison des pluies
+            Comment entretenir son logement après la saison des pluies ?
           </h1>
 
           <div className="flex items-center gap-6 text-white/90">
             <span className="flex items-center gap-2">
               <Calendar className="w-5 h-5" />
-              15 Octobre 2024
+              20 Janvier 2025
             </span>
             <span className="flex items-center gap-2">
               <Clock className="w-5 h-5" />
-              5 min de lecture
+              6 min de lecture
             </span>
           </div>
         </div>
@@ -80,65 +80,110 @@ export default function ConseilsNettoyageSaisonPluies() {
             {/* Introduction */}
             <div className="prose prose-lg max-w-none mb-12">
               <p className="text-xl text-gray-700 leading-relaxed">
-                La saison des pluies à Dakar, qui s'étend généralement de juin à octobre, apporte son lot de défis 
-                pour l'entretien de votre maison. L'humidité, les infiltrations d'eau et la boue peuvent rapidement 
-                transformer votre intérieur en cauchemar si vous n'êtes pas bien préparé.
+                La saison des pluies au Sénégal peut laisser des traces sur votre maison : humidité excessive, moisissures, 
+                infiltrations d'eau, peinture abîmée… Un bon entretien après cette période est essentiel pour préserver 
+                votre logement et éviter des réparations coûteuses. Découvrez les actions à entreprendre pour protéger 
+                votre maison et améliorer sa longévité.
               </p>
             </div>
 
-            {/* Section 1 - À compléter manuellement */}
+            {/* Section 1 */}
             <section className="mb-12">
               <h2 className="text-3xl font-display font-bold text-blue mb-6">
-                1. Préparez votre maison avant la saison des pluies
+                1. Inspecter et réparer le toit
               </h2>
               <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p>
-                  [Contenu à ajouter : Conseils sur la préparation de la maison, vérification des gouttières, 
-                  inspection des toits, etc.]
+                  La toiture est l'une des parties les plus exposées aux intempéries. Après la saison des pluies :
                 </p>
                 <ul className="list-disc list-inside space-y-2 ml-4">
-                  <li>[Point 1 à développer]</li>
-                  <li>[Point 2 à développer]</li>
-                  <li>[Point 3 à développer]</li>
+                  <li>Vérifiez l'état des tuiles ou du carrelage, notamment les joints : remplacez ce qui est fissuré ou déplacé.</li>
+                  <li>Assurez-vous qu'aucune infiltration d'eau n'a eu lieu.</li>
+                  <li>Nettoyez les évacuations pour éviter qu'elles ne s'encrassent avec des feuilles et des débris.</li>
                 </ul>
-              </div>
-            </section>
-
-            {/* Section 2 - À compléter manuellement */}
-            <section className="mb-12">
-              <h2 className="text-3xl font-display font-bold text-blue mb-6">
-                2. Gérez l'humidité à l'intérieur
-              </h2>
-              <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p>
-                  [Contenu à ajouter : Solutions pour gérer l'humidité, utilisation de déshumidificateurs, 
-                  aération, prévention des moisissures, etc.]
+                  Une toiture bien entretenue protège efficacement contre les prochaines pluies et prolonge la durée de vie de votre logement.
                 </p>
               </div>
             </section>
 
-            {/* Section 3 - À compléter manuellement */}
+            {/* Section 2 */}
             <section className="mb-12">
               <h2 className="text-3xl font-display font-bold text-blue mb-6">
-                3. Nettoyage des sols et surfaces
+                2. Vérifier les murs et refaire la peinture si nécessaire
               </h2>
               <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p>
-                  [Contenu à ajouter : Techniques de nettoyage adaptées à la saison des pluies, 
-                  produits recommandés, fréquence de nettoyage, etc.]
+                  L'humidité et les intempéries peuvent causer des dommages visibles sur les murs : tâches d'humidité, 
+                  fissures, peinture écaillée… Pour y remédier :
+                </p>
+                <ul className="list-disc list-inside space-y-2 ml-4">
+                  <li>Identifiez les fissures et appliquez un enduit pour éviter les infiltrations d'eau.</li>
+                  <li>Traitez les zones affectées par la moisissure avec un mélange d'eau de javel et d'eau pour éviter leur propagation.</li>
+                  <li>Si la peinture extérieure s'est détériorée, optez pour une peinture anti-humidité ou hydrofuge, spécialement conçue pour résister aux conditions climatiques du Sénégal.</li>
+                </ul>
+                <p>
+                  Une nouvelle couche de peinture ne se contente pas d'améliorer l'esthétique de votre maison, elle joue aussi un rôle protecteur contre l'usure et les éléments.
                 </p>
               </div>
             </section>
 
-            {/* Section 4 - À compléter manuellement */}
+            {/* Section 3 */}
             <section className="mb-12">
               <h2 className="text-3xl font-display font-bold text-blue mb-6">
-                4. Protection des textiles et meubles
+                3. Assainir et ventiler l'intérieur
               </h2>
               <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p>
-                  [Contenu à ajouter : Conseils pour protéger les tapis, rideaux, canapés et autres 
-                  textiles de l'humidité et des moisissures.]
+                  L'humidité peut persister à l'intérieur de la maison, favorisant l'apparition de moisissures et de mauvaises odeurs. Pour y remédier :
+                </p>
+                <ul className="list-disc list-inside space-y-2 ml-4">
+                  <li>Aérez toutes les pièces en ouvrant portes et fenêtres.</li>
+                  <li>Utilisez un déshumidificateur ou du charbon actif pour absorber l'excès d'humidité.</li>
+                  <li>Nettoyez les textiles (rideaux, tapis, matelas) qui peuvent avoir absorbé l'humidité ambiante.</li>
+                </ul>
+                <p>
+                  Un intérieur sain et bien ventilé réduit les risques de maladies respiratoires et améliore votre confort au quotidien.
+                </p>
+              </div>
+            </section>
+
+            {/* Section 4 */}
+            <section className="mb-12">
+              <h2 className="text-3xl font-display font-bold text-blue mb-6">
+                4. Vérifier les installations électriques et la plomberie
+              </h2>
+              <div className="space-y-4 text-gray-700 leading-relaxed">
+                <p>
+                  Les infiltrations d'eau peuvent endommager les circuits électriques et provoquer des courts-circuits. 
+                  De même, la plomberie peut être affectée par l'accumulation de débris et de boue.
+                </p>
+                <ul className="list-disc list-inside space-y-2 ml-4">
+                  <li>Faites appel à un électricien pour inspecter votre installation, surtout si vous avez constaté des anomalies (prises qui crépitent, ampoules qui grillent rapidement).</li>
+                  <li>Vérifiez l'état des canalisations et des évacuations d'eau pour éviter les obstructions et les fuites.</li>
+                </ul>
+                <p>
+                  Ces contrôles garantissent la sécurité de votre maison et vous évitent des dépenses imprévues.
+                </p>
+              </div>
+            </section>
+
+            {/* Section 5 */}
+            <section className="mb-12">
+              <h2 className="text-3xl font-display font-bold text-blue mb-6">
+                5. Entretenir le jardin et les extérieurs
+              </h2>
+              <div className="space-y-4 text-gray-700 leading-relaxed">
+                <p>
+                  Après les fortes pluies, votre jardin peut être envahi par des herbes folles et des eaux stagnantes, favorisant la prolifération des moustiques.
+                </p>
+                <ul className="list-disc list-inside space-y-2 ml-4">
+                  <li>Taillez les arbres et arbustes pour éviter qu'ils n'endommagent votre maison.</li>
+                  <li>Éliminez les eaux stagnantes pour prévenir les maladies comme le paludisme.</li>
+                  <li>Enrichissez le sol avec du compost pour revitaliser votre pelouse et vos plantes.</li>
+                </ul>
+                <p>
+                  Un jardin bien entretenu embellit votre maison et limite les nuisibles.
                 </p>
               </div>
             </section>
@@ -146,18 +191,18 @@ export default function ConseilsNettoyageSaisonPluies() {
             {/* Conclusion */}
             <div className="bg-cream rounded-xl p-8 mt-12">
               <h3 className="text-2xl font-display font-bold text-blue mb-4">
-                Besoin d'aide professionnelle ?
+                Faire appel à des professionnels pour un entretien complet
               </h3>
               <p className="text-gray-700 mb-6">
-                Les équipes Kaza sont formées pour gérer tous les défis de la saison des pluies. 
-                Nos professionnels utilisent des produits adaptés au climat sénégalais et des techniques 
-                éprouvées pour garder votre maison impeccable.
+                Si vous manquez de temps ou souhaitez un travail de qualité, faites appel à des experts en entretien et rénovation. 
+                Sur Kaza, nous vous mettons en relation avec des artisans qualifiés : peintres, électriciens, plombiers, menuisiers… 
+                pour tous vos travaux de maintenance après la saison des pluies.
               </p>
               <Link
                 to="/"
                 className="inline-block bg-primary text-white px-8 py-3 rounded-full font-semibold hover:bg-primary-dark transition-colors"
               >
-                Réserver un service de nettoyage
+                Demander un devis personnalisé
               </Link>
             </div>
           </div>
