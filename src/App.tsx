@@ -3,6 +3,7 @@ import Services from './components/Services'
 import Features from './components/Features'
 import HowItWorks from './components/HowItWorks'
 import FindHelp from './components/FindHelp'
+import Artisans from './components/Artisans'
 import Testimonials from './components/Testimonials'
 import FAQSection from './components/FAQ'
 import WorkWithUs from './components/WorkWithUs'
@@ -67,6 +68,7 @@ function App() {
       <Features />
       <HowItWorks />
       <FindHelp />
+      <Artisans />
       <Testimonials />
       <FAQSection />
       <WorkWithUs />
