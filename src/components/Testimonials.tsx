@@ -14,14 +14,14 @@ export default function Testimonials() {
       role: 'Local Guide',
       image: '/picture_testimonials/02.png',
       rating: 5,
-      text: 'I used this service for a plumber and everything went very smoothly. The work was completed quickly, without any complications, and the customer service is excellent.',
+      text: 'J\'ai fait appel à ce service pour un plombier et tout s\'est très bien déroulé. Le travail a été effectué rapidement, sans aucune complication, et le service client est excellent.',
     },
     {
       name: 'Leconte Sloane',
       role: 'Client',
       image: '/picture_testimonials/03.png',
       rating: 5,
-      text: 'Top experience! The timing of the intervention was respected. The technician was very professional, fast and very efficient. I recommend!',
+      text: 'Expérience au top ! Le timing de l\'intervention a été respecté. Le technicien a été très professionnel, rapide et très efficace . Je recommande !',
     },
   ]
 
