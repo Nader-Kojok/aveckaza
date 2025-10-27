@@ -20,74 +20,206 @@ export default function Services() {
     {
       icon: '/services_icons/icons8-plumbing-128.png',
       title: 'Plomberie',
-      description: 'Installation et réparation de plomberie. Fuites, robinetterie, canalisations, nos plombiers interviennent rapidement.',
-      features: ['Réparation fuites', 'Installation sanitaires', 'Débouchage', 'Dépannage urgence']
-    },
-    {
-      icon: '/services_icons/icons8-fridge-128.png',
-      title: 'Électroménager',
-      description: 'Réparation et entretien d\'électroménager. Machines à laver, réfrigérateurs, climatiseurs et plus encore.',
-      features: ['Réparation tous appareils', 'Entretien préventif', 'Pièces détachées', 'Garantie travaux']
-    },
-    {
-      icon: '/services_icons/icons8-drill-128.png',
-      title: 'Petits travaux',
-      description: 'Tous petits travaux de bricolage et réparation. Installation, montage, fixation par des professionnels qualifiés.',
-      features: ['Montage meubles', 'Fixations murales', 'Réparations diverses', 'Installation équipements']
+      description: 'Installation, réparation et recherche de fuites.',
+      features: [
+        'Réparation de fuites (robinet, évier, WC, ballon)',
+        'Débouchage évacuations / canalisations',
+        'Remplacement robinetterie, flexibles, siphons',
+        'Pose sanitaires (lavabo, WC, douche, chauffe-eau)',
+        'Diagnostic pression / étanchéité + devis avant travaux'
+      ]
     },
     {
       icon: '/services_icons/icons8-light-on-128.png',
       title: 'Électricité',
-      description: 'Installation électrique et dépannage. Tableaux électriques, prises, éclairage par des électriciens certifiés.',
-      features: ['Installation complète', 'Dépannage rapide', 'Mise aux normes', 'Éclairage LED']
+      description: 'Installation et dépannage sécurisés (normes et mise à la terre).',
+      features: [
+        'Dépannage pannes / court-circuits',
+        'Pose et remplacement de prises, interrupteurs, disjoncteurs',
+        'Tableaux électriques : ajout/rénovation, différentiels',
+        'Éclairage intérieur/extérieur (LED, détecteurs)',
+        'Mise aux normes et certificats de conformité de base'
+      ]
     },
     {
       icon: '/services_icons/icons8-air-conditioner-128.png',
       title: 'Climatisation',
-      description: 'Installation, entretien et réparation de climatisation. Climatiseurs split, centralisés, maintenance régulière.',
-      features: ['Installation clim', 'Entretien annuel', 'Recharge gaz', 'Dépannage 24/7']
+      description: 'Pose, entretien et réparation de climatiseurs.',
+      features: [
+        'Installation split (mono/multi) avec mise en service',
+        'Entretien annuel (nettoyage, filtre, contrôle)',
+        'Recharge gaz, fuites sur circuit frigorifique',
+        'Dépannage carte, compresseur, ventilateurs',
+        'Recommandations d\'usage et d\'économie d\'énergie'
+      ]
+    },
+    {
+      icon: '/services_icons/icons8-fridge-128.png',
+      title: 'Réparation électroménager',
+      description: 'Interventions sur appareils domestiques.',
+      features: [
+        'Lave-linge, sèche-linge, lave-vaisselle',
+        'Réfrigérateurs, congélateurs, frigos vitrine',
+        'Fours, plaques, micro-ondes, hottes',
+        'Climatiseurs mobiles, chauffe-eau électriques',
+        'Diagnostic, devis et remplacement de pièces'
+      ]
     },
     {
       icon: '/services_icons/icons8-key-security-128.png',
-      title: 'Serrurier',
-      description: 'Services de serrurerie professionnelle. Ouverture de porte, changement de serrure, blindage et sécurisation.',
-      features: ['Ouverture porte', 'Changement serrure', 'Blindage porte', 'Dépannage urgence']
-    },
-    {
-      icon: '/services_icons/icons8-tree-128.png',
-      title: 'Jardinage',
-      description: 'Entretien de jardin et espaces verts. Taille, tonte, plantation et aménagement paysager par des professionnels.',
-      features: ['Tonte pelouse', 'Taille arbres', 'Plantation', 'Entretien régulier']
+      title: 'Serrurerie',
+      description: 'Ouverture et sécurisation sans dégâts inutiles.',
+      features: [
+        'Ouverture de porte (claquée, verrouillée)',
+        'Remplacement/renforcement de serrures et cylindres',
+        'Blindage, barres de sécurité, poignées renforcées',
+        'Pose de verrous additionnels et crémones',
+        'Conseils anti-intrusion'
+      ]
     },
     {
       icon: '/services_icons/icons8-paint-roller-128.png',
       title: 'Peinture',
-      description: 'Travaux de peinture intérieure et extérieure. Préparation des surfaces, peinture de qualité, finitions soignées.',
-      features: ['Peinture intérieure', 'Peinture extérieure', 'Préparation murs', 'Finitions décoratives']
+      description: 'Finitions propres et durables, intérieur/extérieur.',
+      features: [
+        'Préparation des supports (rebouchage, ponçage, sous-couche)',
+        'Peinture murs, plafonds, boiseries, ferronneries',
+        'Peinture façades et protections anti-humidité',
+        'Effets décoratifs simples (satin, mat, laque)',
+        'Protection chantier + nettoyage fin de travaux'
+      ]
+    },
+    {
+      icon: '/services_icons/icons8-trowel-128.png',
+      title: 'Carrelage',
+      description: 'Pose précise, alignements et joints soignés.',
+      features: [
+        'Pose sol et mur (céramique, grès, faïence)',
+        'Réparation de carreaux et reprises de joints',
+        'Étanchéité sous carrelage (zones humides)',
+        'Plinthes, nez de marche et finitions',
+        'Conseil de calepinage et choix matériaux'
+      ]
+    },
+    {
+      icon: '/services_icons/icons8-rounded-square-96 (1).png',
+      title: 'Plâtre & faux plafonds (murs lumineux)',
+      description: 'Cloisons, faux plafonds et éclairages intégrés.',
+      features: [
+        'Pose BA13, cloisons et doublages',
+        'Faux plafonds standards ou design',
+        'Intégration de bandes LED / "murs lumineux"',
+        'Bandes, enduits, lissage prêt à peindre',
+        'Correction d\'angles et alignements'
+      ]
+    },
+    {
+      icon: '/services_icons/icons8-brick-wall-128.png',
+      title: 'Maçonnerie',
+      description: 'Petits ouvrages et reprises structurelles courantes.',
+      features: [
+        'Murets, seuils, marches, dalles de petite surface',
+        'Reprises d\'enduits, fissures, éclats',
+        'Ouvertures/agrandissements (après validation technique)',
+        'Seuils et appuis de fenêtres, linteaux simples',
+        'Béton de propreté, chapes de rattrapage'
+      ]
+    },
+    {
+      icon: '/services_icons/icons8-roofing-96 (1).png',
+      title: 'Étanchéité',
+      description: 'Traitement des infiltrations et protections durables.',
+      features: [
+        'Diagnostic d\'infiltration (toiture, terrasse, murs)',
+        'Membranes, résines, relevés d\'étanchéité',
+        'Étanchéité de sanitaires / douches à l\'italienne',
+        'Reprises de joints et acrotères',
+        'Tests de mise en eau + rapport photo'
+      ]
+    },
+    {
+      icon: '/services_icons/icons8-pool-128.png',
+      title: 'Piscine',
+      description: 'Entretien, réparation et mise en service.',
+      features: [
+        'Nettoyage, équilibrage pH/Chlore',
+        'Dépannage pompe/filtre, fuites, colmatage',
+        'Changement sable/charge filtrante',
+        'Révision skimmers, buses, coffrets',
+        'Hivernage / remise en route saisonnière'
+      ]
+    },
+    {
+      icon: '/services_icons/icons8-recliner-128.png',
+      title: 'Menuiserie bois & meubles',
+      description: 'Conception, pose et réparation sur mesure.',
+      features: [
+        'Placards, dressings, bibliothèques',
+        'Portes, plinthes, parquets (pose/ponçage)',
+        'Réparation/ajustement de meubles',
+        'Plans de travail, niches, agencements',
+        'Finitions vernis/peintures, quincaillerie'
+      ]
+    },
+    {
+      icon: '/services_icons/icons8-welder-shield-96 (1).png',
+      title: 'Menuiserie métallique',
+      description: 'Ouvrages acier/alu pour sécuriser et aménager.',
+      features: [
+        'Portes, grilles, garde-corps, rampes',
+        'Châssis aluminium (fixe, coulissant)',
+        'Pergolas, abris légers, cadres',
+        'Réparation/soudure sur place (selon accès)',
+        'Antirouille et peinture de protection'
+      ]
+    },
+    {
+      icon: '/services_icons/icons8-drill-128.png',
+      title: 'Petits travaux (bricolage)',
+      description: 'Interventions rapides et installations courantes.',
+      features: [
+        'Fixations murales (TV, étagères, tringles)',
+        'Montage/démontage de meubles',
+        'Pose de tringles, miroirs, cadres',
+        'Joints silicone, petites reprises d\'enduit',
+        'Installation ou réparation de moustiquaires de fenêtres'
+      ]
+    },
+    {
+      icon: '/services_icons/icons8-vacuum-cleaner-128.png',
+      title: 'Nettoyage (canapés, tapis, matelas, fin de chantier…)',
+      description: 'Nettoyage professionnel avec équipements adaptés.',
+      features: [
+        'Détachage et shampoing canapés, fauteuils, matelas',
+        'Nettoyage tapis et moquettes en profondeur',
+        'Nettoyage fin de chantier (poussières, traces, vitres)',
+        'Détartrage salles d\'eau, cuisine, inox',
+        'Produits et méthodes adaptés aux matériaux'
+      ]
     },
     {
       icon: '/services_icons/icons8-bullet-camera-128.png',
       title: 'Sécurité',
-      description: 'Installation de systèmes de sécurité. Alarmes, caméras de surveillance, contrôle d\'accès pour votre tranquillité.',
-      features: ['Alarmes anti-intrusion', 'Vidéosurveillance', 'Contrôle accès', 'Télésurveillance']
+      description: 'Solutions de protection et de contrôle.',
+      features: [
+        'Alarmes anti-intrusion (basique)',
+        'Vidéosurveillance (caméras IP, enregistrement)',
+        'Interphones et contrôle d\'accès',
+        'Remise en service et maintenance',
+        'Conseils d\'implantation'
+      ]
     },
     {
-      icon: '/services_icons/icons8-vacuum-cleaner-128.png',
-      title: 'Ménage',
-      description: 'Services de ménage professionnel. Nettoyage complet, entretien régulier, prestations personnalisées.',
-      features: ['Ménage complet', 'Entretien régulier', 'Nettoyage profond', 'Prestations sur mesure']
-    },
-    {
-      icon: '/services_icons/icons8-recliner-128.png',
-      title: 'Meubles & menuiserie bois',
-      description: 'Fabrication et réparation de meubles sur mesure. Menuiserie bois, ébénisterie, aménagements personnalisés.',
-      features: ['Meubles sur mesure', 'Réparation meubles', 'Ébénisterie', 'Aménagement intérieur']
-    },
-    {
-      icon: '/services_icons/icons8-saw-128 (1).png',
-      title: 'Menuiserie',
-      description: 'Travaux de menuiserie et charpente. Portes, fenêtres, placards, aménagements sur mesure.',
-      features: ['Portes & fenêtres', 'Placards sur mesure', 'Charpente', 'Agencement intérieur']
+      icon: '/services_icons/icons8-tree-128.png',
+      title: 'Jardinage',
+      description: 'Entretien et remise en état d\'espaces verts.',
+      features: [
+        'Tonte, taille, désherbage',
+        'Taille arbustes/haies, élagage',
+        'Arrosage, paillage, petites plantations',
+        'Nettoyage terrasses/allées',
+        'Évacuation des déchets verts'
+      ]
     }
   ]
 

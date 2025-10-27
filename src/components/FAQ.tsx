@@ -20,7 +20,7 @@ export default function FAQ() {
     },
     {
       question: 'Comment fonctionne le paiement des prestations ?',
-      answer: 'Vous payez votre prestation à la fin de l\'intervention via un lien de paiement sécurisé qui vous sera envoyé.\n\nNous acceptons :\n• Paiements via mobile money (Wave, Orange Money)\n• Paiement par carte bancaire\n\nNous n\'acceptons pas les paiements en espèces.'
+      answer: 'Le paiement se fait directement auprès du technicien, à la fin de l\'intervention, par mobile money (Wave, Orange Money) ou en espèces selon votre préférence.\n\n💡 Le paiement du matériel (s\'il y en a) se fait avant l\'achat, et celui de la main-d\'œuvre à la fin de l\'intervention.'
     },
   ]
 

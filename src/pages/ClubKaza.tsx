@@ -1,4 +1,4 @@
-import { Gift, Users, Star, Award, TrendingUp, Sparkles, MessageCircle, Mail } from 'lucide-react'
+import { Gift, Users, Sparkles, MessageCircle, Mail } from 'lucide-react'
 import Seo from '../components/SEO'
 
 export default function ClubKaza() {
@@ -14,46 +14,13 @@ export default function ClubKaza() {
     "url": "https://aveckaza.com/club-kaza"
   }
 
-  const levels = [
-    {
-      name: 'Bronze',
-      points: '0 - 500',
-      color: 'from-orange-400 to-orange-600',
-      benefits: ['5% de réduction', 'Accès aux offres spéciales']
-    },
-    {
-      name: 'Argent',
-      points: '501 - 1500',
-      color: 'from-gray-300 to-gray-500',
-      benefits: ['10% de réduction', 'Priorité sur les réservations', 'Support prioritaire']
-    },
-    {
-      name: 'Or',
-      points: '1501 - 3000',
-      color: 'from-yellow-400 to-yellow-600',
-      benefits: ['15% de réduction', 'Service VIP', '1 service gratuit/mois', 'Accès anticipé aux nouveautés']
-    },
-    {
-      name: 'Platine',
-      points: '3000+',
-      color: 'from-purple-400 to-purple-600',
-      benefits: ['20% de réduction', 'Concierge dédié', '2 services gratuits/mois', 'Événements exclusifs']
-    }
-  ]
-
-  const howToEarnPoints = [
-    { icon: '🛒', title: 'Réservations', points: '10 points', description: 'Pour chaque 1000 FCFA dépensé' },
-    { icon: '👥', title: 'Parrainage', points: '500 points', description: 'Quand votre filleul fait sa 1ère réservation' },
-    { icon: '⭐', title: 'Avis', points: '50 points', description: 'Pour chaque avis laissé' },
-    { icon: '🎂', title: 'Anniversaire', points: '200 points', description: 'Cadeau d\'anniversaire' },
-  ]
 
   return (
     <div className="min-h-screen bg-white">
       <Seo
-        title="Club Kaza - Programme de Fidélité et Parrainage"
-        description="Rejoignez le Club Kaza et profitez de réductions, points de fidélité et bonus de parrainage. Programme de récompenses pour services à domicile Dakar."
-        keywords="Club Kaza, programme fidélité Dakar, parrainage services domicile, réductions Kaza, points fidélité"
+        title="Club Kaza - Programme de Parrainage et Récompenses"
+        description="Rejoignez le Club Kaza : parrainez vos proches et recevez 10% en bons d'achat, partagez votre expérience sur les réseaux sociaux et gagnez des récompenses. Communauté de clients satisfaits à Dakar."
+        keywords="Club Kaza, programme parrainage Dakar, récompenses services domicile, bons d'achat Kaza, parrainage Sénégal"
         canonical="/club-kaza"
         structuredData={structuredData}
       />
@@ -74,7 +41,7 @@ export default function ClubKaza() {
             Bienvenue au Club Kaza
           </h1>
           <p className="text-xl text-white/90 mb-8">
-            Gagnez des points à chaque réservation, parrainez vos proches et profitez d'avantages exclusifs !
+            Chez Kaza, nous croyons que le bouche-à-oreille et la confiance valent plus que n'importe quelle publicité. Le Club Kaza est notre façon de remercier nos clients les plus fidèles et ceux qui partagent leur expérience.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -98,31 +65,77 @@ export default function ClubKaza() {
         </div>
       </section>
 
-      {/* Avantages du parrainage */}
+      {/* Programme de parrainage */}
       <section className="px-4 sm:px-6 lg:px-8 py-16">
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-gradient-to-br from-cream to-white rounded-3xl p-8 shadow-lg border border-gray-200">
-            <div className="flex flex-col md:flex-row items-center gap-8">
-              <div className="flex-shrink-0">
-                <div className="bg-primary/10 w-20 h-20 rounded-2xl flex items-center justify-center">
-                  <Gift className="w-10 h-10 text-primary" />
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-display font-bold text-gray-900 mb-4">
+              1. Le programme de parrainage
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Recommandez Kaza à vos proches et gagnez ensemble !
+            </p>
+          </div>
+
+          <div className="bg-gradient-to-br from-cream to-white rounded-3xl p-8 md:p-12 shadow-lg border border-gray-200">
+            <div className="grid md:grid-cols-2 gap-8 mb-8">
+              <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-200">
+                <div className="bg-primary/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-4">
+                  <Users className="w-8 h-8 text-primary" />
                 </div>
+                <h3 className="text-xl font-display font-bold text-gray-900 mb-3">
+                  Comment ça marche ?
+                </h3>
+                <ul className="space-y-3 text-gray-600">
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary font-bold">•</span>
+                    <span>Invitez vos amis, voisins ou collègues à découvrir Kaza</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary font-bold">•</span>
+                    <span>Lorsqu'ils effectuent leur première commande, vous recevez <strong className="text-primary">10% du montant</strong> en bon d'achat Kaza</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary font-bold">•</span>
+                    <span>Eux aussi reçoivent <strong className="text-primary">10% du montant</strong> en bon d'achat</span>
+                  </li>
+                </ul>
               </div>
-              
-              <div className="flex-1">
-                <h2 className="text-2xl font-display font-bold text-gray-900 mb-4">
-                  Programme de parrainage
-                </h2>
-                <p className="text-gray-600 mb-4">
-                  Partagez Kaza avec vos amis et votre famille. Vous recevez <strong className="text-primary">500 points</strong> quand ils font leur première réservation, et ils reçoivent <strong className="text-primary">10% de réduction</strong> !
-                </p>
-                <div className="flex flex-wrap gap-3">
-                  <div className="bg-primary/5 px-4 py-2 rounded-full">
-                    <span className="text-primary font-semibold">👤 Vous : +500 points</span>
-                  </div>
-                  <div className="bg-secondary/10 px-4 py-2 rounded-full">
-                    <span className="text-secondary font-semibold">👥 Votre ami : -10%</span>
-                  </div>
+
+              <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-200">
+                <div className="bg-secondary/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-4">
+                  <Gift className="w-8 h-8 text-secondary" />
+                </div>
+                <h3 className="text-xl font-display font-bold text-gray-900 mb-3">
+                  Vos avantages
+                </h3>
+                <ul className="space-y-3 text-gray-600">
+                  <li className="flex items-start gap-2">
+                    <span className="text-secondary font-bold">•</span>
+                    <span><strong>Pas de limite</strong> de parrainage : plus vous partagez Kaza, plus vous cumulez de récompenses</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-secondary font-bold">•</span>
+                    <span>Votre code de parrainage est disponible dans votre espace client</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-secondary font-bold">•</span>
+                    <span>Ou sur simple demande auprès de notre service client</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-r from-primary to-blue text-white rounded-2xl p-6 text-center">
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-lg font-semibold">
+                <div className="flex items-center gap-2">
+                  <span className="text-3xl">👤</span>
+                  <span>Vous : 10% en bon d'achat</span>
+                </div>
+                <span className="hidden sm:inline text-2xl">+</span>
+                <div className="flex items-center gap-2">
+                  <span className="text-3xl">👥</span>
+                  <span>Votre filleul : 10% en bon d'achat</span>
                 </div>
               </div>
             </div>
@@ -130,128 +143,106 @@ export default function ClubKaza() {
         </div>
       </section>
 
-      {/* Comment gagner des points */}
+      {/* Programme de récompenses */}
       <section className="px-4 sm:px-6 lg:px-8 py-16 bg-cream">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-display font-bold text-gray-900 mb-4">
-              Comment gagner des points ?
+              2. Le programme de récompenses
             </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Accumulez des points à chaque interaction avec Kaza et débloquez des récompenses exclusives
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Partagez votre expérience et soyez récompensé !
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {howToEarnPoints.map((item) => (
-              <div key={item.title} className="bg-white rounded-2xl p-6 shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
-                <div className="text-5xl mb-4">{item.icon}</div>
-                <h3 className="text-xl font-display font-bold text-gray-900 mb-2">
-                  {item.title}
-                </h3>
-                <div className="text-2xl font-bold text-primary mb-2">
-                  {item.points}
+          <div className="bg-white rounded-3xl p-8 md:p-12 shadow-lg border border-gray-200">
+            <div className="grid md:grid-cols-3 gap-8 mb-8">
+              <div className="text-center">
+                <div className="bg-gradient-to-br from-pink-400 to-pink-600 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span className="text-4xl">📸</span>
                 </div>
-                <p className="text-gray-600 text-sm">
-                  {item.description}
+                <h3 className="text-xl font-display font-bold text-gray-900 mb-2">
+                  Étape 1
+                </h3>
+                <p className="text-gray-600">
+                  Après une intervention, publiez une photo ou une courte vidéo du résultat en story
                 </p>
               </div>
-            ))}
+
+              <div className="text-center">
+                <div className="bg-gradient-to-br from-purple-400 to-purple-600 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span className="text-4xl">@</span>
+                </div>
+                <h3 className="text-xl font-display font-bold text-gray-900 mb-2">
+                  Étape 2
+                </h3>
+                <p className="text-gray-600">
+                  Identifiez <strong className="text-primary">@kaza.sn</strong> dans votre publication sur Instagram ou Facebook
+                </p>
+              </div>
+
+              <div className="text-center">
+                <div className="bg-gradient-to-br from-yellow-400 to-yellow-600 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <Gift className="w-10 h-10 text-white" />
+                </div>
+                <h3 className="text-xl font-display font-bold text-gray-900 mb-2">
+                  Étape 3
+                </h3>
+                <p className="text-gray-600">
+                  Recevez un bon d'achat Kaza à utiliser ou à offrir
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-2xl p-6 text-center">
+              <p className="text-lg text-gray-700 mb-2">
+                🎁 <strong>Toutes les publications</strong> reçoivent un bon d'achat Kaza
+              </p>
+              <p className="text-gray-600">
+                Plus la publication est inspirante, plus le bon d'achat est important !
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Niveaux de fidélité */}
+      {/* Rejoignez le Club Kaza */}
       <section className="px-4 sm:px-6 lg:px-8 py-16">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-display font-bold text-gray-900 mb-4">
-              Niveaux de fidélité
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-gradient-to-br from-primary to-blue text-white rounded-3xl p-8 md:p-12 shadow-xl text-center">
+            <div className="inline-flex items-center justify-center w-20 h-20 bg-white/20 backdrop-blur-sm rounded-full mb-6">
+              <Users className="w-10 h-10" />
+            </div>
+            
+            <h2 className="text-3xl font-display font-bold mb-4">
+              Rejoignez le Club Kaza
             </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Plus vous utilisez Kaza, plus vous débloquez d'avantages exclusifs
+            
+            <p className="text-xl text-white/90 mb-6">
+              Le Club Kaza, c'est plus qu'un programme de fidélité : c'est une communauté de clients satisfaits, fiers de soutenir un service local, fiable et professionnel.
             </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {levels.map((level) => (
-              <div key={level.name} className="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-200 hover:scale-105 transition-transform">
-                <div className={`bg-gradient-to-br ${level.color} p-6 text-white`}>
-                  <Award className="w-12 h-12 mb-3" />
-                  <h3 className="text-2xl font-display font-bold mb-2">
-                    {level.name}
-                  </h3>
-                  <p className="text-white/90 text-sm">
-                    {level.points} points
-                  </p>
-                </div>
-                <div className="p-6">
-                  <ul className="space-y-3">
-                    {level.benefits.map((benefit) => (
-                      <li key={benefit} className="flex items-start gap-2 text-sm text-gray-700">
-                        <Star className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
-                        <span>{benefit}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Statistiques */}
-      <section className="px-4 sm:px-6 lg:px-8 py-16 bg-blue text-white">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            <div>
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-2xl mb-4">
-                <Users className="w-8 h-8" />
-              </div>
-              <div className="text-4xl font-display font-bold mb-2">5000+</div>
-              <div className="text-white/80">Membres actifs</div>
+            
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 mb-8">
+              <p className="text-lg font-semibold">
+                Participez, partagez, inspirez… et profitez d'avantages exclusifs !
+              </p>
             </div>
-            <div>
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-2xl mb-4">
-                <TrendingUp className="w-8 h-8" />
-              </div>
-              <div className="text-4xl font-display font-bold mb-2">2M+</div>
-              <div className="text-white/80">Points distribués</div>
-            </div>
-            <div>
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-2xl mb-4">
-                <Gift className="w-8 h-8" />
-              </div>
-              <div className="text-4xl font-display font-bold mb-2">10000+</div>
-              <div className="text-white/80">Récompenses offertes</div>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="https://wa.me/221787891010?text=Bonjour%2C%20je%20souhaite%20rejoindre%20le%20Club%20Kaza"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 bg-white text-primary px-8 py-4 rounded-full text-lg font-semibold transition-all hover:scale-105 shadow-lg"
+              >
+                <MessageCircle className="w-5 h-5" />
+                Rejoindre maintenant
+              </a>
             </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Final */}
-      <section className="px-4 sm:px-6 lg:px-8 py-16">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-display font-bold text-gray-900 mb-6">
-            Prêt à rejoindre le Club Kaza ?
-          </h2>
-          <p className="text-gray-600 text-lg mb-8">
-            Contactez-nous dès maintenant pour obtenir votre carte de membre et commencer à accumuler des points !
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://wa.me/221787891010?text=Bonjour%2C%20je%20souhaite%20rejoindre%20le%20Club%20Kaza"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-full text-lg font-semibold transition-all hover:scale-105 shadow-lg"
-            >
-              <MessageCircle className="w-5 h-5" />
-              Rejoindre maintenant
-            </a>
-          </div>
-        </div>
-      </section>
     </div>
   )
 }

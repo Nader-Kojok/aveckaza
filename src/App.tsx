@@ -1,7 +1,6 @@
 import Hero from './components/Hero'
 import Services from './components/Services'
 import Features from './components/Features'
-import HowItWorks from './components/HowItWorks'
 // import FindHelp from './components/FindHelp'
 import Artisans from './components/Artisans'
 import Testimonials from './components/Testimonials'
@@ -67,7 +66,6 @@ function App() {
       <Services />
       <Artisans />
       <Features />
-      <HowItWorks />
       {/* <FindHelp /> */}
       <Testimonials />
       <FAQSection />

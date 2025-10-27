@@ -4,25 +4,25 @@ import { placeholders } from '../lib/placeholder'
 export default function Testimonials() {
   const testimonials = [
     {
-      name: 'Fatou D.',
-      role: 'Propriétaire',
-      image: placeholders.profiles.woman1,
-      rating: 5,
-      text: 'Kaza a changé ma vie! Ma maison n’a jamais été aussi propre et j’adore la facilité de réservation.',
-    },
-    {
-      name: 'Moussa S.',
-      role: 'Professionnel occupé',
+      name: 'Pierre-Louis Denaro',
+      role: 'Local Guide',
       image: placeholders.profiles.man1,
       rating: 5,
-      text: 'J’étais sceptique au début, mais le service a dépassé mes attentes. Je recommande vivement!',
+      text: 'HIGHLY recommend Kaza. They made finding professional, qualified help easy, which is rare in this city.',
     },
     {
-      name: 'Awa N.',
-      role: 'Maman',
+      name: 'Elena Boffetta',
+      role: 'Local Guide',
+      image: placeholders.profiles.woman1,
+      rating: 5,
+      text: 'I used this service for a plumber and everything went very smoothly. The work was completed quickly, without any complications, and the customer service is excellent.',
+    },
+    {
+      name: 'Leconte Sloane',
+      role: 'Client',
       image: placeholders.profiles.woman2,
       rating: 5,
-      text: 'En tant que maman qui travaille, ce service est une bouée de sauvetage. Les professionnels sont fiables.',
+      text: 'Top experience! The timing of the intervention was respected. The technician was very professional, fast and very efficient. I recommend!',
     },
   ]
 
@@ -32,11 +32,19 @@ export default function Testimonials() {
         <div className="text-center mb-12">
           <p className="text-sm font-semibold text-primary mb-2">TÉMOIGNAGES</p>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-bold text-gray-900 leading-tight">
-            Rencontrez quelques-uns de nos professionnels Kaza.
+            Découvrez ce que nos clients disent de nous
           </h2>
           <p className="mt-4 text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
             Ne nous croyez pas sur parole. Voici ce que nos clients disent de leur expérience.
           </p>
+          <a 
+            href="https://www.google.com/search?sca_esv=f0ead55d09cdc2fd&rlz=1C5CHFA_enKE1072KE1072&cs=1&sxsrf=AE3TifMrZvJj_XWbDuAKIyhS8d-I41LofQ:1761591016595&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-ExTnIM-D3T_DAyZl4C44RnXb4V6u6nMK5KMpducwWkwLdzVPCDoEh6tIJswepErJOUuLwRjpoPAsZtOiQzu4CAyOPgLU&q=Kaza+Reviews&sa=X&ved=2ahUKEwjKo6L2hcWQAxUHQEEAHbfVKPsQ0bkNegQIIBAD&cshid=1761591161098133&biw=1440&bih=782&dpr=2&sei=g7__aNWiAsedkdUPkpf18Aw" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="mt-4 inline-block text-primary hover:text-primary-dark font-semibold underline"
+          >
+            Voir tous nos avis Google →
+          </a>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
@@ -74,15 +82,9 @@ export default function Testimonials() {
             href="https://commander.aveckaza.com/" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="bg-primary hover:bg-primary-dark text-white px-8 py-3 rounded-full font-semibold transition-colors mr-4 inline-block"
+            className="bg-primary hover:bg-primary-dark text-white px-8 py-3 rounded-full font-semibold transition-colors inline-block"
           >
             Réserver maintenant
-          </a>
-          <a 
-            href="/en-savoir-plus"
-            className="border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-3 rounded-full font-semibold transition-colors inline-block"
-          >
-            En savoir plus
           </a>
         </div>
       </div>

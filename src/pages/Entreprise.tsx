@@ -1,4 +1,4 @@
-import { Target, Heart, Users, Award, TrendingUp, Shield } from 'lucide-react'
+import { Target, Heart, Shield, Lightbulb, CheckCircle } from 'lucide-react'
 import Seo from '../components/SEO'
 
 export default function Entreprise() {
@@ -6,7 +6,7 @@ export default function Entreprise() {
     "@context": "https://schema.org",
     "@type": "AboutPage",
     "name": "À propos de Kaza Sénégal",
-    "description": "Découvrez Kaza, la première plateforme de services à domicile au Sénégal. Notre mission, nos valeurs et notre engagement envers nos clients et professionnels.",
+    "description": "Découvrez Kaza, la plateforme qui structure le secteur des services à domicile au Sénégal. Notre histoire, notre mission et nos valeurs.",
     "url": "https://aveckaza.com/entreprise"
   }
 
@@ -14,11 +14,12 @@ export default function Entreprise() {
     <div className="min-h-screen bg-white">
       <Seo
         title="À Propos - Notre Mission et Valeurs"
-        description="Kaza est la première plateforme de services à domicile au Sénégal. Découvrez notre mission, nos valeurs et notre engagement pour connecter clients et professionnels qualifiés à Dakar."
+        description="Kaza structure le secteur des services à domicile au Sénégal. Découvrez notre histoire, notre mission et notre engagement pour la qualité et le professionnalisme à Dakar."
         keywords="à propos Kaza, entreprise services domicile Sénégal, plateforme services Dakar, mission Kaza, valeurs Kaza"
         canonical="/entreprise"
         structuredData={structuredData}
       />
+      
       {/* Hero Section */}
       <section className="px-4 sm:px-6 lg:px-8 pt-32 pb-16">
         <div className="max-w-4xl mx-auto text-center">
@@ -26,13 +27,36 @@ export default function Entreprise() {
             À propos de Kaza
           </h1>
           <p className="text-xl text-gray-600 mb-8">
-            La première plateforme de services à domicile au Sénégal, connectant des professionnels qualifiés avec des clients qui ont besoin d'aide.
+            Structurer le secteur des services à domicile au Sénégal, en garantissant la qualité pour les clients et en donnant aux artisans les outils pour mieux travailler.
           </p>
         </div>
       </section>
 
-      {/* Mission */}
+      {/* Notre Histoire */}
       <section className="px-4 sm:px-6 lg:px-8 py-16 bg-cream">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-5xl font-display font-bold text-gray-900 mb-8">
+            Notre Histoire
+          </h2>
+          
+          <div className="prose prose-lg max-w-none">
+            <p className="text-gray-700 text-lg mb-6">
+              Tout est parti d'un constat simple, mais largement partagé : au Sénégal, il est souvent difficile de trouver un artisan ponctuel, rigoureux et transparent. Les retards, les travaux inachevés ou les tarifs flous sont devenus la norme, laissant les clients sans repères et les artisans sans cadre professionnel.
+            </p>
+            
+            <p className="text-gray-700 text-lg mb-6">
+              C'est pour répondre à ce besoin de fiabilité qu'est née Kaza, début 2025 à Dakar. Notre objectif : encadrer chaque intervention avec des standards clairs, un service client attentif et des artisans sélectionnés pour leur sérieux.
+            </p>
+            
+            <p className="text-gray-700 text-lg">
+              Quelques mois plus tard, plus de 120 artisans collaborent déjà avec nous et plus de 2 000 interventions ont été réalisées à Dakar, témoignant d'un vrai changement dans la façon dont les services à domicile sont perçus et organisés.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Notre Mission */}
+      <section className="px-4 sm:px-6 lg:px-8 py-16">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -43,25 +67,29 @@ export default function Entreprise() {
                 Notre Mission
               </h2>
               <p className="text-gray-700 text-lg mb-4">
-                Faciliter l'accès à des services à domicile de qualité pour tous les Sénégalais, tout en créant des opportunités d'emploi pour des professionnels qualifiés.
+                Kaza structure le secteur des services à domicile, en garantissant la qualité pour les clients et en donnant aux artisans les outils pour mieux travailler et développer leur activité.
               </p>
               <p className="text-gray-700 text-lg">
-                Nous croyons que chacun mérite un foyer bien entretenu et que chaque professionnel mérite de travailler dans des conditions dignes et équitables.
+                Chaque chantier est encadré par un service client attentif, des artisans sélectionnés et des standards clairs — pour faire de la qualité, de la transparence et du professionnalisme la nouvelle norme du service à domicile.
               </p>
             </div>
             <div className="bg-gradient-to-br from-primary to-primary-dark rounded-3xl p-12 text-white">
               <div className="space-y-6">
                 <div>
-                  <div className="text-5xl font-display font-bold mb-2">1000+</div>
-                  <div className="text-white/90">Professionnels actifs</div>
+                  <div className="text-5xl font-display font-bold mb-2">+120</div>
+                  <div className="text-white/90">Artisans validés et formés</div>
                 </div>
                 <div>
-                  <div className="text-5xl font-display font-bold mb-2">5000+</div>
-                  <div className="text-white/90">Clients satisfaits</div>
+                  <div className="text-5xl font-display font-bold mb-2">+800</div>
+                  <div className="text-white/90">Clients particuliers et professionnels</div>
                 </div>
                 <div>
-                  <div className="text-5xl font-display font-bold mb-2">10000+</div>
-                  <div className="text-white/90">Services réalisés</div>
+                  <div className="text-5xl font-display font-bold mb-2">+2 000</div>
+                  <div className="text-white/90">Interventions réalisées avec suivi qualité</div>
+                </div>
+                <div>
+                  <div className="text-5xl font-display font-bold mb-2">92%</div>
+                  <div className="text-white/90">De satisfaction client</div>
                 </div>
               </div>
             </div>
@@ -69,7 +97,40 @@ export default function Entreprise() {
         </div>
       </section>
 
-      {/* Valeurs */}
+      {/* Ce qui fait la différence */}
+      <section className="px-4 sm:px-6 lg:px-8 py-16 bg-cream">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-5xl font-display font-bold text-gray-900 mb-8">
+            Ce qui fait la différence
+          </h2>
+          
+          <p className="text-gray-700 text-lg mb-8">
+            Confirmation de rendez-vous, rappels automatiques, nettoyage systématique, émission de factures, et suivi qualité — tout est géré pour garantir une expérience fiable, du premier contact jusqu'à la fin du service.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+              <h3 className="text-2xl font-display font-bold text-gray-900 mb-4">
+                Pour nos clients
+              </h3>
+              <p className="text-gray-700">
+                Nous garantissons des artisans vérifiés, un service client attentif et une expérience fluide du début à la fin.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+              <h3 className="text-2xl font-display font-bold text-gray-900 mb-4">
+                Pour nos artisans
+              </h3>
+              <p className="text-gray-700">
+                Nous offrons des opportunités régulières, des paiements sécurisés et un accompagnement continu pour les faire progresser.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Nos Valeurs */}
       <section className="px-4 sm:px-6 lg:px-8 py-16">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-5xl font-display font-bold text-gray-900 text-center mb-12">
@@ -79,13 +140,13 @@ export default function Entreprise() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="bg-primary/10 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <Heart className="w-8 h-8 text-primary" />
+                <CheckCircle className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-3xl font-display font-bold text-gray-900 mb-3">
-                Excellence
+                Fiabilité
               </h3>
               <p className="text-gray-600">
-                Nous nous engageons à fournir des services de la plus haute qualité à nos clients
+                Chaque intervention est planifiée, suivie et exécutée avec rigueur. Chez Kaza, le sérieux n'est pas une promesse : c'est une méthode.
               </p>
             </div>
 
@@ -94,46 +155,34 @@ export default function Entreprise() {
                 <Shield className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-3xl font-display font-bold text-gray-900 mb-3">
-                Confiance
+                Transparence
               </h3>
               <p className="text-gray-600">
-                Tous nos professionnels sont vérifiés, formés et assurés pour votre tranquillité d'esprit
+                Des prix clairs, un suivi visible et des échanges honnêtes à chaque étape. La confiance se construit dans la clarté.
               </p>
             </div>
 
             <div className="text-center">
               <div className="bg-primary/10 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <Users className="w-8 h-8 text-primary" />
+                <Target className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-3xl font-display font-bold text-gray-900 mb-3">
-                Communauté
+                Professionnalisme
               </h3>
               <p className="text-gray-600">
-                Nous créons une communauté solidaire de professionnels et de clients
+                Nos artisans sont sélectionnés, accompagnés et formés pour garantir un service constant et de qualité.
               </p>
             </div>
 
             <div className="text-center">
               <div className="bg-primary/10 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <TrendingUp className="w-8 h-8 text-primary" />
+                <Lightbulb className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-3xl font-display font-bold text-gray-900 mb-3">
-                Innovation
+                Innovation utile
               </h3>
               <p className="text-gray-600">
-                Nous utilisons la technologie pour simplifier l'accès aux services à domicile
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="bg-primary/10 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <Award className="w-8 h-8 text-primary" />
-              </div>
-              <h3 className="text-3xl font-display font-bold text-gray-900 mb-3">
-                Intégrité
-              </h3>
-              <p className="text-gray-600">
-                Nous agissons avec honnêteté et transparence dans toutes nos interactions
+                Nous utilisons la technologie pour simplifier, structurer et améliorer l'expérience des clients comme celle des artisans.
               </p>
             </div>
 
@@ -145,90 +194,8 @@ export default function Entreprise() {
                 Respect
               </h3>
               <p className="text-gray-600">
-                Nous traitons chaque personne avec dignité et respect, qu'il s'agisse de clients ou de professionnels
+                Respect du client, du travail bien fait et de chaque artisan qui s'engage à nos côtés.
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Histoire */}
-      <section className="px-4 sm:px-6 lg:px-8 py-16 bg-cream">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-5xl font-display font-bold text-gray-900 mb-8">
-            Notre Histoire
-          </h2>
-          
-          <div className="prose prose-lg max-w-none">
-            <p className="text-gray-700 text-lg mb-6">
-              Kaza est née d'une vision simple : rendre les services à domicile accessibles, fiables et abordables pour tous les Sénégalais. Nous avons constaté que trouver un professionnel qualifié et de confiance était souvent difficile et chronophage.
-            </p>
-            
-            <p className="text-gray-700 text-lg mb-6">
-              En 2024, nous avons lancé notre plateforme à Dakar avec une poignée de professionnels triés sur le volet. Aujourd'hui, nous sommes fiers de compter plus de 1000 professionnels actifs et d'avoir servi des milliers de clients satisfaits.
-            </p>
-            
-            <p className="text-gray-700 text-lg">
-              Notre croissance rapide témoigne de la confiance que nos clients et nos professionnels placent en nous. Nous continuons d'innover et d'améliorer nos services pour mieux répondre aux besoins de notre communauté.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Engagement */}
-      <section className="px-4 sm:px-6 lg:px-8 py-16">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-5xl font-display font-bold text-gray-900 text-center mb-12">
-            Notre Engagement
-          </h2>
-          
-          <div className="space-y-6">
-            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-              <h3 className="text-3xl font-display font-bold text-gray-900 mb-3">
-                Pour nos clients
-              </h3>
-              <ul className="space-y-2 text-gray-700">
-                <li className="flex items-start">
-                  <span className="text-primary mr-2">•</span>
-                  <span>Des professionnels vérifiés et qualifiés</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-primary mr-2">•</span>
-                  <span>Une plateforme simple et intuitive</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-primary mr-2">•</span>
-                  <span>Un service client réactif et à l'écoute</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-primary mr-2">•</span>
-                  <span>Une garantie satisfaction sur tous nos services</span>
-                </li>
-              </ul>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-              <h3 className="text-3xl font-display font-bold text-gray-900 mb-3">
-                Pour nos professionnels
-              </h3>
-              <ul className="space-y-2 text-gray-700">
-                <li className="flex items-start">
-                  <span className="text-primary mr-2">•</span>
-                  <span>Des opportunités de travail régulières</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-primary mr-2">•</span>
-                  <span>Des paiements rapides et sécurisés</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-primary mr-2">•</span>
-                  <span>Une assurance pour toutes les interventions</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-primary mr-2">•</span>
-                  <span>Un accompagnement et des formations continues</span>
-                </li>
-              </ul>
             </div>
           </div>
         </div>

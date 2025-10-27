@@ -13,7 +13,7 @@ export default function Artisans() {
       id: 2,
       name: 'Pierre-Edouard Goudiaby',
       specialty: 'Plomberie',
-      image: '/artisans/02.png',
+      image: '/artisans/03.png',
       testimonial: '"Il est arrivé en moins d\'une heure et a tout réparé. Il a même nettoyé avant de partir, un vrai soulagement !"',
       rating: 5,
       bgColor: 'bg-orange-400'
@@ -22,7 +22,7 @@ export default function Artisans() {
       id: 3,
       name: 'Birama Ba',
       specialty: 'Jardin',
-      image: '/artisans/03.png',
+      image: '/artisans/02.png',
       testimonial: '"Il a taillé mes arbres, et traité certaines plantes! On sent qu\'il est compétent et passionné. Je recommande"',
       rating: 5,
       bgColor: 'bg-yellow-400'
