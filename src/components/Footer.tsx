@@ -71,28 +71,21 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/20 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="flex flex-col items-center md:items-start gap-2">
-              <p className="text-sm text-white/60 text-center md:text-left">
-                © 2025 Kaza Sénégal. Tous droits réservés.
-              </p>
-              <p className="text-sm text-white/60 text-center md:text-left">
-                Developed with <span className="text-orange-500">🧡</span> by{' '}
-                <a 
-                  href="https://www.agencearcane.com/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="hover:text-white/80 transition-colors underline"
-                >
-                  Agence Arcane
-                </a>
-              </p>
-            </div>
-            <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 text-sm text-white/60">
-              <a href="mailto:contact@aveckaza.com" className="hover:text-white/80 transition-colors min-h-[44px] flex items-center">contact@aveckaza.com</a>
-              <span className="hidden sm:inline">•</span>
-              <a href="tel:+221787891010" className="hover:text-white/80 transition-colors min-h-[44px] flex items-center">+221 78 789 10 10</a>
-            </div>
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-3">
+            <p className="text-sm text-white/60 text-center sm:text-left">
+              © 2025 Kaza Sénégal. Tous droits réservés.
+            </p>
+            <p className="text-sm text-white/60 text-center sm:text-right">
+              Developed with <span className="text-orange-500">🧡</span> by{' '}
+              <a 
+                href="https://www.agencearcane.com/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:text-white/80 transition-colors underline"
+              >
+                Agence Arcane
+              </a>
+            </p>
           </div>
         </div>
       </div>
