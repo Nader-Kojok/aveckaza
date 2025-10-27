@@ -1,5 +1,3 @@
-import { placeholders } from '../lib/placeholder'
-
 export default function Features() {
   return (
     <section id="comment-ca-marche" className="py-16 px-4 sm:px-6 lg:px-8">
@@ -31,7 +29,7 @@ export default function Features() {
           <div className="relative">
             <div className="rounded-3xl overflow-hidden aspect-square shadow-xl">
               <img 
-                src={placeholders.technology.mobileApp} 
+                src="/computer.avif" 
                 alt="Application mobile Kaza"
                 className="w-full h-full object-cover"
                 loading="lazy"
