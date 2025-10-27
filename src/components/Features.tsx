@@ -27,11 +27,11 @@ export default function Features() {
           </div>
           
           <div className="relative">
-            <div className="rounded-3xl overflow-hidden aspect-square shadow-xl">
+            <div className="rounded-3xl overflow-hidden shadow-xl">
               <img 
                 src="/computer.avif" 
                 alt="Application mobile Kaza"
-                className="w-full h-full object-cover"
+                className="w-full h-auto object-cover"
                 loading="lazy"
               />
             </div>
