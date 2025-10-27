@@ -25,7 +25,7 @@ export default function ClubKaza() {
         structuredData={structuredData}
       />
       {/* Hero Section */}
-      <section className="px-4 sm:px-6 lg:px-8 pt-32 pb-16 bg-gradient-to-br from-primary via-primary-dark to-blue text-white relative overflow-hidden">
+      <section className="px-4 sm:px-6 lg:px-8 pt-32 pb-16 bg-gradient-to-br from-blue to-blue-dark text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-10 left-10 w-32 h-32 bg-white rounded-full blur-3xl"></div>
           <div className="absolute bottom-10 right-10 w-40 h-40 bg-white rounded-full blur-3xl"></div>
@@ -103,30 +103,30 @@ export default function ClubKaza() {
               </div>
 
               <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-200">
-                <div className="bg-secondary/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-4">
-                  <Gift className="w-8 h-8 text-secondary" />
+                <div className="bg-primary/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-4">
+                  <Gift className="w-8 h-8 text-primary" />
                 </div>
                 <h3 className="text-xl font-display font-bold text-gray-900 mb-3">
                   Vos avantages
                 </h3>
                 <ul className="space-y-3 text-gray-600">
                   <li className="flex items-start gap-2">
-                    <span className="text-secondary font-bold">•</span>
+                    <span className="text-primary font-bold">•</span>
                     <span><strong>Pas de limite</strong> de parrainage : plus vous partagez Kaza, plus vous cumulez de récompenses</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-secondary font-bold">•</span>
+                    <span className="text-primary font-bold">•</span>
                     <span>Votre code de parrainage est disponible dans votre espace client</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-secondary font-bold">•</span>
+                    <span className="text-primary font-bold">•</span>
                     <span>Ou sur simple demande auprès de notre service client</span>
                   </li>
                 </ul>
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-primary to-blue text-white rounded-2xl p-6 text-center">
+            <div className="bg-gradient-to-r from-blue to-blue-dark text-white rounded-2xl p-6 text-center">
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-lg font-semibold">
                 <div className="flex items-center gap-2">
                   <span className="text-3xl">👤</span>
@@ -158,7 +158,7 @@ export default function ClubKaza() {
           <div className="bg-white rounded-3xl p-8 md:p-12 shadow-lg border border-gray-200">
             <div className="grid md:grid-cols-3 gap-8 mb-8">
               <div className="text-center">
-                <div className="bg-gradient-to-br from-pink-400 to-pink-600 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <div className="bg-primary w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-4">
                   <span className="text-4xl">📸</span>
                 </div>
                 <h3 className="text-xl font-display font-bold text-gray-900 mb-2">
@@ -170,7 +170,7 @@ export default function ClubKaza() {
               </div>
 
               <div className="text-center">
-                <div className="bg-gradient-to-br from-purple-400 to-purple-600 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <div className="bg-blue w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-4">
                   <span className="text-4xl">@</span>
                 </div>
                 <h3 className="text-xl font-display font-bold text-gray-900 mb-2">
@@ -182,7 +182,7 @@ export default function ClubKaza() {
               </div>
 
               <div className="text-center">
-                <div className="bg-gradient-to-br from-yellow-400 to-yellow-600 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <div className="bg-primary w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-4">
                   <Gift className="w-10 h-10 text-white" />
                 </div>
                 <h3 className="text-xl font-display font-bold text-gray-900 mb-2">
@@ -194,7 +194,7 @@ export default function ClubKaza() {
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-2xl p-6 text-center">
+            <div className="bg-primary/10 rounded-2xl p-6 text-center">
               <p className="text-lg text-gray-700 mb-2">
                 🎁 <strong>Toutes les publications</strong> reçoivent un bon d'achat Kaza
               </p>
@@ -209,7 +209,7 @@ export default function ClubKaza() {
       {/* Rejoignez le Club Kaza */}
       <section className="px-4 sm:px-6 lg:px-8 py-16">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-gradient-to-br from-primary to-blue text-white rounded-3xl p-8 md:p-12 shadow-xl text-center">
+          <div className="bg-gradient-to-br from-blue to-blue-dark text-white rounded-3xl p-8 md:p-12 shadow-xl text-center">
             <div className="inline-flex items-center justify-center w-20 h-20 bg-white/20 backdrop-blur-sm rounded-full mb-6">
               <Users className="w-10 h-10" />
             </div>
