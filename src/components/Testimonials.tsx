@@ -1,26 +1,25 @@
 import { Star } from 'lucide-react'
-import { placeholders } from '../lib/placeholder'
 
 export default function Testimonials() {
   const testimonials = [
     {
       name: 'Pierre-Louis Denaro',
       role: 'Local Guide',
-      image: placeholders.profiles.man1,
+      image: '/picture_testimonials/01.png',
       rating: 5,
       text: 'HIGHLY recommend Kaza. They made finding professional, qualified help easy, which is rare in this city.',
     },
     {
       name: 'Elena Boffetta',
       role: 'Local Guide',
-      image: placeholders.profiles.woman1,
+      image: '/picture_testimonials/02.png',
       rating: 5,
       text: 'I used this service for a plumber and everything went very smoothly. The work was completed quickly, without any complications, and the customer service is excellent.',
     },
     {
       name: 'Leconte Sloane',
       role: 'Client',
-      image: placeholders.profiles.woman2,
+      image: '/picture_testimonials/03.png',
       rating: 5,
       text: 'Top experience! The timing of the intervention was respected. The technician was very professional, fast and very efficient. I recommend!',
     },
