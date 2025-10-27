@@ -4,7 +4,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { HelmetProvider } from '@vuer-ai/react-helmet-async'
 import './index.css'
 import App from './App.tsx'
-import Cgv from './pages/CGV.tsx'
 import Faq from './pages/FAQ.tsx'
 import DevenirPro from './pages/DevenirPro.tsx'
 import Entreprise from './pages/Entreprise.tsx'
@@ -34,7 +33,6 @@ createRoot(document.getElementById('root')!).render(
           <Routes>
             <Route path="/" element={<App />} />
             <Route path="/services" element={<Services />} />
-            <Route path="/cgv" element={<Cgv />} />
             <Route path="/faq" element={<Faq />} />
             <Route path="/devenir-pro" element={<DevenirPro />} />
             <Route path="/entreprise" element={<Entreprise />} />
