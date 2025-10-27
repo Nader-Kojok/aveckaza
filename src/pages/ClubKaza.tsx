@@ -1,4 +1,4 @@
-import { Gift, Users, Sparkles, MessageCircle, Mail } from 'lucide-react'
+import { Gift, Users, Sparkles, MessageCircle, Mail, Camera, AtSign } from 'lucide-react'
 import Seo from '../components/SEO'
 
 export default function ClubKaza() {
@@ -158,8 +158,8 @@ export default function ClubKaza() {
           <div className="bg-white rounded-3xl p-8 md:p-12 shadow-lg border border-gray-200">
             <div className="grid md:grid-cols-3 gap-8 mb-8">
               <div className="text-center">
-                <div className="bg-primary w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                  <span className="text-4xl">📸</span>
+                <div className="bg-blue w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <Camera className="w-10 h-10 text-white" />
                 </div>
                 <h3 className="text-xl font-display font-bold text-gray-900 mb-2">
                   Étape 1
@@ -170,8 +170,8 @@ export default function ClubKaza() {
               </div>
 
               <div className="text-center">
-                <div className="bg-blue w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                  <span className="text-4xl">@</span>
+                <div className="bg-blue-dark w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <AtSign className="w-10 h-10 text-white" />
                 </div>
                 <h3 className="text-xl font-display font-bold text-gray-900 mb-2">
                   Étape 2
