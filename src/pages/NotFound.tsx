@@ -48,10 +48,6 @@ export default function NotFound() {
               <ArrowLeft className="w-4 h-4 mr-2" />
               Devenir pro
             </a>
-            <a href="/offre-entreprises" className="text-primary hover:underline flex items-center">
-              <ArrowLeft className="w-4 h-4 mr-2" />
-              Offre entreprises
-            </a>
             <a href="/entreprise" className="text-primary hover:underline flex items-center">
               <ArrowLeft className="w-4 h-4 mr-2" />
               À propos

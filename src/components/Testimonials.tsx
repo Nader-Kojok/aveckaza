@@ -3,19 +3,19 @@ import { Star } from 'lucide-react'
 export default function Testimonials() {
   const testimonials = [
     {
-      name: 'Pierre-Louis Denaro',
+      name: 'Pierre-Louis D.',
       image: '/picture_testimonials/01.png',
       rating: 5,
       text: 'HIGHLY recommend Kaza. They made finding professional, qualified help easy, which is rare in this city.',
     },
     {
-      name: 'Elena Boffetta',
+      name: 'Elena B.',
       image: '/picture_testimonials/02.png',
       rating: 5,
       text: 'J\'ai fait appel à ce service pour un plombier et tout s\'est très bien déroulé. Le travail a été effectué rapidement, sans aucune complication, et le service client est excellent.',
     },
     {
-      name: 'Leconte Sloane',
+      name: 'Leconte S.',
       image: '/picture_testimonials/03.png',
       rating: 5,
       text: 'Expérience au top ! Le timing de l\'intervention a été respecté. Le technicien a été très professionnel, rapide et très efficace . Je recommande !',

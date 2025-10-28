@@ -10,16 +10,15 @@ export default function Hero() {
           dans les services à domicile.
         </h1>
         
-        {/* Service Icons Grid - Mobile: 4x4x4, Desktop: 7x5 */}
+        {/* Service Icons Grid - Mobile: 4x4x2, Desktop: 6x4 */}
         <div className="mt-12 mb-12">
-          {/* First Row - Mobile: 4 items, Desktop: 7 items */}
-          <div className="grid grid-cols-4 sm:grid-cols-7 gap-4 sm:gap-6 md:gap-8 max-w-5xl mx-auto mb-8">
+          {/* First Row - Mobile: 4 items, Desktop: 6 items */}
+          <div className="grid grid-cols-4 sm:grid-cols-6 gap-4 sm:gap-6 md:gap-8 max-w-5xl mx-auto mb-8">
             {[
               { icon: '/services_icons/icons8-plumbing-128.png', label: 'Plomberie &\nétanchéité' },
-              { icon: '/services_icons/icons8-saw-128 (1).png', label: 'Menuiserie bois' },
               { icon: '/services_icons/icons8-fridge-128.png', label: 'Réparation\nd\'électroménager' },
               { icon: '/services_icons/icons8-light-on-128.png', label: 'Électricité' },
-              { icon: '/services_icons/icons8-key-security-128.png', label: 'Serrurerie', className: 'hidden sm:flex' },
+              { icon: '/services_icons/icons8-key-security-128.png', label: 'Serrurerie' },
               { icon: '/services_icons/icons8-air-conditioner-128.png', label: 'Froid &\nclimatisation', className: 'hidden sm:flex' },
               { icon: '/services_icons/icons8-recliner-128.png', label: 'Tapisserie', className: 'hidden sm:flex' },
             ].map((service) => (
@@ -37,17 +36,15 @@ export default function Hero() {
             ))}
           </div>
           
-          {/* Second Row - Mobile: 4 items, Desktop: 5 items */}
-          <div className="grid grid-cols-4 sm:grid-cols-5 gap-4 sm:gap-6 md:gap-8 max-w-3xl mx-auto mb-8">
+          {/* Second Row - Mobile: 4 items, Desktop: 4 items */}
+          <div className="grid grid-cols-4 gap-4 sm:gap-6 md:gap-8 max-w-2xl mx-auto mb-8">
             {[
-              { icon: '/services_icons/icons8-key-security-128.png', label: 'Serrurerie', className: 'sm:hidden' },
               { icon: '/services_icons/icons8-air-conditioner-128.png', label: 'Froid &\nclimatisation', className: 'sm:hidden' },
               { icon: '/services_icons/icons8-recliner-128.png', label: 'Tapisserie', className: 'sm:hidden' },
-              { icon: '/services_icons/icons8-drill-128.png', label: 'Installation' },
-              { icon: '/services_icons/icons8-tree-128.png', label: 'Jardinage', className: 'hidden sm:flex' },
+              { icon: '/services_icons/icons8-drill-128.png', label: 'Menuiserie bois &\nmétallique' },
+              { icon: '/services_icons/icons8-tree-128.png', label: 'Jardinage' },
               { icon: '/services_icons/icons8-bullet-camera-128.png', label: 'Sécurité', className: 'hidden sm:flex' },
               { icon: '/services_icons/icons8-paint-roller-128.png', label: 'Peinture', className: 'hidden sm:flex' },
-              { icon: '/services_icons/icons8-vacuum-cleaner-128.png', label: 'Nettoyage', className: 'hidden sm:flex' },
             ].map((service) => (
               <div
                 key={service.label}
@@ -63,13 +60,12 @@ export default function Hero() {
             ))}
           </div>
 
-          {/* Third Row - Mobile only: 4 items */}
-          <div className="grid grid-cols-4 gap-4 sm:gap-6 md:gap-8 max-w-2xl mx-auto sm:hidden">
+          {/* Third Row - Mobile only: 2 items centered in 4-column grid */}
+          <div className="grid grid-cols-4 gap-4 max-w-2xl mx-auto sm:hidden">
+            <div></div>
             {[
-              { icon: '/services_icons/icons8-tree-128.png', label: 'Jardinage' },
               { icon: '/services_icons/icons8-bullet-camera-128.png', label: 'Sécurité' },
               { icon: '/services_icons/icons8-paint-roller-128.png', label: 'Peinture' },
-              { icon: '/services_icons/icons8-vacuum-cleaner-128.png', label: 'Nettoyage' },
             ].map((service) => (
               <div
                 key={service.label}
@@ -83,6 +79,7 @@ export default function Hero() {
                 <span className="text-[10px] sm:text-xs text-blue-dark text-center leading-tight font-medium">{service.label}</span>
               </div>
             ))}
+            <div></div>
           </div>
         </div>
 
@@ -92,7 +89,7 @@ export default function Hero() {
             href="/services" 
             className="text-blue-dark font-semibold hover:text-primary transition-colors inline-flex items-center text-base"
           >
-            Voir plus de services
+            Voir tous les services
             <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
