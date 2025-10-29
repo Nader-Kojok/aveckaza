@@ -68,7 +68,7 @@ export default function Blog() {
         structuredData={structuredData}
       />
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue to-blue-600 text-white pt-32 pb-16 px-4 sm:px-6 lg:px-8">
+      <section className="bg-[#03507C] text-white pt-32 pb-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-6">
             Blog Kaza
