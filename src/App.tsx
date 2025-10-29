@@ -14,7 +14,7 @@ function App() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Kaza Sénégal",
-    "image": "https://aveckaza.com/logo_kaza.png",
+    "image": "https://aveckaza.com/logo_kaza.svg",
     "@id": "https://aveckaza.com",
     "url": "https://aveckaza.com",
     "telephone": "+221787891010",

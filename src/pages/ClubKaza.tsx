@@ -1,4 +1,4 @@
-import { Gift, Users, Sparkles, MessageCircle, Mail, Camera, AtSign } from 'lucide-react'
+import { Gift, Users, Sparkles, Camera, AtSign } from 'lucide-react'
 import Seo from '../components/SEO'
 
 export default function ClubKaza() {
@@ -44,24 +44,15 @@ export default function ClubKaza() {
             Chez Kaza, nous croyons que le bouche-à-oreille et la confiance valent plus que n'importe quelle publicité. Le Club Kaza est notre façon de remercier nos clients les plus fidèles et ceux qui partagent leur expérience.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://wa.me/221787891010?text=Bonjour%2C%20je%20souhaite%20rejoindre%20le%20Club%20Kaza"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 bg-white text-primary px-8 py-4 rounded-full text-lg font-semibold transition-all hover:scale-105 shadow-lg"
-            >
-              <MessageCircle className="w-5 h-5" />
-              Rejoindre via WhatsApp
-            </a>
-            <a
-              href="mailto:contact@aveckaza.com?subject=Inscription%20Club%20Kaza"
-              className="inline-flex items-center justify-center gap-2 bg-white/10 backdrop-blur-sm border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold transition-all hover:bg-white/20"
-            >
-              <Mail className="w-5 h-5" />
-              Rejoindre par Email
-            </a>
-          </div>
+          <a
+            href="https://commander.aveckaza.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 bg-white text-primary px-8 py-4 rounded-full text-lg font-semibold transition-all hover:scale-105 shadow-lg"
+          >
+            <Users className="w-5 h-5" />
+            Créer mon compte
+          </a>
         </div>
       </section>
 
@@ -228,17 +219,15 @@ export default function ClubKaza() {
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="https://wa.me/221787891010?text=Bonjour%2C%20je%20souhaite%20rejoindre%20le%20Club%20Kaza"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-white text-primary px-8 py-4 rounded-full text-lg font-semibold transition-all hover:scale-105 shadow-lg"
-              >
-                <MessageCircle className="w-5 h-5" />
-                Rejoindre maintenant
-              </a>
-            </div>
+            <a
+              href="https://commander.aveckaza.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 bg-white text-primary px-8 py-4 rounded-full text-lg font-semibold transition-all hover:scale-105 shadow-lg"
+            >
+              <Users className="w-5 h-5" />
+              Créer mon compte
+            </a>
           </div>
         </div>
       </section>

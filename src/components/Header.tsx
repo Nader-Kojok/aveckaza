@@ -15,7 +15,7 @@ export default function Header() {
           <div className="flex items-center">
             <a href="/" className="flex items-center">
               <img 
-                src="/logo_kaza.png" 
+                src="/logo_kaza.svg" 
                 alt="Kaza" 
                 className="h-6 sm:h-12 w-auto max-h-16 object-contain" 
                 fetchPriority="high"

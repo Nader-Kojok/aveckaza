@@ -8,7 +8,7 @@ export default function ProlongerDureeVieClimatiseur() {
     "@type": "BlogPosting",
     "headline": "7 astuces incontournables pour prolonger la durée de vie de votre climatiseur",
     "description": "Un climatiseur bien entretenu peut fonctionner efficacement pendant de nombreuses années, tout en limitant vos dépenses en réparations ou en remplacement. Si vous souhaitez maximiser la durée de vie de votre climatiseur dans le climat du Sénégal, voici les meilleures pratiques à adopter.",
-    "image": "https://aveckaza.com/logo_kaza.png",
+    "image": "https://aveckaza.com/logo_kaza.svg",
     "datePublished": "2025-01-18",
     "dateModified": "2025-01-18",
     "author": {
@@ -20,7 +20,7 @@ export default function ProlongerDureeVieClimatiseur() {
       "name": "Kaza Sénégal",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://aveckaza.com/logo_kaza.png"
+        "url": "https://aveckaza.com/logo_kaza.svg"
       }
     },
     "mainEntityOfPage": {
@@ -40,7 +40,7 @@ export default function ProlongerDureeVieClimatiseur() {
         structuredData={structuredData}
       />
       {/* Header */}
-      <div className="bg-gradient-to-br from-accent to-primary text-white py-20 px-4 sm:px-6 lg:px-8">
+      <div className="bg-secondary text-white py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <Link
             to="/blog"
@@ -74,19 +74,18 @@ export default function ProlongerDureeVieClimatiseur() {
       </div>
 
       {/* Article Content */}
-      <article className="py-16 px-4 sm:px-6 lg:px-8">
+      <article className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-2xl shadow-sm overflow-hidden">
             {/* Featured Image */}
-            <div className="w-full h-96 overflow-hidden">
+            <div className="w-full h-96 overflow-hidden mb-12">
               <img 
                 src="/blog/prolonger_climatiseur.webp" 
                 alt="7 astuces incontournables pour prolonger la durée de vie de votre climatiseur"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover rounded-xl"
               />
             </div>
             
-            <div className="p-8 sm:p-12">
+            <div>
               {/* Introduction */}
               <div className="prose prose-lg max-w-none mb-12">
               <p className="text-xl text-gray-700 leading-relaxed">
@@ -98,7 +97,7 @@ export default function ProlongerDureeVieClimatiseur() {
 
             {/* Section 1 */}
             <section className="mb-12">
-              <h2 className="text-3xl font-display font-bold text-blue mb-6">
+              <h2 className="text-3xl font-display font-bold text-blue-dark mb-6">
                 1. Nettoyez régulièrement les filtres à air
               </h2>
               <div className="space-y-4 text-gray-700 leading-relaxed">
@@ -115,7 +114,7 @@ export default function ProlongerDureeVieClimatiseur() {
 
             {/* Section 2 */}
             <section className="mb-12">
-              <h2 className="text-3xl font-display font-bold text-blue mb-6">
+              <h2 className="text-3xl font-display font-bold text-blue-dark mb-6">
                 2. Vérifiez et nettoyez les bobines du climatiseur
               </h2>
               <div className="space-y-4 text-gray-700 leading-relaxed">
@@ -131,7 +130,7 @@ export default function ProlongerDureeVieClimatiseur() {
 
             {/* Section 3 */}
             <section className="mb-12">
-              <h2 className="text-3xl font-display font-bold text-blue mb-6">
+              <h2 className="text-3xl font-display font-bold text-blue-dark mb-6">
                 3. Assurez un bon flux d'air autour de l'unité extérieure
               </h2>
               <div className="space-y-4 text-gray-700 leading-relaxed">
@@ -147,7 +146,7 @@ export default function ProlongerDureeVieClimatiseur() {
 
             {/* Section 4 */}
             <section className="mb-12">
-              <h2 className="text-3xl font-display font-bold text-blue mb-6">
+              <h2 className="text-3xl font-display font-bold text-blue-dark mb-6">
                 4. Programmez un entretien annuel avec un professionnel
               </h2>
               <div className="space-y-4 text-gray-700 leading-relaxed">
@@ -166,7 +165,7 @@ export default function ProlongerDureeVieClimatiseur() {
 
             {/* Section 5 */}
             <section className="mb-12">
-              <h2 className="text-3xl font-display font-bold text-blue mb-6">
+              <h2 className="text-3xl font-display font-bold text-blue-dark mb-6">
                 5. Évitez de sursolliciter votre climatiseur
               </h2>
               <div className="space-y-4 text-gray-700 leading-relaxed">
@@ -183,7 +182,7 @@ export default function ProlongerDureeVieClimatiseur() {
 
             {/* Section 6 */}
             <section className="mb-12">
-              <h2 className="text-3xl font-display font-bold text-blue mb-6">
+              <h2 className="text-3xl font-display font-bold text-blue-dark mb-6">
                 6. Isolez correctement votre logement
               </h2>
               <div className="space-y-4 text-gray-700 leading-relaxed">
@@ -198,7 +197,7 @@ export default function ProlongerDureeVieClimatiseur() {
 
             {/* Section 7 */}
             <section className="mb-12">
-              <h2 className="text-3xl font-display font-bold text-blue mb-6">
+              <h2 className="text-3xl font-display font-bold text-blue-dark mb-6">
                 7. Évitez les démarrages et arrêts fréquents
               </h2>
               <div className="space-y-4 text-gray-700 leading-relaxed">
@@ -213,7 +212,7 @@ export default function ProlongerDureeVieClimatiseur() {
 
             {/* Conclusion */}
             <div className="bg-cream rounded-xl p-8 mt-12">
-              <h3 className="text-2xl font-display font-bold text-blue mb-4">
+                <h3 className="text-xl font-semibold text-blue-dark mt-6 mb-3">
                 Pourquoi entretenir votre climatiseur avec Kaza ?
               </h3>
               <p className="text-gray-700 mb-6">
@@ -229,7 +228,6 @@ export default function ProlongerDureeVieClimatiseur() {
               </Link>
             </div>
             </div>
-          </div>
         </div>
       </article>
     </div>

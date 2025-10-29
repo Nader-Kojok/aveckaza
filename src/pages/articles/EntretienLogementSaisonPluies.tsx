@@ -8,7 +8,7 @@ export default function EntretienLogementSaisonPluies() {
     "@type": "BlogPosting",
     "headline": "Comment entretenir son logement après la saison des pluies ?",
     "description": "La saison des pluies au Sénégal peut laisser des traces sur votre maison : humidité excessive, moisissures, infiltrations d'eau, peinture abîmée… Un bon entretien après cette période est essentiel pour préserver votre logement.",
-    "image": "https://aveckaza.com/logo_kaza.png",
+    "image": "https://aveckaza.com/logo_kaza.svg",
     "datePublished": "2025-01-20",
     "dateModified": "2025-01-20",
     "author": {
@@ -20,7 +20,7 @@ export default function EntretienLogementSaisonPluies() {
       "name": "Kaza Sénégal",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://aveckaza.com/logo_kaza.png"
+        "url": "https://aveckaza.com/logo_kaza.svg"
       }
     },
     "mainEntityOfPage": {
@@ -40,7 +40,7 @@ export default function EntretienLogementSaisonPluies() {
         structuredData={structuredData}
       />
       {/* Header */}
-      <div className="bg-gradient-to-br from-secondary to-blue-400 text-white py-20 px-4 sm:px-6 lg:px-8">
+      <div className="bg-secondary text-white py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <Link
             to="/blog"
@@ -74,19 +74,18 @@ export default function EntretienLogementSaisonPluies() {
       </div>
 
       {/* Article Content */}
-      <article className="py-16 px-4 sm:px-6 lg:px-8">
+      <article className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-2xl shadow-sm overflow-hidden">
             {/* Featured Image */}
-            <div className="w-full h-96 overflow-hidden">
+            <div className="w-full h-96 overflow-hidden mb-12">
               <img 
                 src="/blog/entretenir_logement.webp" 
-                alt="Comment entretenir son logement après la saison des pluies"
-                className="w-full h-full object-cover"
+                alt="Comment entretenir son logement après la saison des pluies ?"
+                className="w-full h-full object-cover rounded-xl"
               />
             </div>
             
-            <div className="p-8 sm:p-12">
+            <div>
               {/* Introduction */}
               <div className="prose prose-lg max-w-none mb-12">
               <p className="text-xl text-gray-700 leading-relaxed">
@@ -99,7 +98,7 @@ export default function EntretienLogementSaisonPluies() {
 
             {/* Section 1 */}
             <section className="mb-12">
-              <h2 className="text-3xl font-display font-bold text-blue mb-6">
+              <h2 className="text-3xl font-display font-bold text-blue-dark mb-6">
                 1. Inspecter et réparer le toit
               </h2>
               <div className="space-y-4 text-gray-700 leading-relaxed">
@@ -119,7 +118,7 @@ export default function EntretienLogementSaisonPluies() {
 
             {/* Section 2 */}
             <section className="mb-12">
-              <h2 className="text-3xl font-display font-bold text-blue mb-6">
+              <h2 className="text-3xl font-display font-bold text-blue-dark mb-6">
                 2. Vérifier les murs et refaire la peinture si nécessaire
               </h2>
               <div className="space-y-4 text-gray-700 leading-relaxed">
@@ -140,7 +139,7 @@ export default function EntretienLogementSaisonPluies() {
 
             {/* Section 3 */}
             <section className="mb-12">
-              <h2 className="text-3xl font-display font-bold text-blue mb-6">
+              <h2 className="text-3xl font-display font-bold text-blue-dark mb-6">
                 3. Assainir et ventiler l'intérieur
               </h2>
               <div className="space-y-4 text-gray-700 leading-relaxed">
@@ -160,7 +159,7 @@ export default function EntretienLogementSaisonPluies() {
 
             {/* Section 4 */}
             <section className="mb-12">
-              <h2 className="text-3xl font-display font-bold text-blue mb-6">
+              <h2 className="text-3xl font-display font-bold text-blue-dark mb-6">
                 4. Vérifier les installations électriques et la plomberie
               </h2>
               <div className="space-y-4 text-gray-700 leading-relaxed">
@@ -180,7 +179,7 @@ export default function EntretienLogementSaisonPluies() {
 
             {/* Section 5 */}
             <section className="mb-12">
-              <h2 className="text-3xl font-display font-bold text-blue mb-6">
+              <h2 className="text-3xl font-display font-bold text-blue-dark mb-6">
                 5. Entretenir le jardin et les extérieurs
               </h2>
               <div className="space-y-4 text-gray-700 leading-relaxed">
@@ -200,7 +199,7 @@ export default function EntretienLogementSaisonPluies() {
 
             {/* Conclusion */}
             <div className="bg-cream rounded-xl p-8 mt-12">
-              <h3 className="text-2xl font-display font-bold text-blue mb-4">
+                <h3 className="text-xl font-semibold text-blue-dark mt-6 mb-3">
                 Faire appel à des professionnels pour un entretien complet
               </h3>
               <p className="text-gray-700 mb-6">
@@ -216,7 +215,6 @@ export default function EntretienLogementSaisonPluies() {
               </Link>
             </div>
             </div>
-          </div>
         </div>
       </article>
     </div>

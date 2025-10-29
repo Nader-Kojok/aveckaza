@@ -8,7 +8,7 @@ export default function PrixTravauxPeinture() {
     "@type": "BlogPosting",
     "headline": "Peinture : les 6 facteurs qui font varier le prix des travaux",
     "description": "Refaire la peinture d'un logement peut sembler simple, mais plusieurs éléments influencent le prix d'un artisan peintre. Il est important de comprendre ce qui fait varier les tarifs et d'anticiper les coûts liés aux différentes étapes du chantier.",
-    "image": "https://aveckaza.com/logo_kaza.png",
+    "image": "https://aveckaza.com/logo_kaza.svg",
     "datePublished": "2025-01-22",
     "dateModified": "2025-01-22",
     "author": {
@@ -20,7 +20,7 @@ export default function PrixTravauxPeinture() {
       "name": "Kaza Sénégal",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://aveckaza.com/logo_kaza.png"
+        "url": "https://aveckaza.com/logo_kaza.svg"
       }
     },
     "mainEntityOfPage": {
@@ -40,7 +40,7 @@ export default function PrixTravauxPeinture() {
         structuredData={structuredData}
       />
       {/* Header */}
-      <div className="bg-gradient-to-br from-accent to-secondary text-white py-20 px-4 sm:px-6 lg:px-8">
+      <div className="bg-primary text-white py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <Link
             to="/blog"
@@ -74,19 +74,18 @@ export default function PrixTravauxPeinture() {
       </div>
 
       {/* Article Content */}
-      <article className="py-16 px-4 sm:px-6 lg:px-8">
+      <article className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-2xl shadow-sm overflow-hidden">
             {/* Featured Image */}
-            <div className="w-full h-96 overflow-hidden">
+            <div className="w-full h-96 overflow-hidden mb-12">
               <img 
                 src="/blog/travaux_peinture.webp" 
                 alt="Peinture : les 6 facteurs qui font varier le prix des travaux"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover rounded-xl"
               />
             </div>
             
-            <div className="p-8 sm:p-12">
+            <div>
               {/* Introduction */}
               <div className="prose prose-lg max-w-none mb-12">
               <p className="text-xl text-gray-700 leading-relaxed">
@@ -98,7 +97,7 @@ export default function PrixTravauxPeinture() {
 
             {/* Section 1 */}
             <section className="mb-12">
-              <h2 className="text-3xl font-display font-bold text-blue mb-6">
+              <h2 className="text-3xl font-display font-bold text-blue-dark mb-6">
                 1. L'état du logement : simple rafraîchissement ou gros travaux ?
               </h2>
               <div className="space-y-4 text-gray-700 leading-relaxed">
@@ -115,7 +114,7 @@ export default function PrixTravauxPeinture() {
 
             {/* Section 2 */}
             <section className="mb-12">
-              <h2 className="text-3xl font-display font-bold text-blue mb-6">
+              <h2 className="text-3xl font-display font-bold text-blue-dark mb-6">
                 2. La préparation du chantier : masquer et protéger les surfaces
               </h2>
               <div className="space-y-4 text-gray-700 leading-relaxed">
@@ -135,7 +134,7 @@ export default function PrixTravauxPeinture() {
 
             {/* Section 3 */}
             <section className="mb-12">
-              <h2 className="text-3xl font-display font-bold text-blue mb-6">
+              <h2 className="text-3xl font-display font-bold text-blue-dark mb-6">
                 3. La sous-couche : un élément clé pour un rendu de qualité
               </h2>
               <div className="space-y-4 text-gray-700 leading-relaxed">
@@ -155,7 +154,7 @@ export default function PrixTravauxPeinture() {
 
             {/* Section 4 */}
             <section className="mb-12">
-              <h2 className="text-3xl font-display font-bold text-blue mb-6">
+              <h2 className="text-3xl font-display font-bold text-blue-dark mb-6">
                 4. Le type de peinture : composition et finition
               </h2>
               <div className="space-y-4 text-gray-700 leading-relaxed">
@@ -163,13 +162,13 @@ export default function PrixTravauxPeinture() {
                   Toutes les peintures ne se valent pas, et leur prix varie selon la composition et la finition.
                 </p>
                 
-                <h3 className="text-xl font-semibold text-blue mt-6 mb-3">Peintures à l'eau vs peintures à l'huile</h3>
+                <h3 className="text-xl font-semibold text-blue-dark mt-6 mb-3">Peintures à l'eau vs peintures à l'huile</h3>
                 <ul className="list-disc list-inside space-y-2 ml-4">
                   <li><strong>Peinture à l'eau (acrylique) :</strong> La plus courante, elle sèche rapidement, est peu odorante et plus écologique. Elle est généralement moins chère et plus facile à appliquer.</li>
                   <li><strong>Peinture à l'huile (glycéro) :</strong> Plus résistante et lessivable, elle offre un rendu plus tendu mais contient des solvants qui dégagent une forte odeur et nécessitent plus de temps de séchage. Elle est souvent plus coûteuse et tend à disparaître au profit des peintures à l'eau.</li>
                 </ul>
 
-                <h3 className="text-xl font-semibold text-blue mt-6 mb-3">Les finitions : mat, satiné, brillant</h3>
+                <h3 className="text-xl font-semibold text-blue-dark mt-6 mb-3">Les finitions : mat, satiné, brillant</h3>
                 <ul className="list-disc list-inside space-y-2 ml-4">
                   <li><strong>Mat :</strong> Aspect sobre et élégant, masque bien les imperfections mais fragile et difficile à nettoyer.</li>
                   <li><strong>Satiné :</strong> Finition intermédiaire, résistante et facile à nettoyer, idéale pour les pièces de vie.</li>
@@ -183,7 +182,7 @@ export default function PrixTravauxPeinture() {
 
             {/* Section 5 */}
             <section className="mb-12">
-              <h2 className="text-3xl font-display font-bold text-blue mb-6">
+              <h2 className="text-3xl font-display font-bold text-blue-dark mb-6">
                 5. La surface totale à peindre et la complexité du chantier
               </h2>
               <div className="space-y-4 text-gray-700 leading-relaxed">
@@ -200,7 +199,7 @@ export default function PrixTravauxPeinture() {
 
             {/* Section 6 */}
             <section className="mb-12">
-              <h2 className="text-3xl font-display font-bold text-blue mb-6">
+              <h2 className="text-3xl font-display font-bold text-blue-dark mb-6">
                 6. La main-d'œuvre et le savoir-faire de l'artisan
               </h2>
               <div className="space-y-4 text-gray-700 leading-relaxed">
@@ -216,7 +215,7 @@ export default function PrixTravauxPeinture() {
 
             {/* Conclusion */}
             <div className="bg-cream rounded-xl p-8 mt-12">
-              <h3 className="text-2xl font-display font-bold text-blue mb-4">
+              <h3 className="text-2xl font-display font-bold text-blue-dark mb-4">
                 Un prix qui reflète la qualité du travail
               </h3>
               <p className="text-gray-700 mb-6">
@@ -235,7 +234,6 @@ export default function PrixTravauxPeinture() {
               </Link>
             </div>
             </div>
-          </div>
         </div>
       </article>
     </div>

@@ -8,7 +8,7 @@ export default function PlombsQuiSautent() {
     "@type": "BlogPosting",
     "headline": "Plombs qui sautent : causes, solutions et quand faire appel à un électricien",
     "description": "Un disjoncteur qui saute sans raison apparente peut être source de frustration et d'inquiétude. Plusieurs raisons peuvent expliquer cette coupure électrique.",
-    "image": "https://aveckaza.com/logo_kaza.png",
+    "image": "https://aveckaza.com/logo_kaza.svg",
     "datePublished": "2025-01-15",
     "dateModified": "2025-01-15",
     "author": {
@@ -20,7 +20,7 @@ export default function PlombsQuiSautent() {
       "name": "Kaza Sénégal",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://aveckaza.com/logo_kaza.png"
+        "url": "https://aveckaza.com/logo_kaza.svg"
       }
     },
     "mainEntityOfPage": {
@@ -40,7 +40,7 @@ export default function PlombsQuiSautent() {
         structuredData={structuredData}
       />
       {/* Header */}
-      <div className="bg-gradient-to-br from-primary to-primary-dark text-white py-20 px-4 sm:px-6 lg:px-8">
+      <div className="bg-primary text-white py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <Link
             to="/blog"
@@ -74,19 +74,18 @@ export default function PlombsQuiSautent() {
       </div>
 
       {/* Article Content */}
-      <article className="py-16 px-4 sm:px-6 lg:px-8">
+      <article className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-2xl shadow-sm overflow-hidden">
             {/* Featured Image */}
-            <div className="w-full h-96 overflow-hidden">
+            <div className="w-full h-96 overflow-hidden mb-12">
               <img 
                 src="/blog/plombs_sautent.webp" 
                 alt="Plombs qui sautent : causes, solutions et quand faire appel à un électricien"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover rounded-xl"
               />
             </div>
             
-            <div className="p-8 sm:p-12">
+            <div>
               {/* Introduction */}
               <div className="prose prose-lg max-w-none mb-12">
               <p className="text-xl text-gray-700 leading-relaxed">
@@ -99,7 +98,7 @@ export default function PlombsQuiSautent() {
 
             {/* Section 1 */}
             <section className="mb-12">
-              <h2 className="text-3xl font-display font-bold text-blue mb-6">
+              <h2 className="text-3xl font-display font-bold text-blue-dark mb-6">
                 Vous avez ajouté de nouveaux appareils ? Le compteur est peut-être sous-calibré
               </h2>
               <div className="space-y-4 text-gray-700 leading-relaxed">
@@ -108,7 +107,7 @@ export default function PlombsQuiSautent() {
                   une climatisation ou un lave-linge, il est probable que la puissance souscrite auprès de votre 
                   fournisseur d'électricité ne soit plus suffisante.
                 </p>
-                <h3 className="text-xl font-semibold text-blue mt-6 mb-3">Que faire ?</h3>
+                <h3 className="text-xl font-semibold text-blue-dark mt-6 mb-3">Que faire ?</h3>
                 <ul className="list-disc list-inside space-y-2 ml-4">
                   <li>Testez en éteignant certains appareils énergivores comme le chauffage, le four ou le sèche-linge pour voir si le problème persiste</li>
                   <li>Vérifiez votre puissance souscrite sur votre facture d'électricité, par exemple 6 kVA, 9 kVA ou 12 kVA</li>
@@ -123,7 +122,7 @@ export default function PlombsQuiSautent() {
 
             {/* Section 2 */}
             <section className="mb-12">
-              <h2 className="text-3xl font-display font-bold text-blue mb-6">
+              <h2 className="text-3xl font-display font-bold text-blue-dark mb-6">
                 Vous n'avez rien changé ? Il s'agit probablement d'un court-circuit ou d'une panne
               </h2>
               <div className="space-y-4 text-gray-700 leading-relaxed">
@@ -132,7 +131,7 @@ export default function PlombsQuiSautent() {
                   sûrement d'un court-circuit dû à des fils abîmés ou une prise défectueuse, d'un appareil endommagé 
                   ou d'un problème au niveau du tableau électrique.
                 </p>
-                <h3 className="text-xl font-semibold text-blue mt-6 mb-3">Comment vérifier ?</h3>
+                <h3 className="text-xl font-semibold text-blue-dark mt-6 mb-3">Comment vérifier ?</h3>
                 <ul className="list-disc list-inside space-y-2 ml-4">
                   <li>Coupez tous les disjoncteurs sauf le général</li>
                   <li>Réactivez-les un par un pour voir lequel fait disjoncter</li>
@@ -150,7 +149,7 @@ export default function PlombsQuiSautent() {
 
             {/* Section 3 */}
             <section className="mb-12">
-              <h2 className="text-3xl font-display font-bold text-blue mb-6">
+              <h2 className="text-3xl font-display font-bold text-blue-dark mb-6">
                 Une surcharge sur un circuit spécifique
               </h2>
               <div className="space-y-4 text-gray-700 leading-relaxed">
@@ -159,7 +158,7 @@ export default function PlombsQuiSautent() {
                   appareils puissants sont branchés sur la même ligne. Par exemple, brancher un four et un lave-vaisselle 
                   sur une prise inadaptée peut causer une surcharge locale.
                 </p>
-                <h3 className="text-xl font-semibold text-blue mt-6 mb-3">Que faire ?</h3>
+                <h3 className="text-xl font-semibold text-blue-dark mt-6 mb-3">Que faire ?</h3>
                 <ul className="list-disc list-inside space-y-2 ml-4">
                   <li>Répartissez mieux les appareils sur plusieurs prises</li>
                   <li>Évitez les multiprises pour brancher des appareils énergivores</li>
@@ -174,7 +173,7 @@ export default function PlombsQuiSautent() {
 
             {/* Section 4 */}
             <section className="mb-12">
-              <h2 className="text-3xl font-display font-bold text-blue mb-6">
+              <h2 className="text-3xl font-display font-bold text-blue-dark mb-6">
                 Un problème externe : coupure du réseau
               </h2>
               <div className="space-y-4 text-gray-700 leading-relaxed">
@@ -182,7 +181,7 @@ export default function PlombsQuiSautent() {
                   Parfois, le problème ne vient pas de chez vous mais du réseau électrique général. Une panne chez votre 
                   fournisseur ou une surtension peut entraîner des coupures soudaines.
                 </p>
-                <h3 className="text-xl font-semibold text-blue mt-6 mb-3">Comment vérifier ?</h3>
+                <h3 className="text-xl font-semibold text-blue-dark mt-6 mb-3">Comment vérifier ?</h3>
                 <ul className="list-disc list-inside space-y-2 ml-4">
                   <li>Regardez si vos voisins sont aussi impactés</li>
                   <li>Consultez le site ou l'application de votre fournisseur d'électricité pour voir si une panne est signalée</li>
@@ -194,7 +193,7 @@ export default function PlombsQuiSautent() {
 
             {/* Conclusion */}
             <div className="bg-cream rounded-xl p-8 mt-12">
-              <h3 className="text-2xl font-display font-bold text-blue mb-4">
+              <h3 className="text-2xl font-display font-bold text-blue-dark mb-4">
                 Besoin d'un électricien ? Kaza vous envoie un expert rapidement
               </h3>
               <p className="text-gray-700 mb-6">
@@ -218,7 +217,6 @@ export default function PlombsQuiSautent() {
               </Link>
             </div>
             </div>
-          </div>
         </div>
       </article>
     </div>

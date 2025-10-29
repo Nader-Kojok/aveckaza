@@ -15,7 +15,7 @@ export default function Seo({
   title,
   description,
   keywords = 'services à domicile Dakar, femme de ménage Sénégal, bricolage Dakar, jardinage Dakar, aide ménagère, Kaza Sénégal',
-  ogImage = '/logo_kaza.png',
+  ogImage = '/logo_kaza.svg',
   ogType = 'website',
   canonical,
   noindex = false,

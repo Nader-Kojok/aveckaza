@@ -53,7 +53,7 @@ export default function Blog() {
       "name": "Kaza Sénégal",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://aveckaza.com/logo_kaza.png"
+        "url": "https://aveckaza.com/logo_kaza.svg"
       }
     }
   }
