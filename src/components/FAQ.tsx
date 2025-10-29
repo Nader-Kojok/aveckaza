@@ -29,7 +29,7 @@ export default function FAQ() {
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-12">
           <p className="text-sm font-semibold text-primary mb-2">FAQ</p>
-          <h2 className="text-3xl sm:text-4xl font-display font-bold text-gray-900">
+          <h2 className="text-3xl sm:text-4xl font-display font-bold text-blue-dark">
             Des questions ? Nous avons les réponses.
           </h2>
         </div>
@@ -44,7 +44,7 @@ export default function FAQ() {
                 onClick={() => setOpenIndex(openIndex === faq.question ? null : faq.question)}
                 className="w-full px-6 py-4 flex items-center justify-between text-left hover:bg-gray-50 transition-colors"
               >
-                <span className="font-semibold text-gray-900">{faq.question}</span>
+                <span className="font-semibold text-blue-dark">{faq.question}</span>
                 <ChevronDown
                   className={`w-5 h-5 text-primary transition-transform ${
                     openIndex === faq.question ? 'rotate-180' : ''

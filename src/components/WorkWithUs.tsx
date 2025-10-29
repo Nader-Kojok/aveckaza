@@ -24,7 +24,7 @@ export default function WorkWithUs() {
           
           <div className="order-1 lg:order-2">
             <p className="text-sm font-semibold text-primary mb-2">CARRIÈRES</p>
-            <h2 className="text-3xl sm:text-4xl font-display font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl sm:text-4xl font-display font-bold text-blue-dark mb-6">
               Vous souhaitez travailler avec Kaza ?
             </h2>
             <p className="text-gray-600 mb-6">

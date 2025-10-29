@@ -23,7 +23,7 @@ export default function Entreprise() {
       {/* Hero Section */}
       <section className="px-4 sm:px-6 lg:px-8 pt-32 pb-16">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-6xl sm:text-7xl font-display font-bold text-gray-900 mb-6">
+          <h1 className="text-6xl sm:text-7xl font-display font-bold text-blue-dark mb-6">
             À propos de Kaza
           </h1>
           <p className="text-xl text-gray-600 mb-8">
@@ -35,7 +35,7 @@ export default function Entreprise() {
       {/* Notre Histoire */}
       <section className="px-4 sm:px-6 lg:px-8 py-16 bg-cream">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-5xl font-display font-bold text-gray-900 mb-8">
+          <h2 className="text-5xl font-display font-bold text-blue-dark mb-8">
             Notre Histoire
           </h2>
           
@@ -63,7 +63,7 @@ export default function Entreprise() {
               <div className="bg-primary/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
                 <Target className="w-8 h-8 text-primary" />
               </div>
-              <h2 className="text-5xl font-display font-bold text-gray-900 mb-6">
+              <h2 className="text-5xl font-display font-bold text-blue-dark mb-6">
                 Notre Mission
               </h2>
               <p className="text-gray-700 text-lg mb-4">
@@ -100,7 +100,7 @@ export default function Entreprise() {
       {/* Ce qui fait la différence */}
       <section className="px-4 sm:px-6 lg:px-8 py-16 bg-cream">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-5xl font-display font-bold text-gray-900 mb-8">
+          <h2 className="text-5xl font-display font-bold text-blue-dark mb-8">
             Ce qui fait la différence
           </h2>
           
@@ -110,7 +110,7 @@ export default function Entreprise() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-              <h3 className="text-2xl font-display font-bold text-gray-900 mb-4">
+              <h3 className="text-2xl font-display font-bold text-blue-dark mb-4">
                 Pour nos clients
               </h3>
               <p className="text-gray-700">
@@ -119,7 +119,7 @@ export default function Entreprise() {
             </div>
 
             <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-              <h3 className="text-2xl font-display font-bold text-gray-900 mb-4">
+              <h3 className="text-2xl font-display font-bold text-blue-dark mb-4">
                 Pour nos artisans
               </h3>
               <p className="text-gray-700">
@@ -133,7 +133,7 @@ export default function Entreprise() {
       {/* Nos Valeurs */}
       <section className="px-4 sm:px-6 lg:px-8 py-16">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-5xl font-display font-bold text-gray-900 text-center mb-12">
+          <h2 className="text-5xl font-display font-bold text-blue-dark text-center mb-12">
             Nos Valeurs
           </h2>
           
@@ -142,7 +142,7 @@ export default function Entreprise() {
               <div className="bg-primary/10 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <CheckCircle className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="text-3xl font-display font-bold text-gray-900 mb-3">
+              <h3 className="text-3xl font-display font-bold text-blue-dark mb-3">
                 Fiabilité
               </h3>
               <p className="text-gray-600">
@@ -154,7 +154,7 @@ export default function Entreprise() {
               <div className="bg-primary/10 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <Shield className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="text-3xl font-display font-bold text-gray-900 mb-3">
+              <h3 className="text-3xl font-display font-bold text-blue-dark mb-3">
                 Transparence
               </h3>
               <p className="text-gray-600">
@@ -166,7 +166,7 @@ export default function Entreprise() {
               <div className="bg-primary/10 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <Target className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="text-3xl font-display font-bold text-gray-900 mb-3">
+              <h3 className="text-3xl font-display font-bold text-blue-dark mb-3">
                 Professionnalisme
               </h3>
               <p className="text-gray-600">
@@ -178,7 +178,7 @@ export default function Entreprise() {
               <div className="bg-primary/10 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <Lightbulb className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="text-3xl font-display font-bold text-gray-900 mb-3">
+              <h3 className="text-3xl font-display font-bold text-blue-dark mb-3">
                 Innovation utile
               </h3>
               <p className="text-gray-600">
@@ -190,7 +190,7 @@ export default function Entreprise() {
               <div className="bg-primary/10 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <Heart className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="text-3xl font-display font-bold text-gray-900 mb-3">
+              <h3 className="text-3xl font-display font-bold text-blue-dark mb-3">
                 Respect
               </h3>
               <p className="text-gray-600">

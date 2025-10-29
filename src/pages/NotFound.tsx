@@ -6,7 +6,7 @@ export default function NotFound() {
       <div className="max-w-2xl mx-auto text-center">
         <div className="mb-8">
           <h1 className="text-9xl font-display font-bold text-primary mb-4">404</h1>
-          <h2 className="text-3xl sm:text-4xl font-display font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-display font-bold text-blue-dark mb-4">
             Page introuvable
           </h2>
           <p className="text-lg text-gray-600 mb-8">
@@ -32,7 +32,7 @@ export default function NotFound() {
         </div>
 
         <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-200">
-          <h3 className="text-xl font-display font-bold text-gray-900 mb-4">
+          <h3 className="text-xl font-display font-bold text-blue-dark mb-4">
             Liens utiles
           </h3>
           <div className="grid grid-cols-2 gap-4 text-left">

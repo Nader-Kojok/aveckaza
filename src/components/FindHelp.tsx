@@ -18,7 +18,7 @@ export default function FindHelp() {
           
           <div className="order-1 lg:order-2">
             <p className="text-sm font-semibold text-primary mb-2">PLATEFORME EN LIGNE</p>
-            <h2 className="text-3xl sm:text-4xl font-display font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl sm:text-4xl font-display font-bold text-blue-dark mb-6">
               Gérez tous vos services depuis notre plateforme web.
             </h2>
             <p className="text-gray-600 mb-6">

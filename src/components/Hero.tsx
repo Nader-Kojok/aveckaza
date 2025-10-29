@@ -3,9 +3,9 @@ export default function Hero() {
     <section className="pt-24 pb-16 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-6xl mx-auto text-center">
         <h1 
-          className="font-display font-bold text-blue-dark mb-12 leading-tight text-3xl sm:text-4xl lg:text-5xl"
+          className="font-display font-semibold text-blue-dark mb-12 leading-tight text-2xl sm:text-3xl lg:text-4xl"
         >
-          Kaza remet de <span className="underline decoration-[#04CBBF] decoration-[8px] underline-offset-1">l'ordre</span> et de la <span className="underline decoration-[#04CBBF] decoration-[8px] underline-offset-1">confiance</span>
+          Kaza remet de <span className="relative inline-block bg-gradient-to-t from-[#04CBBF] from-0% via-[#04CBBF] via-25% to-transparent to-25%">l'ordre</span> et de la <span className="relative inline-block bg-gradient-to-t from-[#04CBBF] from-0% via-[#04CBBF] via-25% to-transparent to-25%">confiance</span>
           <br />
           dans les services à domicile.
         </h1>
@@ -13,14 +13,14 @@ export default function Hero() {
         {/* Service Icons Grid - Mobile: 4x4x2, Desktop: 6x4 */}
         <div className="mt-12 mb-12">
           {/* First Row - Mobile: 4 items, Desktop: 6 items */}
-          <div className="grid grid-cols-4 sm:grid-cols-6 gap-4 sm:gap-6 md:gap-8 max-w-5xl mx-auto mb-8">
+          <div className="grid grid-cols-4 sm:grid-cols-6 gap-3 sm:gap-4 md:gap-5 max-w-5xl mx-auto mb-6">
             {[
               { icon: '/services_icons/icons8-plumbing-128.png', label: 'Plomberie &\nétanchéité' },
-              { icon: '/services_icons/icons8-fridge-128.png', label: 'Réparation\nd\'électroménager' },
+              { icon: '/services_icons/icons8-paint-roller-128.png', label: 'Peinture' },
               { icon: '/services_icons/icons8-light-on-128.png', label: 'Électricité' },
-              { icon: '/services_icons/icons8-key-security-128.png', label: 'Serrurerie' },
-              { icon: '/services_icons/icons8-air-conditioner-128.png', label: 'Froid &\nclimatisation', className: 'hidden sm:flex' },
-              { icon: '/services_icons/icons8-recliner-128.png', label: 'Tapisserie', className: 'hidden sm:flex' },
+              { icon: '/services_icons/icons8-air-conditioner-128.png', label: 'Froid &\nclimatisation' },
+              { icon: '/services_icons/icons8-key-security-128.png', label: 'Serrurerie', className: 'hidden sm:flex' },
+              { icon: '/services_icons/icons8-fridge-128.png', label: 'Réparation\nd\'électroménager', className: 'hidden sm:flex' },
             ].map((service) => (
               <div
                 key={service.label}
@@ -29,22 +29,22 @@ export default function Hero() {
                 <img 
                   src={service.icon} 
                   alt={service.label.replaceAll('\n', ' ')}
-                  className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 mb-2 object-contain"
+                  className="w-9 h-9 sm:w-10 sm:h-10 md:w-12 md:h-12 mb-2 object-contain"
                 />
-                <span className="text-[10px] sm:text-xs text-blue-dark text-center leading-tight whitespace-pre-line font-medium">{service.label}</span>
+                <span className="text-xs sm:text-sm text-blue-dark text-center leading-tight whitespace-pre-line font-semibold">{service.label}</span>
               </div>
             ))}
           </div>
           
           {/* Second Row - Mobile: 4 items, Desktop: 4 items */}
-          <div className="grid grid-cols-4 gap-4 sm:gap-6 md:gap-8 max-w-2xl mx-auto mb-8">
+          <div className="grid grid-cols-4 gap-3 sm:gap-4 md:gap-5 max-w-2xl mx-auto mb-6">
             {[
-              { icon: '/services_icons/icons8-air-conditioner-128.png', label: 'Froid &\nclimatisation', className: 'sm:hidden' },
-              { icon: '/services_icons/icons8-recliner-128.png', label: 'Tapisserie', className: 'sm:hidden' },
+              { icon: '/services_icons/icons8-key-security-128.png', label: 'Serrurerie', className: 'sm:hidden' },
+              { icon: '/services_icons/icons8-fridge-128.png', label: 'Réparation\nd\'électroménager', className: 'sm:hidden' },
               { icon: '/services_icons/icons8-drill-128.png', label: 'Menuiserie bois &\nmétallique' },
-              { icon: '/services_icons/icons8-tree-128.png', label: 'Jardinage' },
-              { icon: '/services_icons/icons8-bullet-camera-128.png', label: 'Sécurité', className: 'hidden sm:flex' },
-              { icon: '/services_icons/icons8-paint-roller-128.png', label: 'Peinture', className: 'hidden sm:flex' },
+              { icon: '/services_icons/icons8-bullet-camera-128.png', label: 'Sécurité' },
+              { icon: '/services_icons/icons8-recliner-128.png', label: 'Tapisserie', className: 'hidden sm:flex' },
+              { icon: '/services_icons/icons8-tree-128.png', label: 'Jardinage', className: 'hidden sm:flex' },
             ].map((service) => (
               <div
                 key={service.label}
@@ -53,19 +53,19 @@ export default function Hero() {
                 <img 
                   src={service.icon} 
                   alt={service.label.replaceAll('\n', ' ')}
-                  className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 mb-2 object-contain"
+                  className="w-9 h-9 sm:w-10 sm:h-10 md:w-12 md:h-12 mb-2 object-contain"
                 />
-                <span className="text-[10px] sm:text-xs text-blue-dark text-center leading-tight whitespace-pre-line font-medium">{service.label}</span>
+                <span className="text-xs sm:text-sm text-blue-dark text-center leading-tight whitespace-pre-line font-semibold">{service.label}</span>
               </div>
             ))}
           </div>
 
           {/* Third Row - Mobile only: 2 items centered in 4-column grid */}
-          <div className="grid grid-cols-4 gap-4 max-w-2xl mx-auto sm:hidden">
+          <div className="grid grid-cols-4 gap-3 max-w-2xl mx-auto sm:hidden">
             <div></div>
             {[
-              { icon: '/services_icons/icons8-bullet-camera-128.png', label: 'Sécurité' },
-              { icon: '/services_icons/icons8-paint-roller-128.png', label: 'Peinture' },
+              { icon: '/services_icons/icons8-recliner-128.png', label: 'Tapisserie' },
+              { icon: '/services_icons/icons8-tree-128.png', label: 'Jardinage' },
             ].map((service) => (
               <div
                 key={service.label}
@@ -74,9 +74,9 @@ export default function Hero() {
                 <img 
                   src={service.icon} 
                   alt={service.label}
-                  className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 mb-2 object-contain"
+                  className="w-9 h-9 sm:w-10 sm:h-10 md:w-12 md:h-12 mb-2 object-contain"
                 />
-                <span className="text-[10px] sm:text-xs text-blue-dark text-center leading-tight font-medium">{service.label}</span>
+                <span className="text-xs sm:text-sm text-blue-dark text-center leading-tight font-semibold">{service.label}</span>
               </div>
             ))}
             <div></div>
@@ -102,7 +102,7 @@ export default function Hero() {
             href="https://commander.aveckaza.com/" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="bg-primary hover:bg-primary-dark text-white px-10 sm:px-12 py-3.5 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all hover:scale-105 shadow-lg inline-flex items-center justify-center min-h-[56px]"
+            className="bg-primary hover:bg-primary-dark text-white px-7 sm:px-9 py-2.5 sm:py-3 rounded-full text-sm sm:text-base font-semibold transition-all hover:scale-105 shadow-md inline-flex items-center justify-center"
           >
             Réserver
           </a>

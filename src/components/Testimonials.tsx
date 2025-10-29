@@ -27,7 +27,7 @@ export default function Testimonials() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <p className="text-sm font-semibold text-primary mb-2">TÉMOIGNAGES</p>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-bold text-gray-900 leading-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-bold text-blue-dark leading-tight">
             Découvrez ce que nos clients disent de nous
           </h2>
           <p className="mt-4 text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
@@ -57,7 +57,7 @@ export default function Testimonials() {
                   loading="lazy"
                 />
                 <div>
-                  <h4 className="font-display font-bold text-gray-900">{testimonial.name}</h4>
+                  <h4 className="font-display font-bold text-blue-dark">{testimonial.name}</h4>
                 </div>
               </div>
               

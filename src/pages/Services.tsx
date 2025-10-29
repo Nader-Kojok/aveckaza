@@ -220,6 +220,18 @@ export default function Services() {
         'Nettoyage terrasses/allées',
         'Évacuation des déchets verts'
       ]
+    },
+    {
+      icon: '/services_icons/icons8-open-window-144.png',
+      title: 'Vitrier',
+      description: 'Pose, remplacement et réparation de vitrages.',
+      features: [
+        'Remplacement de vitres cassées (simple ou double vitrage)',
+        'Pose de miroirs et parois de douche',
+        'Découpe sur mesure et installation',
+        'Réparation de fenêtres et baies vitrées',
+        'Mastic et joints d\'étanchéité'
+      ]
     }
   ]
 
@@ -237,7 +249,7 @@ export default function Services() {
       <section className="px-4 sm:px-6 lg:px-8 pt-32 pb-16 bg-cream">
         <div className="max-w-4xl mx-auto text-center">
           <h1 
-            className="font-display font-bold text-gray-900 mb-6"
+            className="font-display font-bold text-blue-dark mb-6"
             style={{ fontSize: 'clamp(2.5rem, 4.5vw, 4.5rem)' }}
           >
             Tous nos services
@@ -272,7 +284,7 @@ export default function Services() {
                       className="w-10 h-10"
                     />
                   </div>
-                  <h3 className="text-3xl font-display font-bold text-gray-900 mb-4">
+                  <h3 className="text-3xl font-display font-bold text-blue-dark mb-4">
                     {service.title}
                   </h3>
                   <p className="text-gray-600 mb-6">

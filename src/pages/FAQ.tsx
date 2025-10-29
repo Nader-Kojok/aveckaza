@@ -108,7 +108,7 @@ export default function Faq() {
       />
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-display font-bold text-gray-900 mb-4">
+          <h1 className="text-4xl font-display font-bold text-blue-dark mb-4">
             Foire Aux Questions
           </h1>
           <p className="text-lg text-gray-600">
@@ -132,7 +132,7 @@ export default function Faq() {
                         onClick={() => setOpenIndex(openIndex === faq.question ? null : faq.question)}
                         className="w-full px-6 py-4 flex items-center justify-between text-left hover:bg-gray-50 transition-colors"
                       >
-                        <span className="font-semibold text-gray-900 pr-4">{faq.question}</span>
+                        <span className="font-semibold text-blue-dark pr-4">{faq.question}</span>
                         <ChevronDown
                           className={`w-5 h-5 text-primary flex-shrink-0 transition-transform ${
                             openIndex === faq.question ? 'rotate-180' : ''
@@ -152,7 +152,7 @@ export default function Faq() {
         </div>
 
         <div className="mt-16 bg-cream rounded-2xl p-8 text-center">
-          <h3 className="text-2xl font-display font-bold text-gray-900 mb-4">
+          <h3 className="text-2xl font-display font-bold text-blue-dark mb-4">
             Vous ne trouvez pas votre réponse ?
           </h3>
           <p className="text-gray-700 mb-6">

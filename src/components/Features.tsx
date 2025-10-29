@@ -5,7 +5,7 @@ export default function Features() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div>
             <p className="text-sm sm:text-base font-semibold text-primary mb-2">COMMENT ÇA MARCHE</p>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-bold text-gray-900 mb-6 leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-bold text-blue-dark mb-6 leading-tight">
               Faire intervenir un technicien n'a jamais été aussi simple
             </h2>
             <p className="text-base sm:text-lg text-gray-600 mb-6">

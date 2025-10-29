@@ -25,7 +25,7 @@ export default function EnSavoirPlus() {
       {/* Processus Simple */}
       <section className="px-4 sm:px-6 lg:px-8 py-16">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-display font-bold text-gray-900 text-center mb-12">
+          <h2 className="text-3xl font-display font-bold text-blue-dark text-center mb-12">
             Réserver un service en 3 étapes
           </h2>
           
@@ -35,7 +35,7 @@ export default function EnSavoirPlus() {
                 1
               </div>
               <div className="flex-1">
-                <h3 className="text-2xl font-display font-bold text-gray-900 mb-3">
+                <h3 className="text-2xl font-display font-bold text-blue-dark mb-3">
                   Choisissez votre service
                 </h3>
                 <p className="text-gray-700 text-lg mb-4">
@@ -54,7 +54,7 @@ export default function EnSavoirPlus() {
                 2
               </div>
               <div className="flex-1">
-                <h3 className="text-2xl font-display font-bold text-gray-900 mb-3">
+                <h3 className="text-2xl font-display font-bold text-blue-dark mb-3">
                   Sélectionnez date et heure
                 </h3>
                 <p className="text-gray-700 text-lg mb-4">
@@ -73,7 +73,7 @@ export default function EnSavoirPlus() {
                 3
               </div>
               <div className="flex-1">
-                <h3 className="text-2xl font-display font-bold text-gray-900 mb-3">
+                <h3 className="text-2xl font-display font-bold text-blue-dark mb-3">
                   Confirmez et détendez-vous
                 </h3>
                 <p className="text-gray-700 text-lg mb-4">
@@ -93,7 +93,7 @@ export default function EnSavoirPlus() {
       {/* Garanties */}
       <section className="px-4 sm:px-6 lg:px-8 py-16 bg-cream">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-display font-bold text-gray-900 text-center mb-12">
+          <h2 className="text-3xl font-display font-bold text-blue-dark text-center mb-12">
             Nos garanties
           </h2>
           
@@ -102,7 +102,7 @@ export default function EnSavoirPlus() {
               <div className="bg-primary/10 w-14 h-14 rounded-xl flex items-center justify-center mb-4">
                 <Shield className="w-7 h-7 text-primary" />
               </div>
-              <h3 className="text-xl font-display font-bold text-gray-900 mb-3">
+              <h3 className="text-xl font-display font-bold text-blue-dark mb-3">
                 Professionnels vérifiés
               </h3>
               <p className="text-gray-600">
@@ -114,7 +114,7 @@ export default function EnSavoirPlus() {
               <div className="bg-primary/10 w-14 h-14 rounded-xl flex items-center justify-center mb-4">
                 <Award className="w-7 h-7 text-primary" />
               </div>
-              <h3 className="text-xl font-display font-bold text-gray-900 mb-3">
+              <h3 className="text-xl font-display font-bold text-blue-dark mb-3">
                 100% assuré
               </h3>
               <p className="text-gray-600">
@@ -126,7 +126,7 @@ export default function EnSavoirPlus() {
               <div className="bg-primary/10 w-14 h-14 rounded-xl flex items-center justify-center mb-4">
                 <Sparkles className="w-7 h-7 text-primary" />
               </div>
-              <h3 className="text-xl font-display font-bold text-gray-900 mb-3">
+              <h3 className="text-xl font-display font-bold text-blue-dark mb-3">
                 Satisfaction garantie
               </h3>
               <p className="text-gray-600">
@@ -138,7 +138,7 @@ export default function EnSavoirPlus() {
               <div className="bg-primary/10 w-14 h-14 rounded-xl flex items-center justify-center mb-4">
                 <Clock className="w-7 h-7 text-primary" />
               </div>
-              <h3 className="text-xl font-display font-bold text-gray-900 mb-3">
+              <h3 className="text-xl font-display font-bold text-blue-dark mb-3">
                 Ponctualité
               </h3>
               <p className="text-gray-600">
@@ -150,7 +150,7 @@ export default function EnSavoirPlus() {
               <div className="bg-primary/10 w-14 h-14 rounded-xl flex items-center justify-center mb-4">
                 <Users className="w-7 h-7 text-primary" />
               </div>
-              <h3 className="text-xl font-display font-bold text-gray-900 mb-3">
+              <h3 className="text-xl font-display font-bold text-blue-dark mb-3">
                 Service client réactif
               </h3>
               <p className="text-gray-600">
@@ -162,7 +162,7 @@ export default function EnSavoirPlus() {
               <div className="bg-primary/10 w-14 h-14 rounded-xl flex items-center justify-center mb-4">
                 <Check className="w-7 h-7 text-primary" />
               </div>
-              <h3 className="text-xl font-display font-bold text-gray-900 mb-3">
+              <h3 className="text-xl font-display font-bold text-blue-dark mb-3">
                 Paiement sécurisé
               </h3>
               <p className="text-gray-600">
@@ -176,13 +176,13 @@ export default function EnSavoirPlus() {
       {/* Services détaillés */}
       <section className="px-4 sm:px-6 lg:px-8 py-16">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-display font-bold text-gray-900 text-center mb-12">
+          <h2 className="text-3xl font-display font-bold text-blue-dark text-center mb-12">
             Nos services en détail
           </h2>
           
           <div className="space-y-6">
             <div className="bg-white border border-gray-200 rounded-xl p-6">
-              <h3 className="text-xl font-display font-bold text-gray-900 mb-3">
+              <h3 className="text-xl font-display font-bold text-blue-dark mb-3">
                 🧹 Ménage et nettoyage
               </h3>
               <p className="text-gray-700 mb-3">
@@ -205,7 +205,7 @@ export default function EnSavoirPlus() {
             </div>
 
             <div className="bg-white border border-gray-200 rounded-xl p-6">
-              <h3 className="text-xl font-display font-bold text-gray-900 mb-3">
+              <h3 className="text-xl font-display font-bold text-blue-dark mb-3">
                 🔧 Bricolage et réparations
               </h3>
               <p className="text-gray-700 mb-3">
@@ -228,7 +228,7 @@ export default function EnSavoirPlus() {
             </div>
 
             <div className="bg-white border border-gray-200 rounded-xl p-6">
-              <h3 className="text-xl font-display font-bold text-gray-900 mb-3">
+              <h3 className="text-xl font-display font-bold text-blue-dark mb-3">
                 🌿 Jardinage
               </h3>
               <p className="text-gray-700 mb-3">

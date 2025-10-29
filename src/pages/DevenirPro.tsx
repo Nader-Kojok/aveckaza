@@ -56,7 +56,7 @@ export default function DevenirPro() {
       {/* Avantages */}
       <section className="px-4 sm:px-6 lg:px-8 py-16">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-display font-bold text-gray-900 text-center mb-12">
+          <h2 className="text-3xl font-display font-bold text-blue-dark text-center mb-12">
             Ce que vous gagnez en rejoignant Kaza
           </h2>
           
@@ -65,7 +65,7 @@ export default function DevenirPro() {
               <div className="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <Users className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="text-xl font-display font-bold text-gray-900 mb-3">
+              <h3 className="text-xl font-display font-bold text-blue-dark mb-3">
                 Des clients sans démarcher
               </h3>
               <p className="text-gray-600">
@@ -77,7 +77,7 @@ export default function DevenirPro() {
               <div className="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <Briefcase className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="text-xl font-display font-bold text-gray-900 mb-3">
+              <h3 className="text-xl font-display font-bold text-blue-dark mb-3">
                 Une application simple pour tout gérer
               </h3>
               <p className="text-gray-600">
@@ -89,7 +89,7 @@ export default function DevenirPro() {
               <div className="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <TrendingUp className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="text-xl font-display font-bold text-gray-900 mb-3">
+              <h3 className="text-xl font-display font-bold text-blue-dark mb-3">
                 Des revenus réguliers et sécurisés
               </h3>
               <p className="text-gray-600">
@@ -101,7 +101,7 @@ export default function DevenirPro() {
               <div className="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <Shield className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="text-xl font-display font-bold text-gray-900 mb-3">
+              <h3 className="text-xl font-display font-bold text-blue-dark mb-3">
                 Une vraie valorisation de votre travail
               </h3>
               <p className="text-gray-600">
@@ -115,7 +115,7 @@ export default function DevenirPro() {
       {/* Critères */}
       <section className="px-4 sm:px-6 lg:px-8 py-16 bg-cream">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-display font-bold text-gray-900 text-center mb-12">
+          <h2 className="text-3xl font-display font-bold text-blue-dark text-center mb-12">
             Ce qu'on attend de vous
           </h2>
           
@@ -147,7 +147,7 @@ export default function DevenirPro() {
       {/* Processus */}
       <section className="px-4 sm:px-6 lg:px-8 py-16">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-display font-bold text-gray-900 text-center mb-12">
+          <h2 className="text-3xl font-display font-bold text-blue-dark text-center mb-12">
             Comment ça marche ?
           </h2>
           
@@ -157,7 +157,7 @@ export default function DevenirPro() {
                 1
               </div>
               <div>
-                <h3 className="text-xl font-display font-bold text-gray-900 mb-2">
+                <h3 className="text-xl font-display font-bold text-blue-dark mb-2">
                   Vous postulez via le formulaire ci-dessous
                 </h3>
                 <p className="text-gray-600">
@@ -171,7 +171,7 @@ export default function DevenirPro() {
                 2
               </div>
               <div>
-                <h3 className="text-xl font-display font-bold text-gray-900 mb-2">
+                <h3 className="text-xl font-display font-bold text-blue-dark mb-2">
                   On étudie votre profil et on vous contacte
                 </h3>
                 <p className="text-gray-600">
@@ -185,7 +185,7 @@ export default function DevenirPro() {
                 3
               </div>
               <div>
-                <h3 className="text-xl font-display font-bold text-gray-900 mb-2">
+                <h3 className="text-xl font-display font-bold text-blue-dark mb-2">
                   Vous signez nos Conditions d'utilisation et vous suivez une formation Kaza
                 </h3>
                 <p className="text-gray-600">
@@ -199,7 +199,7 @@ export default function DevenirPro() {
                 4
               </div>
               <div>
-                <h3 className="text-xl font-display font-bold text-gray-900 mb-2">
+                <h3 className="text-xl font-display font-bold text-blue-dark mb-2">
                   Votre compte est activé → Vous commencez à recevoir des missions
                 </h3>
                 <p className="text-gray-600">
@@ -214,7 +214,7 @@ export default function DevenirPro() {
       {/* CTA Final */}
       <section className="px-4 sm:px-6 lg:px-8 py-16 bg-cream">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-display font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl font-display font-bold text-blue-dark mb-6">
             Vous êtes motivé, sérieux et compétent ?
           </h2>
           <p className="text-xl text-gray-700 mb-8">

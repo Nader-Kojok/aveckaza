@@ -69,7 +69,7 @@ export default function ClubKaza() {
       <section className="px-4 sm:px-6 lg:px-8 py-16">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-display font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl font-display font-bold text-blue-dark mb-4">
               1. Le programme de parrainage
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -83,7 +83,7 @@ export default function ClubKaza() {
                 <div className="bg-primary/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-4">
                   <Users className="w-8 h-8 text-primary" />
                 </div>
-                <h3 className="text-xl font-display font-bold text-gray-900 mb-3">
+                <h3 className="text-xl font-display font-bold text-blue-dark mb-3">
                   Comment ça marche ?
                 </h3>
                 <ul className="space-y-3 text-gray-600">
@@ -106,7 +106,7 @@ export default function ClubKaza() {
                 <div className="bg-primary/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-4">
                   <Gift className="w-8 h-8 text-primary" />
                 </div>
-                <h3 className="text-xl font-display font-bold text-gray-900 mb-3">
+                <h3 className="text-xl font-display font-bold text-blue-dark mb-3">
                   Vos avantages
                 </h3>
                 <ul className="space-y-3 text-gray-600">
@@ -147,7 +147,7 @@ export default function ClubKaza() {
       <section className="px-4 sm:px-6 lg:px-8 py-16 bg-cream">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-display font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl font-display font-bold text-blue-dark mb-4">
               2. Le programme de récompenses
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -161,7 +161,7 @@ export default function ClubKaza() {
                 <div className="bg-blue w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-4">
                   <Camera className="w-10 h-10 text-white" />
                 </div>
-                <h3 className="text-xl font-display font-bold text-gray-900 mb-2">
+                <h3 className="text-xl font-display font-bold text-blue-dark mb-2">
                   Étape 1
                 </h3>
                 <p className="text-gray-600">
@@ -173,7 +173,7 @@ export default function ClubKaza() {
                 <div className="bg-blue-dark w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-4">
                   <AtSign className="w-10 h-10 text-white" />
                 </div>
-                <h3 className="text-xl font-display font-bold text-gray-900 mb-2">
+                <h3 className="text-xl font-display font-bold text-blue-dark mb-2">
                   Étape 2
                 </h3>
                 <p className="text-gray-600">
@@ -185,7 +185,7 @@ export default function ClubKaza() {
                 <div className="bg-primary w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-4">
                   <Gift className="w-10 h-10 text-white" />
                 </div>
-                <h3 className="text-xl font-display font-bold text-gray-900 mb-2">
+                <h3 className="text-xl font-display font-bold text-blue-dark mb-2">
                   Étape 3
                 </h3>
                 <p className="text-gray-600">

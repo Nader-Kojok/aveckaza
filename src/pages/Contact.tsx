@@ -73,7 +73,7 @@ export default function Contact() {
                   <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
                     <Phone className="w-6 h-6 text-primary" />
                   </div>
-                  <h3 className="font-display text-xl font-bold text-gray-900 mb-2">Téléphone</h3>
+                  <h3 className="font-display text-xl font-bold text-blue-dark mb-2">Téléphone</h3>
                   <p className="text-gray-600 mb-3">Du lundi au samedi, 8h - 20h</p>
                   <a 
                     href="tel:+221787891010" 
@@ -88,7 +88,7 @@ export default function Contact() {
                   <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
                     <Mail className="w-6 h-6 text-primary" />
                   </div>
-                  <h3 className="font-display text-xl font-bold text-gray-900 mb-2">Email</h3>
+                  <h3 className="font-display text-xl font-bold text-blue-dark mb-2">Email</h3>
                   <p className="text-gray-600 mb-3">Réponse sous 24h</p>
                   <a 
                     href="mailto:contact@aveckaza.com" 
@@ -103,9 +103,9 @@ export default function Contact() {
                   <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
                     <MapPin className="w-6 h-6 text-primary" />
                   </div>
-                  <h3 className="font-display text-xl font-bold text-gray-900 mb-2">Adresse</h3>
+                  <h3 className="font-display text-xl font-bold text-blue-dark mb-2">Adresse</h3>
                   <p className="text-gray-600 mb-3">Venez nous rendre visite</p>
-                  <p className="text-gray-900 font-medium">
+                  <p className="text-blue-dark font-medium">
                     Dakar, Sénégal 🇸🇳
                   </p>
                 </div>
@@ -133,7 +133,7 @@ export default function Contact() {
               <div className="lg:col-span-2">
                 <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
                   <div className="mb-8">
-                    <h2 className="font-display text-3xl font-bold text-gray-900 mb-3">
+                    <h2 className="font-display text-3xl font-bold text-blue-dark mb-3">
                       Envoyez-nous un message
                     </h2>
                     <p className="text-gray-600">
@@ -272,7 +272,7 @@ export default function Contact() {
                       <Clock className="w-5 h-5 text-white" />
                     </div>
                     <div>
-                      <h3 className="font-display text-lg font-bold text-gray-900 mb-2">
+                      <h3 className="font-display text-lg font-bold text-blue-dark mb-2">
                         Horaires d'ouverture
                       </h3>
                       <div className="space-y-1 text-sm text-gray-700">
